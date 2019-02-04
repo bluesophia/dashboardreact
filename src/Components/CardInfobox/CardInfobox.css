@@ -1,13 +1,8 @@
+@import '../Assets/Styles/theme.css';
+
 /************************************
             wrap & card
 ************************************/
-@media (min-width: 576px){
-    .card-group {
-        flex: display;
-        flex-basis: auto;
-        flex-flow: row wrap;
-    } 
-}
 .wrapper {
     background: #edf1f5;
     padding-left: 15px;
@@ -17,8 +12,13 @@
     display: flex;
     flex-direction: column;
 }
-
-
+@media (min-width: 576px){
+    .card-group {
+        display: flex;
+        flex-basis: auto;
+        flex-flow: row wrap;
+    } 
+}
 .card {
     position: relative;
     border-right: 1px solid #e9ecef;
@@ -27,10 +27,12 @@
     min-width: 0;
     background-color: #fff;
     flex-basis: auto;
-    /* @media (min-width: 576px){
+}
+@media (min-width: 576px){
+    .card {
         flex: 1 0 0%;
         word-wrap: break-word;
-    } */
+    } 
 }
 .card h3{
     margin-top: 0;
@@ -49,7 +51,6 @@
 .card .wi {
     font-size: 36px;
 }
-
 .card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
@@ -59,10 +60,12 @@
 .card-body h6 {
     font-size: 14px;    
 }
-
 .contentBox {
     display: flex;
     align-items: center;
+}
+.contentBox h3 {
+    text-align: left;
 }
 
 /************************************
@@ -76,42 +79,58 @@
     background-color: #f8f9fa;
     border-radius: 0.25rem;
 }
-.progress-bar {
+/************************************
+      custom-color-progress-bar
+************************************/
+.progress-bar-orange {
     background-color: var(--primary);
+    width: 85%;
+    height: 6px;
+}
+.progress-bar-cyan {
+    background-color: var(--cyan);
+    width: 85%;
+    height: 6px;
+}
+.progress-bar-purple {
+    background-color: var(--purple);
+    width: 85%;
+    height: 6px;
+}
+.progress-bar-green {
+    background-color: var(--teal);
     width: 85%;
     height: 6px;
 }
 
 /************************************
-      custom-color-progress-bar
-************************************/
-.progress-bar-orange {
-    background-color: #fb9678;
-}
-.progress-bar-cyan {
-    background-color: #1FC0C7;
-}
-.progress-bar-purple {
-    background-color: #ab8ce4;
-}
-.progress-bar-green {
-    background-color: #20c997;
-}
-
-/************************************
                 items
 ************************************/
-
 .ptextMuted {
     color: #6c757d;
 }
-
 .counterBox {
     margin-left: auto;
 }   
-.counter{
-    color: #fb9678;
-}
 
+/************************************
+            items-color
+************************************/
+.counter-orange{
+    color: var(--orange);
+    font-weight: 400;
+}
+.counter-cyan{
+    color: var(--cyan);
+    font-weight: 400;
+}
+.counter-purple{
+    color: var(--purple);
+    font-weight: 400;
+}
+.counter-green{
+    color: var(--teal);
+    font-weight: 400;
+}
 
 

@@ -16,18 +16,18 @@ class CardInfobox extends Component {
                             <div className="contentBox">
                                 <div>
                                     <h3>
-                                        <SimpleLineIcon name="screen-desktop" size="Large"/>
+                                        <SimpleLineIcon name="screen-desktop" style={SimpleLineIconStyle}/>
                                     </h3>
                                     <p className="ptextMuted">MYNEW CLIENTS</p>
                                 </div>
                                 <div className="counterBox">
-                                    <h2 className="counter">23</h2>
+                                    <h2 className="counter-orange">23</h2>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12">
                             <div className="progress">
-                                <div className="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className="progress-bar-orange" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -41,18 +41,18 @@ class CardInfobox extends Component {
                             <div className="contentBox">
                                 <div>
                                     <h3>
-                                    <SimpleLineIcon name="note" size="Large"/>
+                                    <SimpleLineIcon name="note" style={SimpleLineIconStyle}/>
                                     </h3>
                                     <p className="ptextMuted">NEW PROJECTS</p>
                                 </div>
                                 <div className="counterBox">
-                                    <h2 className="counter">169</h2>
+                                    <h2 className="counter-cyan">169</h2>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12">
                             <div className="progress">
-                                <div className="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className="progress-bar-cyan" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -66,18 +66,18 @@ class CardInfobox extends Component {
                             <div className="contentBox">
                                 <div>
                                     <h3>
-                                        <SimpleLineIcon name="doc" size="Large"/>
+                                        <SimpleLineIcon name="doc" style={SimpleLineIconStyle}/>
                                     </h3>
                                     <p className="ptextMuted">NEW INVOICES</p>
                                 </div>
                                 <div className="counterBox">
-                                    <h2 className="counter">157</h2>
+                                    <h2 className="counter-purple">157</h2>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12">
                             <div className="progress">
-                                <div className="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className="progress-bar-purple" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -91,18 +91,18 @@ class CardInfobox extends Component {
                             <div className="contentBox">
                                 <div>
                                     <h3>
-                                        <SimpleLineIcon name="bag" size="Large"/>
+                                        <i><SimpleLineIcon name="bag" style={SimpleLineIconStyle}/></i>
                                     </h3>
                                     <p className="ptextMuted">ALL PROJECTS</p>
                                 </div>
                                 <div className="counterBox">
-                                    <h2 className="counter">431</h2>
+                                    <h2 className="counter-green">431</h2>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12">
                             <div className="progress">
-                                <div className="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className="progress-bar-green" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -113,5 +113,10 @@ class CardInfobox extends Component {
             )
         }
     };
+
+    // SimpleLineIconStyle
+    const SimpleLineIconStyle = {
+        fontSize: '24px'
+    }
 
 export default CardInfobox;
