@@ -61,12 +61,14 @@
     flex-direction: column;
 }
 .rightText h1 {
+    position: absolute;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 83px;
 }
 .rightText b {
     font-weight: 500;
+    margin-top: 60px;
 }
 .rightText p {
     opacity: 0.5;
