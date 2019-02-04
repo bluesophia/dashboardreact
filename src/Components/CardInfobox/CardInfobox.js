@@ -110,13 +110,13 @@ class CardInfobox extends Component {
             </div>
         </div>  
     </div>  
-            )
-        }
-    };
-
-    // SimpleLineIconStyle
-    const SimpleLineIconStyle = {
-        fontSize: '24px'
+        )
     }
+};
+
+// SimpleLineIconStyle
+const SimpleLineIconStyle = {
+    fontSize: '24px'
+}
 
 export default CardInfobox;

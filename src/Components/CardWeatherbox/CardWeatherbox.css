@@ -57,10 +57,18 @@
 }
 .rightText {
     text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.rightText h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 83px;
 }
 .rightText b {
-    font-weight: 400;
+    font-weight: 500;
 }
 .rightText p {
     opacity: 0.5;
+    font-weight: 400;
 }

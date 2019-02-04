@@ -20,7 +20,7 @@ class CardWeatherBox extends Component {
                                 </div>
                                 <div className="col-6">
                                     <div className="rightText">
-                                        <h1><WiDayCloudyHigh /></h1>
+                                        <h1><WiDayCloudyHigh size={60} style={WiDayCloudyHighStyle}/></h1>
                                         <b>SUNNEY DAY</b>
                                         <p>April 14</p>
                                     </div>
@@ -32,6 +32,10 @@ class CardWeatherBox extends Component {
             </div>  
         )
     }
+}
+
+const WiDayCloudyHighStyle = {
+    marginLeft: "10px"
 }
 
 export default CardWeatherBox;
