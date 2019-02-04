@@ -1,0 +1,66 @@
+@import '../Assets/Styles/theme.css';
+
+/************************************
+            wrap & card
+************************************/
+.WeatherWrapper {
+    background: #edf1f5;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.WeatherRow {
+    display: flex;
+}
+.Weathercard {
+    background: var(--cyan);
+    color: var(--white);
+    position: relative;
+    flex-direction: row;
+    margin-bottom: 20px;
+    flex-basis: auto;
+}
+.Weathercard h3{
+    margin-top: 40px;
+    font-size: 24px;
+}
+.Weathercard h3 > i {
+    font-size: 24px;
+}
+.Weathercard sup {
+    position: relative;
+    top: -.5em;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+.Weathercard h2 {
+    font-size: 30px;
+}
+.Weathercard p {
+    font-size: 14px;
+    font-weight: 300;
+}
+.Weathercard .wi {
+    font-size: 36px;
+}
+.Weather-card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.Weather-card-body h6 {
+    font-size: 14px;    
+}
+.leftText {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.rightText {
+    text-align: right;
+}
+.rightText b {
+    font-weight: 400;
+}
+.rightText p {
+    opacity: 0.5;
+}
