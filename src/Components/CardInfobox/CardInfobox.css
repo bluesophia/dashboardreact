@@ -1,0 +1,117 @@
+/************************************
+            wrap & card
+************************************/
+@media (min-width: 576px){
+    .card-group {
+        flex: display;
+        flex-basis: auto;
+        flex-flow: row wrap;
+    } 
+}
+.wrapper {
+    background: #edf1f5;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card-group  {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card {
+    position: relative;
+    border-right: 1px solid #e9ecef;
+    flex-direction: column;
+    margin-bottom: 10px;
+    min-width: 0;
+    background-color: #fff;
+    flex-basis: auto;
+    /* @media (min-width: 576px){
+        flex: 1 0 0%;
+        word-wrap: break-word;
+    } */
+}
+.card h3{
+    margin-top: 0;
+    font-size: 24px;
+}
+.card h3 > i {
+    font-size: 24px;
+}
+.card h2 {
+    font-size: 30px;
+}
+.card p {
+    font-size: 14px;
+    font-weight: 300;
+}
+.card .wi {
+    font-size: 36px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    font-size: 14px;
+    font-weight: 300;
+}
+.card-body h6 {
+    font-size: 14px;    
+}
+
+.contentBox {
+    display: flex;
+    align-items: center;
+}
+
+/************************************
+              progress
+************************************/
+.progress {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    font-size: 0.65625rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+}
+.progress-bar {
+    background-color: var(--primary);
+    width: 85%;
+    height: 6px;
+}
+
+/************************************
+      custom-color-progress-bar
+************************************/
+.progress-bar-orange {
+    background-color: #fb9678;
+}
+.progress-bar-cyan {
+    background-color: #1FC0C7;
+}
+.progress-bar-purple {
+    background-color: #ab8ce4;
+}
+.progress-bar-green {
+    background-color: #20c997;
+}
+
+/************************************
+                items
+************************************/
+
+.ptextMuted {
+    color: #6c757d;
+}
+
+.counterBox {
+    margin-left: auto;
+}   
+.counter{
+    color: #fb9678;
+}
+
+
+
