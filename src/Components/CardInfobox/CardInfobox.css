@@ -1,24 +1,9 @@
-@import '../Assets/Styles/theme.css';
+@import '../../Assets/Styles/theme.css';
 
 /************************************
             wrap & card
 ************************************/
-.wrapper {
-    background: #edf1f5;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.card-group  {
-    display: flex;
-    flex-direction: column;
-}
-@media (min-width: 576px){
-    .card-group {
-        display: flex;
-        flex-basis: auto;
-        flex-flow: row wrap;
-    } 
-}
+
 .card {
     position: relative;
     border-right: 1px solid #e9ecef;
@@ -82,7 +67,7 @@
 /************************************
       custom-color-progress-bar
 ************************************/
-.progress-bar-orange {
+.progress-bar-primary {
     background-color: var(--primary);
     width: 85%;
     height: 6px;
@@ -116,8 +101,8 @@
 /************************************
             items-color
 ************************************/
-.counter-orange{
-    color: var(--orange);
+.counter-primary{
+    color: var(--primary);
     font-weight: 400;
 }
 .counter-cyan{

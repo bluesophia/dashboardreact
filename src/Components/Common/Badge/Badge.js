@@ -13,7 +13,7 @@ class Badge extends Component {
     render(){
         return(
             <div>
-                <span class="badge" 
+                <span className="badge" 
                 style={{
                     backgroundColor:this.state.backgroundColor, 
                     color:this.state.color,

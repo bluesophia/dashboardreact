@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import CardInfobox from './Components/CardInfobox/CardInfobox';
-import CardWeatherBox from './Components/CardWeatherbox/CardWeatherbox';
-import CardCommentBox from './Components/CardCommentbox/CardCommentbox';
-import CardRecentcomments from './Components/CardRecentcomments/CardRecentcomments';
+import Infobox from './Screen/Dashboard/Infobox/Infobox';
+import WeatherBox from './Screen/Dashboard/Weatherbox/Weatherbox';
+import CommentBox from './Screen/Dashboard/Commentbox/Commentbox';
+import Recentcomments from './Screen/Dashboard/Recentcomments/Recentcomments';
 // import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <CardInfobox />
-        <CardWeatherBox />
-        <CardCommentBox />
-        <CardRecentcomments />
+        <Infobox />
+        <WeatherBox />
+        <CommentBox />
+        <Recentcomments />
       </div>
     );
   }

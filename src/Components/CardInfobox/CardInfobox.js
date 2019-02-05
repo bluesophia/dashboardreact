@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import './CardInfobox.css';
-import '../Assets/Styles/theme.css';
+import '../../Assets/Styles/theme.css';
 import SimpleLineIcon from 'react-simple-line-icons';
 
 class CardInfobox extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            icon: {icon: null}
+        }
+    }
     render () {
+        const { icon, title, counter, counterColor, className, ariaValuenow } = this.props;
+
         return(
-        <div className="wrapper">
-        <div className="card-group">
-            {/* card1 */}
             <div className="card">
                 <div className="card-body">
                     <div className="row">
@@ -16,100 +21,23 @@ class CardInfobox extends Component {
                             <div className="contentBox">
                                 <div>
                                     <h3>
-                                        <SimpleLineIcon name="screen-desktop" style={SimpleLineIconStyle}/>
+                                        <SimpleLineIcon name={icon} style={SimpleLineIconStyle}/>
                                     </h3>
-                                    <p className="ptextMuted">MYNEW CLIENTS</p>
+                                    <p className="ptextMuted">{title}</p>
                                 </div>
                                 <div className="counterBox">
-                                    <h2 className="counter-orange">23</h2>
+                                    <h2 className={counterColor}>{counter}</h2>
                                 </div>
                             </div>
                         </div>
                         <div className="col-12">
                             <div className="progress">
-                                <div className="progress-bar-orange" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className={className} role="progressbar" aria-valuenow={ariaValuenow} aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* card2 */}
-            <div className="card">
-                <div className="card-body">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="contentBox">
-                                <div>
-                                    <h3>
-                                    <SimpleLineIcon name="note" style={SimpleLineIconStyle}/>
-                                    </h3>
-                                    <p className="ptextMuted">NEW PROJECTS</p>
-                                </div>
-                                <div className="counterBox">
-                                    <h2 className="counter-cyan">169</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12">
-                            <div className="progress">
-                                <div className="progress-bar-cyan" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           {/* card3 */}
-            <div className="card">
-                <div className="card-body">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="contentBox">
-                                <div>
-                                    <h3>
-                                        <SimpleLineIcon name="doc" style={SimpleLineIconStyle}/>
-                                    </h3>
-                                    <p className="ptextMuted">NEW INVOICES</p>
-                                </div>
-                                <div className="counterBox">
-                                    <h2 className="counter-purple">157</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12">
-                            <div className="progress">
-                                <div className="progress-bar-purple" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* card4 */}  
-            <div className="card">
-                <div className="card-body">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="contentBox">
-                                <div>
-                                    <h3>
-                                        <i><SimpleLineIcon name="bag" style={SimpleLineIconStyle}/></i>
-                                    </h3>
-                                    <p className="ptextMuted">ALL PROJECTS</p>
-                                </div>
-                                <div className="counterBox">
-                                    <h2 className="counter-green">431</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-12">
-                            <div className="progress">
-                                <div className="progress-bar-green" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </div>  
         )
     }
 };

@@ -1,4 +1,4 @@
-@import '../Assets/Styles/theme.css';
+@import '../../Assets/Styles/theme.css';
 
 .cardRecentcomments-card {
     position: relative;
@@ -107,9 +107,6 @@
 .comment-footer .action-icons {
     visibility: visible;
 }
-
-
-
 
 /* scrollbar */
 .ps>.ps__scrollbar-x-rail {
