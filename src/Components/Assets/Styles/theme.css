@@ -467,56 +467,6 @@ ul#themecolors li a.working:before {
 
 
 
-/************************************
-        custom-color-badge
-************************************/
-.badge {
-  display: inline-block;
-  padding: 0.25em 0.4em;
-  font-size: 75%;
-  font-weight: 700;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
-}
-
-.badge-pill {
-  padding-right: 0.2em;
-  padding-left: 0.2em;
-  border-radius: 10rem;
-}
-
-.badge-info {
-  color: #fff !important;
-  background-color: var(--cyan) !important;
-}
-
-.badge-success {
-  color: #fff !important;
-  background-color: var(--teal) !important;
-}
-
-.badge-danger {
-  color: #fff !important;
-  background-color: var(--red) !important;
-}
-
-.badge-orange {
-  color: #fff !important;
-  background-color: var(--orange) !important;
-}
-
-.badge-primary {
-  color: black !important;
-  background-color: var(--primary) !important;
-}
-
-.badge-warning {
-  color: black !important;
-  background-color: var(--yellow) !important;
-}
 
 /************************************
         timeline-badge
@@ -1564,16 +1514,6 @@ body .bounceInDown {
           animation-name: bounceInDown;
 }
 
-body .badge {
-  font-weight: 400;
-  font-size: 0.7em !important;
-  line-height: normal;
-  padding: 0.3em 1em !important;
-}
-
-body .badge .badge-pill {
-  padding: 0.2em 1em !important;
-}
 
 body .label {
   padding: 3px 10px;

@@ -1,0 +1,13 @@
+/* @import './theme.css' */
+
+.badge{
+    display: inline-block;
+    font-weight: 500;
+    margin-left: 5px;
+    font-size: 0.75em;
+    line-height: normal;
+    border-radius: 30px;
+    padding: 0.2em 1em;
+    align-items: center;
+    vertical-align: center;
+}

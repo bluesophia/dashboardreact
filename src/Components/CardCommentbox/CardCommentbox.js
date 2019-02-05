@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './CardCommentbox.css';
+import ImgCircle from '../Common/ImgCircle/ImgCircle';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -24,7 +25,7 @@ class CardCommentbox extends Component {
                                 <div className="carousel-item active">
                                     <h4>My Acting blown <span>Your Mind</span> and you <br />also <br />laugh at the moment</h4>
                                     <div>
-                                        <span><img src="http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg" alt="user" className="commentBox-img-circle" /></span>
+                                        <span><ImgCircle src={"http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg"} width={"50px"}/></span>
                                         <span className="commentBox-textBox">
                                         <h4>Govinda</h4>
                                         <p>Actor</p>
@@ -40,7 +41,7 @@ class CardCommentbox extends Component {
                                 <div className="carousel-item active">
                                     <h4>My Acting blown <span>Your Mind</span> and <br /> you also <br />laugh at the moment</h4>
                                     <div>
-                                        <span><img src="http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg" alt="user" className="commentBox-img-circle" /></span>
+                                    <span><ImgCircle src={"http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg"} width={"50px"}/></span>
                                         <span className="commentBox-textBox">
                                         <h4>Govinda</h4>
                                         <p>Actor</p>
@@ -56,7 +57,7 @@ class CardCommentbox extends Component {
                                 <div className="carousel-item active">
                                     <h4>My Acting blown <span>Your Mind</span> and <br /> you also <br />laugh at the moment</h4>
                                     <div>
-                                        <span><img src="http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg" alt="user" className="commentBox-img-circle" /></span>
+                                        <span><ImgCircle src={"http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg"} width={"50px"}/></span>
                                         <span className="commentBox-textBox">
                                         <h4>Govinda</h4>
                                         <p>Actor</p>
