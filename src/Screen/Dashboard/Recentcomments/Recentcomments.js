@@ -43,6 +43,15 @@ class Recentcomments extends Component {
                 status: "Approved"
             },
         ]
+
+        // scrollbar
+        const scrollBarstyle = {
+            height: '300px',
+            overflow: 'auto',
+            position: 'relative',
+            display:'hidden'
+
+        }
         return(
             <div className="row">
                 <div className="col-lg-6">
@@ -50,7 +59,7 @@ class Recentcomments extends Component {
                         <div className="cardRecentcomments-card-body">
                             <h5 className="cardRecentcomments-card-title">Recent Comments</h5>
                         </div>
-                        <div className="comment-widgets" id="comment">
+                        <div className="comment-widgets" id="comment" ref={(ref) => {this.box=ref}} style={scrollBarstyle}>
                         {
                             commentList.map((item, index) => (
                             <CardRecentcomments 
