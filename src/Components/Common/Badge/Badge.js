@@ -5,14 +5,20 @@ class Badge extends Component {
     constructor(props){
         super(props);
         this.state = {
-            theme_color: props.themme_color,
-            value: props.value
+            backgroundColor: props.backgroundColor,
+            value: props.value,
+            color: props.color
         }
     }
     render(){
         return(
             <div>
-                <span class="badge" style={{backgroundColor:this.props.themecolor}}>
+                <span class="badge" 
+                style={{
+                    backgroundColor:this.state.backgroundColor, 
+                    color:this.state.color,
+                }}
+                >
                 {this.state.value}
                 </span> 
             </div>
