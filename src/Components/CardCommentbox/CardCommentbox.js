@@ -10,7 +10,7 @@ class CardCommentbox extends Component {
                 <div>
                     <div>
                         <div className="carousel-item">
-                            <h4>My Acting blown <span>Your Mind</span> and you <br />also <br />laugh at the moment</h4>
+                            <h4>My Acting blown <span>Your Mind</span> and <br /> you also <br />laugh at the moment</h4>
                             <div>
                                 <span><ImgCircle src={avatar} width={"50px"}/></span>
                                 <span className="commentBox-textBox">

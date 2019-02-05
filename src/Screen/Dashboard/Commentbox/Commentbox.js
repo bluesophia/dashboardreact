@@ -22,22 +22,19 @@ class Commentbox extends Component {
                 id: 0,
                 name: "Govinda",
                 avatar: "http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg",
-                job: "Actor",
-                comment: 'My Acting blown Your Mind and you also laugh at the moment'
+                job: "Actor"
             },
             {
                 id: 1,
                 name: "Govinda",
                 avatar: "http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg",
-                job: "Actor",
-                comment: 'My Acting blown <span>Your Mind</span> and you <br />also <br />laugh at the moment'
+                job: "Actor"
             },
             {
                 id: 2,
                 name: "Govinda",
                 avatar: "http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg",
-                job: "Actor",
-                comment: "My Acting blown <span>Your Mind</span> and you <br />also <br />laugh at the moment"
+                job: "Actor"
             },
         ]
         return(
@@ -50,7 +47,6 @@ class Commentbox extends Component {
                         name={item.name}
                         avatar={item.avatar}
                         job={item.job}
-                        comment={item.comment}
                     />
                 ))
             }

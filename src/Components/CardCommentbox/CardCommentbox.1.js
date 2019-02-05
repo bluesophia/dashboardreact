@@ -23,7 +23,7 @@ class CardCommentbox extends Component {
                         <div>
                             <div>
                                 <div className="carousel-item active">
-                                    <h4>My Acting blown <span>Your Mind</span> and you <br />also <br />laugh at the moment</h4>
+                                    <h4>{{__html: this.state.actions}}</h4>
                                     <div>
                                         <span><ImgCircle src={"http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg"} width={"50px"}/></span>
                                         <span className="commentBox-textBox">
