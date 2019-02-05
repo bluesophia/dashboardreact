@@ -62,9 +62,8 @@
 }
 .rightText h1 {
     position: absolute;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 83px;
+    margin: 0 10px 0;
+    align-self: flex-end;
 }
 .rightText b {
     font-weight: 500;
