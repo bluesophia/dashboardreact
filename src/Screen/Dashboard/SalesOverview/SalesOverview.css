@@ -16,9 +16,7 @@
     border-radius: 0px;
     margin-left: 5px;
     margin-right: 5px;
-    width: 100%;
-    margin-bottom: 1rem;
-    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 .salestable-card-body {
     flex: 1 1 auto;
@@ -42,6 +40,7 @@
     margin-bottom: 15px;
     color: #6c757d;
     font-size: 14px;
+    margin-top: -0.375rem;
 }
 .salestable > h5 {
     font-size: 16px;
@@ -60,12 +59,44 @@
 .salestable-mid-card-body {
     background-color: #e9ecef;
 }
+.salestable-mid-card-content {
+    margin-top: 0;
+    font-weight: 300;
+}
+.salestable-mid-card-price {
+    text-align: right;
+    align-self: center;
 
+}
+.salestable-card-option {
+    margin-left: auto;
+}    
+.salestable-form-control {
+    color: var(--gray-extra-dark);
+    min-height: 38px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    font-size: 0.875rem;
+    width: 100%;
+    height: calc(2.0625rem + 2px);
+    overflow: auto;
+    resize: none;
+    background-clip: padding-box;
+    margin-bottom: 0;
+}
+.salestable-form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #fff;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+    /* display-6  */
 /* .salestable table .badge {
     font-weight: 400 !important;
     line-height: normal !important;
 } */
-
 
 
 /************************************
