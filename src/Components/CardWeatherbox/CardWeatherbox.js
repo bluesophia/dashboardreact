@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './CardWeatherbox.css';
-import '../Assets/Styles/theme.css';
+import '../../Assets/Styles/theme.css';
 import { WiDayCloudyHigh } from 'weather-icons-react';
 
 class CardWeatherBox extends Component {

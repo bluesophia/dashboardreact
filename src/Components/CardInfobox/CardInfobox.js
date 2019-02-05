@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './CardInfobox.css';
-import '../Assets/Styles/theme.css';
+import '../../Assets/Styles/theme.css';
 import SimpleLineIcon from 'react-simple-line-icons';
 
 class CardInfobox extends Component {

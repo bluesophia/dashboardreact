@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CardInfobox from './Components/CardInfobox/CardInfobox';
 import CardWeatherBox from './Components/CardWeatherbox/CardWeatherbox';
 import CardCommentBox from './Components/CardCommentbox/CardCommentbox';
-import CardRecentcomments from './Components/CardRecentcomments/CardRecentcomments';
+import Recentcomments from './Screen/Dashboard/Recentcomments/Recentcomments';
 // import './App.css';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <CardInfobox />
         <CardWeatherBox />
         <CardCommentBox />
-        <CardRecentcomments />
+        <Recentcomments />
       </div>
     );
   }
