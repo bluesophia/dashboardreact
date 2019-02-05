@@ -50,27 +50,9 @@
     font-weight: 500;
 }
 .salestable-table > td .sales-price {
-    font-size: 14px !important;
+    font-size: 14px;
 }
-/************************************
-         table-section2
-************************************/
 
-.salestable-mid-card-body {
-    background-color: #e9ecef;
-}
-.salestable-mid-card-content {
-    margin-top: 0;
-    font-weight: 300;
-}
-.salestable-mid-card-price {
-    text-align: right;
-    align-self: center;
-
-}
-.salestable-card-option {
-    margin-left: auto;
-}    
 .salestable-form-control {
     color: var(--gray-extra-dark);
     min-height: 38px;
@@ -92,15 +74,33 @@
     -webkit-box-shadow: none;
             box-shadow: none;
 }
-    /* display-6  */
-/* .salestable table .badge {
-    font-weight: 400 !important;
-    line-height: normal !important;
-} */
+
+/************************************
+         table-section2
+************************************/
+
+.salestable-mid-card-body {
+    background-color: #e9ecef;
+}
+.salestable-mid-card-title {
+    font-size: 24px;
+}
+.salestable-mid-card-content {
+    margin-top: 0;
+    font-weight: 300;
+}
+.salestable-mid-card-price {
+    text-align: right;
+    align-self: center;
+
+}
+.salestable-card-option {
+    margin-left: auto;
+}    
 
 
 /************************************
-                   table
+                table
 ************************************/
     
     .table th, .table thead th {
@@ -118,4 +118,44 @@
     .table.no-border tbody td {
         border: 0px;
     }
+    
+/************************************
+        custom-color-text
+************************************/
+  
+  .text-danger {
+    color: var(--red) !important;
+  }
+  
+  .text-success {
+    color: var(--teal) !important;
+  }
+  
+  .text-info {
+    color: var(--info) !important;
+  }
+  
+  .text-blue {
+    color: var(--blue) !important;
+  }
+  
+  .text-orange {
+    color: var(--primary) !important;
+  }
+  
+  .text-cyan {
+    color: var(--cyan) !important;
+  }
+  
+  .text-purple {
+    color: var(--purple) !important;
+  }
+  
+  .text-green {
+    color: var(--teal) !important;
+  }
+  
+  .text-white {
+    color: var(--white) !important;
+  }
     
