@@ -30,5 +30,6 @@
     position: relative;
     margin-bottom: 10px;
     height: 630px;
+    overflow: hidden;
     position: relative;
 }
