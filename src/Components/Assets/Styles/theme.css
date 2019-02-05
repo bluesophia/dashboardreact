@@ -464,43 +464,8 @@ ul#themecolors li a.working:before {
   background: var(--gray-extra-dark) !important;
 }
 
-/************************************
-       custom-color-card-bg
-************************************/
-.card-bg-cyan {
-  background-color: var(--cyan) !important;
-}
 
-.card-bg-white {
-  background-color: var(--white) !important;
-}
 
-.card-bg-orange {
-  background-color: var(--primary) !important;
-}
-
-.card-bg-purple {
-  background-color: var(--purple) !important;
-}
-
-/************************************
-      custom-color-progress-bar
-************************************/
-.progress-bar-orange {
-  background-color: var(--primary) !important;
-}
-
-.progress-bar-cyan {
-  background-color: var(--cyan) !important;
-}
-
-.progress-bar-purple {
-  background-color: var(--purple) !important;
-}
-
-.progress-bar-green {
-  background-color: var(--teal) !important;
-}
 
 /************************************
         custom-color-badge
