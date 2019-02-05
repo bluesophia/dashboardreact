@@ -806,7 +806,6 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--gray-extra-dark);
   text-align: left;
   background-color: #edf1f5;
   /************************************
@@ -1027,16 +1026,7 @@ body p {
   margin-bottom: 1rem;
 }
 
-body sub, body sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
 
-body sup {
-  top: -.5em;
-}
 
 body svg {
   overflow: hidden;
@@ -1054,40 +1044,6 @@ body textarea:focus, body input:focus {
 body .small, body small {
   font-size: 80%;
   font-weight: 400;
-}
-
-body .table {
-  width: 100%;
-  margin-bottom: 1rem;
-  background-color: transparent;
-  border-collapse: collapse;
-}
-
-body .table th, body .table thead th {
-  font-weight: 500;
-}
-
-body .table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid var(--btn-border-color);
-}
-
-body .table td, body .table th {
-  padding: 1rem;
-  vertical-align: top;
-  border-top: 1px solid var(--btn-border-color);
-}
-
-body .table.no-border tbody td {
-  border: 0px;
-}
-
-body .stylish-table tbody tr.active, body .stylish-table tbody tr:hover {
-  border-color: #fb9678;
-}
-
-body .stylish-table tbody tr {
-  border-left: 3px solid transparent;
 }
 
 body .form-control {
@@ -1366,19 +1322,6 @@ body .d-flex {
   display: flex !important;
 }
 
-@media (max-width: 1023px) {
-  body .d-flex {
-    display: block !important;
-  }
-}
-
-@media (max-width: 1023px) {
-  body .d-flex.no-block {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-}
 
 body .d-none {
   display: none !important;

@@ -15,6 +15,7 @@ class Commentbox extends Component {
             swipeToSlide: true,
             className: "commentBox-card",
             adaptiveHeight: true,
+            arrows: false
           };
 
         const carouselList = [
