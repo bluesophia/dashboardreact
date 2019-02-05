@@ -15,15 +15,15 @@ class CardRecentcomments extends Component {
                     </span>
                 </div>
                 <div className="comment-text">
-                            <h5>{name}</h5>
-                            <p>{comment}</p>
+                    <h5>{name}</h5>
+                    <p>{comment}</p>
                     <div className="comment-footer">
-                                <span className="comment-footer-date">{date}</span>
-                            <Badge backgroundColor={backgroundColor} value={status} color={"#fff"}/>
-                        <span class="action-icons">
-                                <a href="javascript:void(0)"><i class="ti-pencil-alt"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-check"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-heart"></i></a>    
+                        <span className="comment-footer-date">{date}</span>
+                        <Badge backgroundColor={backgroundColor} value={status} color={"#fff"}/>
+                        <span className="action-icons">
+                                <a href="#"><i className="ti-pencil-alt"></i></a>
+                                <a href="#"><i className="ti-check"></i></a>
+                                <a href="#"><i className="ti-heart"></i></a>    
                         </span>
                     </div>
                 </div>
