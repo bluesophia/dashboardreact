@@ -29,7 +29,7 @@ class YearlySales extends Component {
                             </div>
                             <ResponsiveContainer width="100%" height={340}>
                             <LineChart width={600} height={300} data={data}
-                                    margin={{top: 5, right: 30, left: -17, bottom: 5}}>
+                                    margin={{top: 5, right: 30, left: -20, bottom: 5}}>
                             <XAxis dataKey="name" tickSize={0} tickMargin={10} style={AxisStyle}/>
                             <YAxis axisLine={false} tickSize={0} tickMargin={10} style={AxisStyle}/>
                             <Tooltip/>
