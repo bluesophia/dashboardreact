@@ -45,13 +45,14 @@
     overflow-x: auto;
 }
 .overview-table {
-        display: block !important;
+        display: block;
         border-collapse: collapse;
+        width: 100%;
         flex-wrap: nowrap;
 }
-@media (max-width: 1023px){
+@media (min-width: 500px){
     .overview-table {
-        display: block!important;
+        display: inline-table;
     }
 }   
 .overview-table > thead > th {
