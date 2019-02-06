@@ -29,7 +29,7 @@ class SalesDifferenceAreachart extends Component {
                                 <XAxis dataKey="name" tickSize={0} tickMargin={10}/>
                                 <YAxis axisLine={false} tickSize={0} tickMargin={10}/>
                                 <CartesianGrid verticalCoordinatesGenerator />
-                                <Tooltip/>1FC0C7
+                                <Tooltip/>
                                 <Area type='monotone' dataKey='uv' stroke='none' fill='rgb(13, 219, 228)' fillOpacity='0.4' />
                                 <Area type='monotone' dataKey='pv' stroke='none' fill=' rgb(226, 229, 234)' fillOpacity='0.4'/>
                             </AreaChart>    

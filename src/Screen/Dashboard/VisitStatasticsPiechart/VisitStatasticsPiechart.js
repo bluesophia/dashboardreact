@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './VisitStatastics.css';
+import './VisitStatasticsPiechart.css';
 import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
-class VisitStatastics extends Component {
+class VisitStatasticsPiechart extends Component {
     render(){
         const data = [
                 {name: 'Group A', value: 400}, 
@@ -44,4 +44,4 @@ class VisitStatastics extends Component {
     }
 }
 
-export default VisitStatastics;
+export default VisitStatasticsPiechart;
