@@ -121,7 +121,7 @@ class SalesOverview extends Component {
             </div>
         </div>
         </div>
-     )
+        )
     }   
 }
 
