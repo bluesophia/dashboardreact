@@ -4,6 +4,7 @@ import WeatherBox from './Screen/Dashboard/Weatherbox/Weatherbox';
 import CommentBox from './Screen/Dashboard/Commentbox/Commentbox';
 import Recentcomments from './Screen/Dashboard/Recentcomments/Recentcomments';
 import SalesOverview from './Screen/Dashboard/SalesOverview/SalesOverview';
+import SalesDifference from './Screen/Dashboard/SalesDifference/SalesDifference';
 // import './App.css';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
         <CommentBox />
         <Recentcomments />
         <SalesOverview />
+        <SalesDifference />
       </div>
     );
   }
