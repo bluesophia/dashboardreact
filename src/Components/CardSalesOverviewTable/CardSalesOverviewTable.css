@@ -25,4 +25,6 @@
     font-size: 14px;
     font-weight: 400;
 }
-
+.overview-table-tr:hover {
+    background-color: #f8f9fa;
+}
