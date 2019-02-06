@@ -95,7 +95,7 @@ class SalesOverview extends Component {
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>NAMm</th>
+                            <th>NAME</th>
                             <th>STATUS</th>
                             <th>DATE</th>
                             <th>PRICE</th>
