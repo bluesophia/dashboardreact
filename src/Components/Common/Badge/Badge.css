@@ -1,4 +1,4 @@
-/* @import './theme.css' */
+@import '../../../Assets/Styles/theme.css';
 
 .badge{
     display: inline-block;
@@ -11,3 +11,38 @@
     align-items: center;
     vertical-align: center;
 }
+
+/************************************
+        custom-color-badge
+************************************/
+  
+  .badge-info {
+    color: #fff !important;
+    background-color: var(--cyan) !important;
+  }
+  
+  .badge-success {
+    color: #fff !important;
+    background-color: var(--teal) !important;
+  }
+  
+  .badge-danger {
+    color: #fff !important;
+    background-color: var(--red) !important;
+  }
+  
+  .badge-orange {
+    color: #fff !important;
+    background-color: var(--orange) !important;
+  }
+  
+  .badge-primary {
+    color: black !important;
+    background-color: var(--primary) !important;
+  }
+  
+  .badge-warning {
+    color: black !important;
+    background-color: var(--yellow) !important;
+  }
+  

@@ -16,7 +16,7 @@ class Badge extends Component {
                 <span className="badge" 
                 style={{
                     backgroundColor:this.state.backgroundColor, 
-                    color:this.state.color,
+                    color:"white",
                 }}
                 >
                 {this.state.value}
