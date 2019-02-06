@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './SalesDifference.css';
+import './SalesDifferenceAreachart.css';
 import { AreaChart, XAxis, YAxis, Tooltip, Area, ResponsiveContainer, CartesianGrid } from 'recharts';
 class SalesDifferenceAreachart extends Component {
     render(){

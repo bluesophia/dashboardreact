@@ -4,7 +4,8 @@ import WeatherBox from './Screen/Dashboard/Weatherbox/Weatherbox';
 import CommentBox from './Screen/Dashboard/Commentbox/Commentbox';
 import Recentcomments from './Screen/Dashboard/Recentcomments/Recentcomments';
 import SalesOverview from './Screen/Dashboard/SalesOverview/SalesOverview';
-import SalesDifferenceAreachart from './Screen/Dashboard/SalesDifference/SalesDifference';
+import SalesDifferenceAreachart from './Screen/Dashboard/SalesDifferenceAreachart/SalesDifferenceAreachart';
+import SalesDifferenceBarchart from './Screen/Dashboard/SalesDifferenceBarchart/SalesDifferenceBarchart';
 // import './App.css';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
         <Recentcomments />
         <SalesOverview />
         <SalesDifferenceAreachart />
+        <SalesDifferenceBarchart />
       </div>
     );
   }
