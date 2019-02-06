@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "raphael": "^2.2.7",
     "react": "^16.7.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.7.0",
@@ -10,6 +11,7 @@
     "react-simple-line-icons": "^1.0.8",
     "react-slick": "^0.23.2",
     "react-weathericons": "^1.0.4",
+    "recharts": "^1.4.2",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {

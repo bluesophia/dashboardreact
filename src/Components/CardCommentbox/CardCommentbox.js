@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './CardCommentbox.css';
 import ImgCircle from '../Common/ImgCircle/ImgCircle';
 
+
 class CardCommentbox extends Component {
     render(){
         const { avatar, name, job } = this.props;

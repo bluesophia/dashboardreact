@@ -1,0 +1,37 @@
+/************************************
+         table-section2
+************************************/
+
+.salestable-mid-card-body {
+    background-color: #f8f9fa;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+.salestable-mid-card-body-row {
+    display: flex;
+}
+.salestable-mid-card-title {
+    font-size: 24px;
+    margin-top: 0;
+}
+.salestable-mid-card-body-contents {
+    flex: 0 0 50%;
+    min-width: 50%;
+}
+.salestable-mid-card-price > h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 0;
+}
+.salestable-mid-card-content {
+    margin-top: 0;
+    font-weight: 300;
+}
+.salestable-mid-card-price {
+    text-align: right;
+    align-self: center;
+
+}
