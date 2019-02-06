@@ -3,7 +3,7 @@
 /************************************
        salesdifference
 ************************************/
-.sales-difference-card {
+.sales-difference-area-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
     margin-right: 5px;
     margin-bottom: 20px;
 }
-.sales-difference-card-body {
+.sales-difference-area-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
@@ -25,23 +25,23 @@
     width: 100%;
 }
 
-.sales-difference-card-title {
+.sales-difference-area-card-title {
     display: flex;
     margin-bottom: 40px;
     align-items: center;
     position: relative;
     font-weight: 500;
-    margin-bottom: 0.75rem;
+    margin-bottom: 40px;
     margin-top: 0;
 }
-.sales-difference-card-title > h5{
+.sales-difference-area-card-title > h5{
     font-weight: 500;
     margin-top: 0;
 }
-.sales-difference-card-contents {
+.sales-difference-area-card-contents {
     margin-left: auto;
 }
-.sales-difference-card-contents > ul {
+.sales-difference-area-card-contents > ul {
     display: flex;
     margin-left: auto;
     font-size: 12px;

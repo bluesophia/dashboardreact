@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './SalesDifference.css';
-import { AreaChart, XAxis, YAxis, Tooltip, Area, ResponsiveContainer } from 'recharts';
-class SalesDifference extends Component {
+import { AreaChart, XAxis, YAxis, Tooltip, Area, ResponsiveContainer, CartesianGrid } from 'recharts';
+class SalesDifferenceAreachart extends Component {
     render(){
         const data = [
             {name: '2010', uv: 0, pv: 0, amt: 2400},
@@ -13,11 +13,11 @@ class SalesDifference extends Component {
         return(
             <div className="row">
                 <div className="col-lg-8 col-md-12 sales-difference-area-chart">
-                    <div className="sales-difference-card">
-                        <div className="sales-difference-card-body">
-                            <div className="sales-difference-card-title">
+                    <div className="sales-difference-area-card">
+                        <div className="sales-difference-area-card-body">
+                            <div className="sales-difference-area-card-title">
                                 <h5>SALES DIFFERENCE</h5>
-                                <div className="sales-difference-card-contents">
+                                <div className="sales-difference-area-card-contents">
                                     <ul className="list-inline">
                                         <li><div className="circle-blue"></div> SITE A</li>
                                         <li><div className="circle-red"></div> SITE B</li>
@@ -26,8 +26,9 @@ class SalesDifference extends Component {
                             </div>
                             <ResponsiveContainer width="100%" height={340}>
                             <AreaChart data={data} style={AreaChartStyle} >
-                                <XAxis dataKey="name" />
-                                <YAxis datakey="yname"/>
+                                <XAxis dataKey="name" tickSize={0} tickMargin={10}/>
+                                <YAxis axisLine={false} tickSize={0} tickMargin={10}/>
+                                <CartesianGrid verticalCoordinatesGenerator />
                                 <Tooltip/>1FC0C7
                                 <Area type='monotone' dataKey='uv' stroke='none' fill='rgb(13, 219, 228)' fillOpacity='0.4' />
                                 <Area type='monotone' dataKey='pv' stroke='none' fill=' rgb(226, 229, 234)' fillOpacity='0.4'/>
@@ -45,4 +46,4 @@ const AreaChartStyle = {
     fontSize: "12px"
 }
 
-export default SalesDifference;
+export default SalesDifferenceAreachart;

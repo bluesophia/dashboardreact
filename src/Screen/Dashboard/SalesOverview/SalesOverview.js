@@ -92,7 +92,7 @@ class SalesOverview extends Component {
             <CardSalesOverviewReportprice />
             <div className="overview-table-responsive">
                 <table className="overview-table">
-                    <thead>
+                    <thead className="overview-table-head">
                         <tr>
                             <th>#</th>
                             <th>NAME</th>
