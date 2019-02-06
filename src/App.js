@@ -6,6 +6,7 @@ import Recentcomments from './Screen/Dashboard/Recentcomments/Recentcomments';
 import SalesOverview from './Screen/Dashboard/SalesOverview/SalesOverview';
 import SalesDifferenceAreachart from './Screen/Dashboard/SalesDifferenceAreachart/SalesDifferenceAreachart';
 import SalesDifferenceBarchart from './Screen/Dashboard/SalesDifferenceBarchart/SalesDifferenceBarchart';
+import VisitStatastics from './Screen/Dashboard/VisitStatastics/VisitStatastics';
 // import './App.css';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         <SalesOverview />
         <SalesDifferenceAreachart />
         <SalesDifferenceBarchart />
+        <VisitStatastics />
       </div>
     );
   }

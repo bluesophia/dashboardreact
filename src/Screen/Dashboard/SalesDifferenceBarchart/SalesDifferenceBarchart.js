@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SalesDifferenceBarchart.css';
-import { BarChart, XAxis, YAxis, Tooltip, Legend, Bar, ResponsiveContainer, CartesianGrid } from 'recharts';
+import { BarChart, Tooltip, Bar, ResponsiveContainer } from 'recharts';
 class SalesDifferenceBarchart extends Component {
     render(){
         const data = [
@@ -27,7 +27,7 @@ class SalesDifferenceBarchart extends Component {
                                     <b>(150 Sales)</b>
                                 </div>
                                 <div className="col-6 sales-difference-bar-card-righttext">
-                                <ResponsiveContainer width={88} height={154} style={ResponsiveContainerStyle}>
+                                <ResponsiveContainer width={88} height={154}>
                                 <BarChart data={data}>
                                     <Tooltip />
                                     <Bar dataKey="uv" fill="#03a9f3" barSize={4}/>
@@ -41,9 +41,6 @@ class SalesDifferenceBarchart extends Component {
             </div>
         )
     }
-}
-const ResponsiveContainerStyle = {
-    marginRight: 0
 }
 
 export default SalesDifferenceBarchart;
