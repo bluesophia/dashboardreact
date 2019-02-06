@@ -115,7 +115,7 @@ class SalesOverview extends Component {
                                 badgeBackground={item.badgeBackground}
                             />
                         ))
-                    
+                    }
                     </tbody>
                 </table>
             </div>
