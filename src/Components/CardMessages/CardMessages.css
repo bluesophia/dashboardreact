@@ -31,6 +31,7 @@
 }
 
 .message-row .message-row-image {
+    display: flex;
     padding: 0.5rem;
 }
 .message-text {

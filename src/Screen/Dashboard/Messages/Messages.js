@@ -25,7 +25,7 @@ class Messages extends Component {
             },
             {
                 id: 2,
-                name: 'Arifit Sinh',
+                name: 'Arijit Sinh',
                 comment: 'Simply dummy text of the printing and typesetting industry.',
                 time: '9:08 AM',
                 status: 'away'
@@ -46,6 +46,14 @@ class Messages extends Component {
                 imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
                 status: 'online'
             },
+            {
+                id: 5,
+                name: 'Sonu Nigam',
+                comment: "I've sung a song! See you at",
+                time: '9:10 AM',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg',
+                status: 'busy'
+            }
         ]
         return(
             <div className="row">
