@@ -1,0 +1,75 @@
+@import '../../Assets/Styles/theme.css';
+.message-row-card {
+    padding-left:1.25rem;
+    padding-right:1.25rem;
+}
+
+/************************************
+          comment-widgets
+************************************/
+
+.message-row-a {
+    color: black !important;
+}
+.message-row-a:hover {
+    color: black !important;
+}
+.comment-widgets {
+    position: relative;
+    margin-bottom: 10px;
+    height: 630px;
+    position: relative;   
+}
+.message-row {
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    text-decoration: none;
+    padding: 9px 15px;
+}
+.message-row:hover {
+    background: #f8f9fa;
+}
+
+.message-row .message-row-image {
+    display: flex;
+    padding: 0.5rem;
+}
+.message-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+}
+.message-text h5 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.message-text > span {
+    white-space: nowrap;
+    max-height: 66px;
+    font-size: 12px !important;
+    font-weight: 300;
+}
+.message-footer {
+    display: flex;
+    margin-top: -4px;
+}
+.message-footer-date{
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.round {
+    line-height: 48px;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: #01c0c8;
+    font-size: 14px;
+    margin-right: 10px;
+}
