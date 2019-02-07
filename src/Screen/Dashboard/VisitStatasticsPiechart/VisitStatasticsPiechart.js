@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './VisitStatasticsPiechart.css';
-import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
+import { PieChart, Pie, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 class VisitStatasticsPiechart extends Component {
     render(){
         const data = [
-                {name: 'Group A', value: 400}, 
-                {name: 'Group B', value: 300},
-                {name: 'Group C', value: 200}
+                {name: 'A', value: 400}, 
+                {name: 'B', value: 300},
+                {name: 'C', value: 200}
             ]
         const COLORS = ['#FFF', '#7d5db1', '#1FC0C7'];
 
@@ -32,6 +32,7 @@ class VisitStatasticsPiechart extends Component {
                                         data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length] }/>)
                                     }
                                     </Pie>
+                                <Tooltip/>
                                 </PieChart>
                                 </ResponsiveContainer>
                                 </div>
@@ -44,4 +45,7 @@ class VisitStatasticsPiechart extends Component {
     }
 }
 
+const TooltipStyle = {
+    fontSize: "10px"
+}
 export default VisitStatasticsPiechart;
