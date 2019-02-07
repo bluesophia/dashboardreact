@@ -1,6 +1,7 @@
 @import '../../Assets/Styles/theme.css';
 .message-row-card {
-    padding:1.5
+    padding-left:1.25rem;
+    padding-right:1.25rem;
 }
 
 /************************************
@@ -42,18 +43,17 @@
     margin-bottom: 0;
 }
 .message-text > span {
-    margin: 1px 0;
     white-space: nowrap;
     max-height: 66px;
-    margin-bottom: 1rem;
     font-size: 12px !important;
-    font-weight: 400;
+    font-weight: 300;
 }
 .message-footer {
     display: flex;
+    margin-top: -4px;
 }
 .message-footer-date{
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 300;
 
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './CardMessages.css';
-import ImgCircle from '../Common/ImgCircle/ImgCircle';
+import ImgCircleStatus from '../Common/ImgCircleStatus/ImgCircleStatus';
 
 class CardMessages extends Component {
     render(){
@@ -13,7 +13,7 @@ class CardMessages extends Component {
             <div className="message-row">
                 <div className="message-row-image">
                     <span className="round"> 
-                        <ImgCircle src={imgUrl} width={"50px"}/>
+                        <ImgCircleStatus src={imgUrl} width={"50px"}/>
                     </span>
                 </div>
                 <div className="message-text">
