@@ -9,47 +9,46 @@ class Messages extends Component {
         const commentList = [
             {
                 id: 0,
-                name: 'James Anderson',
+                name: 'Pavan kumar',
                 comment: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum',
-                date: 'April 14, 2016',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
-                backgroundColor: "#03a9f3",
-                status: "pending"
+                time: '9:30 AM',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg'
             },
             {
                 id: 1,
-                name: 'Michael Jorden',
-                comment: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum',
-                date: 'April 14, 2016',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg',
-                backgroundColor: "#20c997",
-                status: "Approved"
+                name: 'Sonu Nigam',
+                comment: "I've sung a song! See you at",
+                time: '9:10 AM',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg'
             },
             {
                 id: 2,
-                name: 'Johnathan Doeting',
-                comment: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum',
-                date: 'April 14, 2016',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg',
-                backgroundColor: "#E26B78",
-                status: "Rejected"
+                name: 'Arifit Sinh',
+                comment: 'Simply dummy text of the printing and typesetting industry.',
+                time: '9:08 AM',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg'
             },
             {
                 id: 3,
-                name: 'Genelia doe',
-                comment: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum',
-                date: 'April 14, 2016',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg',
-                backgroundColor: "#20c997",
-                status: "Approved"
+                name: 'Pavan kumar',
+                comment: 'Just see the my admin!',
+                time: '9:02 AM',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg'
+            },
+            {
+                id: 4,
+                name: 'Pavan kumar',
+                comment: 'Welcome to the Elite Admin',
+                time: '9:30 AM',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg'
             },
         ]
         return(
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="cardRecentcomments-card">
-                        <div className="cardRecentcomments-card-body">
-                            <h5 className="cardRecentcomments-card-title">Recent Comments</h5>
+                    <div className="messages-card">
+                        <div className="messages-card-body">
+                            <h5 className="messages-card-title">YOU HAVE 5 NEW MESSAGES</h5>
                         </div>
                         <div className="comment-widgets" id="comment">
                         <Scrollbars autoHide>
@@ -59,10 +58,8 @@ class Messages extends Component {
                                 key={commentList.id} 
                                 name={item.name} 
                                 comment={item.comment} 
-                                date={item.date} 
-                                imgUrl={item.imgUrl} 
-                                backgroundColor={item.backgroundColor}
-                                status={item.status}
+                                time={item.time} 
+                                imgUrl={item.imgUrl}
                             />
                             ))
                         }

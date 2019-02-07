@@ -1,6 +1,6 @@
 @import '../../../Assets/Styles/theme.css';
 
-.cardRecentcomments-card {
+.messages-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,14 +14,15 @@
     margin-right: 5px;
     margin-bottom: 20px;
 }
-.cardRecentcomments-card-body {
+.messages-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
+    padding-bottom: 0;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
 }
-.cardRecentcomments-card-title {
+.messages-card-title {
     position: relative;
     font-weight: 500;
     margin-bottom: 0.75rem;
