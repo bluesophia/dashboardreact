@@ -12,35 +12,39 @@ class Messages extends Component {
                 name: 'Pavan kumar',
                 comment: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum',
                 time: '9:30 AM',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg'
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
+                status: 'online'
             },
             {
                 id: 1,
                 name: 'Sonu Nigam',
                 comment: "I've sung a song! See you at",
                 time: '9:10 AM',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg'
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg',
+                status: 'busy'
             },
             {
                 id: 2,
                 name: 'Arifit Sinh',
                 comment: 'Simply dummy text of the printing and typesetting industry.',
                 time: '9:08 AM',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg'
+                status: 'away'
             },
             {
                 id: 3,
                 name: 'Pavan kumar',
                 comment: 'Just see the my admin!',
                 time: '9:02 AM',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg'
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg',
+                status: 'away'
             },
             {
                 id: 4,
                 name: 'Pavan kumar',
                 comment: 'Welcome to the Elite Admin',
                 time: '9:30 AM',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg'
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
+                status: 'online'
             },
         ]
         return(
@@ -60,6 +64,7 @@ class Messages extends Component {
                                 comment={item.comment} 
                                 time={item.time} 
                                 imgUrl={item.imgUrl}
+                                status={item.status}
                             />
                             ))
                         }

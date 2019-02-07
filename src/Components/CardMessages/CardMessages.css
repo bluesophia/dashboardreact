@@ -7,6 +7,7 @@
 /************************************
           comment-widgets
 ************************************/
+
 .message-row-a {
     color: black !important;
 }
@@ -56,4 +57,18 @@
     font-size: 12px;
     font-weight: 300;
 
+}
+
+.round {
+    line-height: 48px;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: #01c0c8;
+    font-size: 14px;
+    margin-right: 10px;
 }

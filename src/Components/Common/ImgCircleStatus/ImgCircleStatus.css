@@ -1,0 +1,45 @@
+.user-img {
+    width: 45px;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 15px 0;
+    
+    
+    
+}
+.user-img img {
+    width: 100%;
+}
+
+#stauscircle {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    left: 33px;
+    position: absolute;
+    top: -1px;
+    width: 10px;
+}
+.user-img-span {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    left: 33px;
+    position: absolute;
+    top: -1px;
+    width: 10px;
+}
+/************************************
+        custom-color-status
+************************************/
+.online {
+    background: var(--teal);
+}
+.busy {
+    background: var(--red);
+}
+.away {
+    background: var(--yellow);
+}

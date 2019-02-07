@@ -5,7 +5,7 @@ import ImgCircleStatus from '../Common/ImgCircleStatus/ImgCircleStatus';
 class CardMessages extends Component {
     render(){
 
-        const { name, comment, time, imgUrl } = this.props;
+        const { name, comment, time, imgUrl, status } = this.props;
 
         return(
             <div className="message-row-card">
@@ -13,7 +13,11 @@ class CardMessages extends Component {
             <div className="message-row">
                 <div className="message-row-image">
                     <span className="round"> 
-                        <ImgCircleStatus src={imgUrl} width={"50px"}/>
+                        <ImgCircleStatus 
+                        src={imgUrl} 
+                        width={"50px"}
+                        status={status}
+                        />
                     </span>
                 </div>
                 <div className="message-text">
