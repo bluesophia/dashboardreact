@@ -1,0 +1,62 @@
+@import '../../Assets/Styles/theme.css';
+
+/************************************
+                card
+************************************/
+    .commentBox-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: var(--primary);
+        color: var(--white);
+        background-clip: border-box;
+        border: 0px solid transparent;
+        border-radius: 0px;
+        margin: 0 5px 20px 5px;
+        margin-right: 5px;
+    }
+    .commentBox-card-body {
+        flex: 1 1 auto;
+        padding: 1.25rem;
+        font-size: 14px;
+        font-weight: 300;
+        width: 100%;
+    }
+    .commentBox-card-body h4 {
+        margin-top: 0;
+        font-weight: 400; 
+    }
+    .commentBox-card-body h4 > span {
+        font-size: 18px;
+        font-weight: 600; 
+    }
+    .commentBox-card-body h6 {
+        font-size: 14px;  
+    }
+    .carousel-item > div {
+        display: flex;
+    }
+    .carousel-item >h4 {
+        height: 105px;
+    }
+    .carousel-item > div > span > img{
+        width: 50px;
+    }
+    .commentBox-img-circle {
+        border-radius: 100%;
+    }   
+    .commentBox-textBox {
+        margin-left: 10px;
+    }
+    .commentBox-textBox h4{
+        color: var(--white);
+        margin-bottom: 0;
+    }
+    .commentBox-textBox p{
+        color: var(--white);
+        font-weight: 500;
+    }
+
+
