@@ -8,6 +8,7 @@ import SalesOverview from './Screen/Dashboard/SalesOverview/SalesOverview';
 import SalesDifferenceAreachart from './Screen/Dashboard/SalesDifferenceAreachart/SalesDifferenceAreachart';
 import SalesDifferenceBarchart from './Screen/Dashboard/SalesDifferenceBarchart/SalesDifferenceBarchart';
 import VisitStatasticsPiechart from './Screen/Dashboard/VisitStatasticsPiechart/VisitStatasticsPiechart';
+import TodoList from './Screen/Dashboard/TodoList/TodoList';
 
 // import './App.css';
 
@@ -24,6 +25,7 @@ class App extends Component {
         <SalesDifferenceAreachart />
         <SalesDifferenceBarchart />
         <VisitStatasticsPiechart />
+        <TodoList />
       </div>
     );
   }
