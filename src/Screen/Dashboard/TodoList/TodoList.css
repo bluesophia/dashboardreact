@@ -1,0 +1,42 @@
+@import '../../../Assets/Styles/theme.css';
+
+.todolist-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: var(--white);
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.todolist-card-body {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+.todolist-card-title {
+    align-self: center;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.todolist-card-title > h5 {
+    margin-bottom: 0;
+}
+
+.comment-widgets {
+    position: relative;
+    margin-bottom: 10px;
+    height: 410px;
+    position: relative;
+}

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './CardRecentcomments.css';
 import ImgCircle from '../Common/ImgCircle/ImgCircle';
 import Badge from '../Common/Badge/Badge'
+import SimpleLineIcon from 'react-simple-line-icons';
+
 class CardRecentcomments extends Component {
     render(){
 
@@ -21,9 +23,10 @@ class CardRecentcomments extends Component {
                         <span className="comment-footer-date">{date}</span>
                         <Badge backgroundColor={backgroundColor} value={status} color={"#fff"}/>
                         <span className="action-icons">
-                                <a href="#"><i className="ti-pencil-alt"></i></a>
-                                <a href="#"><i className="ti-check"></i></a>
-                                <a href="#"><i className="ti-heart"></i></a>    
+                                <a href="#" class="icon-hover-color"><SimpleLineIcon name="pencil" style={SimpleLineIconStyle}/></a>
+                                <a href="#" class="icon-hover-color"><SimpleLineIcon name="check" style={SimpleLineIconStyle}/></a>
+                                
+                                <a href="#"><SimpleLineIcon name="heart" style={SimpleLineIconStyle} /></a>    
                         </span>
                     </div>
                 </div>
@@ -31,5 +34,8 @@ class CardRecentcomments extends Component {
         )
     }
 };
-
+// SimpleLineIconStyle
+const SimpleLineIconStyle = {
+    fontSize: '14px'
+}
 export default CardRecentcomments;
