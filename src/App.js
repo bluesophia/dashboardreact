@@ -10,7 +10,7 @@ import SalesDifferenceBarchart from './Screen/Dashboard/SalesDifferenceBarchart/
 import VisitStatasticsPiechart from './Screen/Dashboard/VisitStatasticsPiechart/VisitStatasticsPiechart';
 import TodoList from './Screen/Dashboard/TodoList/TodoList';
 import Messages from './Screen/Dashboard/Messages/Messages';
-
+import Chat from './Screen/Dashboard/Chat/Chat';
 // import './App.css';
 
 class App extends Component {
@@ -28,6 +28,7 @@ class App extends Component {
         <VisitStatasticsPiechart />
         <TodoList />
         <Messages />
+        <Chat />
       </div>
     );
   }
