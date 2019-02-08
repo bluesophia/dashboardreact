@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
-import { Infobox, YearlySales, Weatherbox, Commentbox, Recentcomments, SalesOverview, 
-          SalesDifferenceAreachart, SalesDifferenceBarchart, VisitStatasticsPiechart,
-          TodoList, Messages, Chat
-} from './Screen/Dashboard';
+// import DashboardScreen from './Screen/Dashboard/DashboardScreen';
+import ProfileScreen from './Screen/Profile/ProfileScreen';
+import './App.css'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Infobox />
-        <YearlySales />
-        <Weatherbox />
-        <Commentbox />
-        <Recentcomments />
-        <SalesOverview />
-        <SalesDifferenceAreachart />
-        <SalesDifferenceBarchart />
-        <VisitStatasticsPiechart />
-        <TodoList />
-        <Messages />
-        <Chat />
+        <div className="Wrapper">
+          {/* <DashboardScreen /> */}
+          <ProfileScreen />
+        </div>
       </div>
     );
   }
 }
 
 export default App;
+ 
