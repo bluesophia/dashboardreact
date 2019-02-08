@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class CircleButton extends Component {
     constructor(props){
@@ -7,7 +8,9 @@ class CircleButton extends Component {
             width: props.width,
             height: props.height,
             backgroundColor: props.backgroundColor,
-            color: props.color
+            color: props.color,
+            icon: props.icon,
+            fontSize:props.fontSize
         }
     }
     static defaultprops = {
@@ -29,7 +32,7 @@ class CircleButton extends Component {
                     backgroundColor: this.props.backgroundColor,
                     color: this.props.color
                     }}>
-                    <i className={this.props.icon}></i>
+                    <FontAwesomeIcon icon={this.props.icon}/>
                     <span>{this.props.value}</span>
                 </button>
             </div>

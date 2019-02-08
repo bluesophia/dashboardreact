@@ -1438,27 +1438,6 @@ body .message-box .message-widget a .mail-contnet .mail-desc, body .message-box 
   font-weight: 300;
 }
 
-body .message-box .message-widget {
-  position: relative;
-}
-
-body .message-box .message-widget a {
-  border-bottom: 1px solid var(--border-bottom-color);
-  display: block;
-  text-decoration: none;
-  padding: 9px 15px;
-}
-
-body .box {
-  display: inline-block;
-  color: var(--gray-dark);
-  background: var(--secondary);
-  border-radius: 0.25rem;
-  padding: 10px;
-  font-size: 14px;
-  font-weight: 300;
-}
-
 body .accordion .card:first-of-type {
   border-bottom: 0;
   border-bottom-right-radius: 0;
