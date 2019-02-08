@@ -9,17 +9,25 @@ class Badge extends Component {
             value: props.value,
             color: props.color
         }
+        
     }
+    static defaultProps = {
+        backgroundColor: "#03a9f3",
+        value: 'pending',
+        color: "white"
+    }
+
     render(){
+        const { backgroundColor, value, color } = this.props;
         return(
             <div>
                 <span className="badge" 
                 style={{
-                    backgroundColor:this.state.backgroundColor, 
-                    color:"white",
+                    backgroundColor:backgroundColor, 
+                    color:color,
                 }}
                 >
-                {this.state.value}
+                {value}
                 </span> 
             </div>
         )
