@@ -32,9 +32,10 @@
 .chat-comment-widgets {
     position: relative;
     margin-bottom: 10px;
-    height: 438px;
+    height: 342px;
     position: relative;
     padding: 1.25rem;
+    padding-top: 0;
 }
 
 .chat-card-body-typemessage {
