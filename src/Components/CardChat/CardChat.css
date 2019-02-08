@@ -18,7 +18,7 @@
 .cardchat-text h5 {
     font-size: 16px;
     margin-top: 0;
-    margin-bottom: 0;
+    color: #6c757d;
 }
 .cardchat-text > span {
     white-space: nowrap;
