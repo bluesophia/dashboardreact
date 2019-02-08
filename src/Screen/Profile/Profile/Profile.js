@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Profile.css';
 import SimpleLineIcon from 'react-simple-line-icons';
 import ImgCircle from '../../../Components/Common/ImgCircle/ImgCircle'
+import CardProfileHeader from '../../../Components/CardProfileHeader/CardProfileHeader'
 
 class Profile extends Component {
     constructor(props){
@@ -19,17 +20,14 @@ class Profile extends Component {
         return(
             <div className="profile-card">
                 <div className="profile-card-body">
-                    <div className="profile-card-header">
-                        <ImgCircle key={this.state.id} src={this.state.imgUrl} width={"150px"}/>
-                        <div className="profile-card-title">
-                            <h4 className="profile-card-name">{this.state.name}</h4>
-                            <h6 className="profile-card-subtitle">{this.state.subtitle}</h6>
-                        </div>
-                        <div className="profile-card-followers">
-                            <a href="#" className="profile-card-followers-icon"><SimpleLineIcon name="people" style={SimpleLineIconStyle}/>{this.state.follower}</a>
-                            <a href="#" className="profile-card-followers-icon"><SimpleLineIcon name="picture" style={SimpleLineIconStyle}/>{this.state.images}</a>
-                        </div>
-                    </div>
+                    <CardProfileHeader 
+                        id={this.state.id}
+                        imgUrl={this.state.imgUrl}
+                        name={this.state.name}
+                        subtitle={this.state.subtitle}
+                        follower={this.state.follower}
+                        images={this.state.images}
+                    />
                     <div className="profile-card-footer">
                     </div>
                 </div>
@@ -38,9 +36,4 @@ class Profile extends Component {
     }
 }
 
-const SimpleLineIconStyle = {
-    fontSize: "14px",
-    marginTop: "4px",
-    marginRight: "5px"
-}
 export default Profile;
