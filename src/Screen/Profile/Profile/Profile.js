@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './Profile.css';
-import SimpleLineIcon from 'react-simple-line-icons';
-import ImgCircle from '../../../Components/Common/ImgCircle/ImgCircle'
 import CardProfileHeader from '../../../Components/CardProfileHeader/CardProfileHeader'
-
+import CircleButton from '../../../Components/Common/CircleButton/CircleButton'
 class Profile extends Component {
     constructor(props){
         super(props);
@@ -28,7 +26,29 @@ class Profile extends Component {
                         follower={this.state.follower}
                         images={this.state.images}
                     />
+                </div>
+                <div className="profile-card-body">
                     <div className="profile-card-footer">
+                        <div className="profile-card-footer-address">
+                            <small>Email address</small>
+                            <h6>hannagover@gmail.com</h6>
+                            <small>Phone</small>
+                            <h6>+91 654 784 547</h6>
+                            <small>Address</small>
+                            <h6>71 Pilgrim Avenue Chevy Chase, MD 20815</h6>
+                        </div>
+                        <div>
+                            <small>Social Profile</small>
+                            <CircleButton 
+                                width={"40px"}
+                                height={"40px"}
+                                backgroundColor={"#dee2e6"}
+                                color={"#212529"}
+                            />
+                        </div>
+                        <div>
+
+                        </div>
                     </div>
                 </div>
             </div>  

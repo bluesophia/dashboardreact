@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import DashboardScreen from './Screen/Dashboard/DashboardScreen';
+import DashboardScreen from './Screen/Dashboard/DashboardScreen';
 import ProfileScreen from './Screen/Profile/ProfileScreen';
 import './App.css'
 
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Wrapper">
-          {/* <DashboardScreen /> */}
+          <DashboardScreen />
           <ProfileScreen />
         </div>
       </div>

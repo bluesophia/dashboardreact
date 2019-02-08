@@ -29,4 +29,5 @@
 .profile-card-body {
     padding: 1.25rem;
     margin-top: 30px;
+    border-bottom: 1px solid var(--border-bottom-color);
 }
