@@ -1,0 +1,29 @@
+@import '../../../Assets/Styles/theme.css';
+
+.profile-card-group  {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 576px){
+    .card-group {
+        display: flex;
+        flex-basis: auto;
+        flex-flow: row wrap;
+    } 
+}
+
+.profile-card {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid transparent;
+    border-radius: 0px;
+}
+

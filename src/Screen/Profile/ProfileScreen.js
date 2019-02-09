@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Profile } from './ProfileExports.js';
+import { Profile, ProfileNav } from './ProfileExports.js';
 
 class ProfileScreen extends Component {
     render(){
         return(
             <div>
                 <Profile />
+                <ProfileNav />
             </div>
         )
     }
