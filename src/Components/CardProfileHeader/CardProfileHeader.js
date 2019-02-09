@@ -9,6 +9,7 @@ class CardProfileHeader extends Component {
         const { id, imgUrl, name, subtitle, follower, images } = this.props;
 
         return(
+            <div className="profile-card-body">
                 <div className="profile-card-header">
                     <ImgCircle key={id} src={imgUrl} width={"150px"}/>
                     <div className="profile-card-title">
@@ -20,6 +21,7 @@ class CardProfileHeader extends Component {
                         <a href="#" className="profile-card-followers-icon"><SimpleLineIcon name="picture" style={SimpleLineIconStyle}/>{images}</a>
                     </div>
                 </div>
+            </div>
         )
     }
 }

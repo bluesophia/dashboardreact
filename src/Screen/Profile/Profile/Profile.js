@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './Profile.css';
 import CardProfileHeader from '../../../Components/CardProfileHeader/CardProfileHeader'
-import CircleButton from '../../../Components/Common/CircleButton/CircleButton'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import CardProfileBottom from '../../../Components/CardProfileBottom/CardProfileBottom';
 
 class Profile extends Component {
     constructor(props){
@@ -26,73 +22,23 @@ class Profile extends Component {
     render(){
         return(
             <div className="profile-card">
-                <div className="profile-card-body">
-                    <CardProfileHeader 
-                        id={this.state.id}
-                        imgUrl={this.state.imgUrl}
-                        name={this.state.name}
-                        subtitle={this.state.subtitle}
-                        follower={this.state.follower}
-                        images={this.state.images}
-                    />
-                </div>
-                <div className="profile-card-body">
-                    <div className="profile-card-footer">
-                        <div className="profile-card-footer-address">
-                            <small>Email address</small>
-                            <h6>{this.state.email}</h6>
-                            <small>Phone</small>
-                            <h6>{this.state.phone}</h6>
-                            <small>Address</small>
-                            <h6>{this.state.address}</h6>
-                        </div>
-                        <div class="map-box">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470029.1604841957!2d72.29955005258641!3d23.019996818380896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C+Gujarat!5e0!3m2!1sen!2sin!4v1493204785508" frameborder="0"  allowfullscreen=""></iframe>
-                        </div>
-                        <div>
-                            <small>Social Profile</small>
-                            <CircleButton 
-                                width={"40px"}
-                                height={"40px"}
-                                border={"1px solid #dee2e6"}
-                                backgroundColor={"#f8f9fa"}
-                                color={"#212529"}
-                                icon={faFacebookF}
-                                fontSize={"13px"}
-                                style={CircleButtonStyle}
-                            />
-                            <CircleButton 
-                                width={"40px"}
-                                height={"40px"}
-                                border={"1px solid #dee2e6"}
-                                backgroundColor={"#f8f9fa"}
-                                color={"#212529"}
-                                icon={faTwitter}
-                                fontSize={"13px"}
-                                style={CircleButtonStyle}
-                            />
-                            <CircleButton 
-                                width={"40px"}
-                                height={"40px"}
-                                border={"1px solid #dee2e6"}
-                                backgroundColor={"#f8f9fa"}
-                                color={"#212529"}
-                                icon={faYoutube}
-                                fontSize={"13px"}
-                                style={CircleButtonStyle}
-                            />
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                </div>
+                <CardProfileHeader 
+                    id={this.state.id}
+                    imgUrl={this.state.imgUrl}
+                    name={this.state.name}
+                    subtitle={this.state.subtitle}
+                    follower={this.state.follower}
+                    images={this.state.images}
+                />
+                <CardProfileBottom 
+                    email={this.state.email}
+                    phone={this.state.phone}
+                    address={this.state.address}
+                />
             </div>  
         )
     }
 }
-const CircleButtonStyle = {
-    fontSize: "13px"
-}
+
 
 export default Profile;
