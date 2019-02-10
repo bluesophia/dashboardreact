@@ -5,7 +5,7 @@ class ProfileScreen extends Component {
     render(){
         return(
             <div>
-                {/* <Profile /> */}
+                <Profile />
                 <ProfileNav />
             </div>
         )
