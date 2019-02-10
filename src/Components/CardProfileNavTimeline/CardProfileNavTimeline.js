@@ -4,11 +4,12 @@ import ImgCircle from '../Common/ImgCircle/ImgCircle';
 import SimpleLineIcon from 'react-simple-line-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import RectangleButton from '../Common/RectangleButton/RectangleButton';
 
 class CardProfileNavTimeline extends Component {
     render(){
 
-        const { name, imgUrl, image1, image2, image3, image4, update, updateWhere, comment, commentNumber, like, time  } = this.props;
+        const { name, imgUrl, image1, image2, image3, image4, update, updateWhere, comment, commentNumber, like, time, button, Blockquote  } = this.props;
         
         return(
             <div className="profile-timeline-row">
@@ -21,7 +22,7 @@ class CardProfileNavTimeline extends Component {
                 <div className="profile-timeline-text">
                     <a href="#">{name}</a>
                     <span className="profile-timeline-date">{time}</span>
-                    <p>{update}<a href="#" className="profile-timeline-updateWhere">  {updateWhere}</a></p>
+                    { update ? <p className="profile-timeline-text-update">{update}<a href="#" className="profile-timeline-updateWhere">  {updateWhere}</a></p> : null }
                     <div className="profile-timeline-image-row">
                         { image1 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image1}/></div> : null }
                         { image2 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image2}/></div> : null }
@@ -29,15 +30,19 @@ class CardProfileNavTimeline extends Component {
                         { image4 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image4}/></div> : null }
                     </div>
                     <div className="profile-timeline-comment-div col-lg-3 col-md-6">
-                        <p>{comment}</p>
+                        { comment ? <p className="profile-timeline-comment">{comment}</p> : null }
+                        { Blockquote ? <p className="profile-timeline-blockquote">{Blockquote}</p> : null }
+                        { button ? <RectangleButton /> : null }
                     </div>
                     <div className="profile-timeline-footer">
                         <span className="profile-timeline-action-icons">
-                            <a herf="#"><p>{commentNumber} comment</p></a>
-                            <a href="#" className="profile-timeline-footer-icon">
-                                <FontAwesomeIcon icon={faHeart} style={FontAwesomeIconStyle}/>
-                                <p>{like} love</p>
-                            </a> 
+                            { commentNumber ? <a herf="#"><p>{commentNumber} comment</p></a> : null }
+                            { like ? 
+                                <a href="#" className="profile-timeline-footer-icon">
+                                    <FontAwesomeIcon icon={faHeart} style={FontAwesomeIconStyle}/>
+                                    <p>{like} love</p> 
+                                </a> 
+                            : null }
                         </span>
                     </div>
                    
@@ -48,7 +53,7 @@ class CardProfileNavTimeline extends Component {
         )
     }
 };
-// SimpleLineIconStyle
+// FontAwesomeIconStyle
 const FontAwesomeIconStyle = {
     fontSize: '14px',
     color: '#e46a76',

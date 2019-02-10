@@ -1,37 +1,34 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './RectangleButton.css'
 
-class CircleButton extends Component {
+class RectangleButton extends Component {
     
     static defaultProps = {
-        width: '40px',
-        height: '40px',
-        border: "none",
-        backgroundColor: "#20c997",
-        fontSize:"20px",
-        color: "white"
+        border: "1px solid transparent",
+        backgroundColor: "rgb(0, 194, 146)",
+        borderColor: "#00c292",
+        color: "white",
+        value: "Design Weblayout"
     }
 
     render(){
 
-        const { index, width, height,border, fontSize, backgroundColor, color, value, icon} = this.props;
+        const { index, color, borderColor,border, backgroundColor, value } = this.props;
         
         return(
             <div>
-                <button key={index} style={{
-                    borderRadius: "100%", 
+                <a key={index} className="recBtn" 
+                style={{
+                    color: color,
+                    borderColor: borderColor,
                     border: border,
-                    fontSize: fontSize,
-                    width: width,
-                    height: height,
-                    backgroundColor: backgroundColor,
-                    color: color
-                    }}>
-                    <FontAwesomeIcon icon={icon}/>
+                    backgroundColor: backgroundColor
+                }}>
                     <span>{value}</span>
-                </button>
+                </a>
             </div>
         )
     }
 }
-export default CircleButton;
+
+export default RectangleButton;
