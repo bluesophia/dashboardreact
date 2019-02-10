@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './YearlySales.css';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Dot } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 class YearlySales extends Component {
     render(){
         const data = [

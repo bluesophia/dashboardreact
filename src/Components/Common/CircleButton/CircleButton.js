@@ -14,11 +14,11 @@ class CircleButton extends Component {
 
     render(){
 
-        const { width, height,border, fontSize, backgroundColor, color, value, icon} = this.props;
+        const { index, width, height,border, fontSize, backgroundColor, color, value, icon} = this.props;
         
         return(
             <div>
-                <button style={{
+                <button key={index} style={{
                     borderRadius: "100%", 
                     border: border,
                     fontSize: fontSize,
