@@ -1,0 +1,158 @@
+@import '../../Assets/Styles/theme.css';
+
+
+/************************************
+          comment-widgets
+************************************/
+.comment-widgets {
+    position: relative;
+    margin-bottom: 10px;
+    height: 630px;
+    position: relative;
+}
+.profile-timeline-row {
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    /* padding: 14px; */
+}
+.profile-timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-right: 10px;
+    border-left: 1px solid #e9ecef;
+    margin-left: 30px;
+}
+.profile-timeline-left-image {
+    float: left;
+    margin-left: -60px;
+    z-index: 1;
+    margin-right: 15px;
+}
+.profile-timeline-image-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+/* .round {
+    line-height: 48px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: var(--cyan);
+} */
+.profile-timeline-date{
+    font-size: 14px;
+    font-weight: 300;
+    color:var(--gray);
+    margin-left: 5px;
+}
+
+.profile-timeline-text {
+    width: 100%;
+}
+.profile-timeline-text a {
+    font-size: 14px;
+    margin-top: 0;
+    font-weight: 300;
+    color: var(--gray-extra-dark);
+}
+.profile-timeline-text p {
+    max-height: 66px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+}
+.profile-timeline-footer {
+    display: flex;
+}
+.profile-timeline-img-div {
+    margin-bottom: 20px;
+}
+.profile-timeline-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    vertical-align: middle;
+    border-style: none;
+}
+.profile-timeline-action-icons {
+    font-size: 12px;
+    visibility: hidden;
+}
+.profile-timeline-date{
+    font-size: 12px;
+    font-weight: 300;
+    color:var(--gray);
+}
+.profile-timeline-action-icons a {
+    padding-left: 7px;
+    vertical-align: middle;
+    color: var(--gray);
+    
+}
+.profile-timeline-action-icons i {
+        font-size: 14px;
+}
+
+/* active */
+.comment-text.active .comment-footer .action-icons, .comment-text:hover .comment-footer .action-icons {
+    visibility: visible;
+}
+.comment-text .comment-footer .action-icons {
+    padding: 10px 0;
+    display: flex;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-top:-5px;
+}
+
+@media (max-width: 767px){
+    .comment-text .comment-footer .action-icons {
+        padding: 10px 0;
+        display: flex;
+        padding: 10px 0;
+        margin-top: 30px;
+        margin-left: -157px;
+    }
+}
+.comment-footer .action-icons {
+    visibility: visible;
+    
+}
+.comment-footer .action-icons > a {
+    margin-right: 10px;
+    
+}
+.icon-hover-color:hover {
+    color: #01c0c8 !important;
+}
+
+/* scrollbar */
+.ps>.ps__scrollbar-x-rail {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    bottom: 0px;
+    height: 6px;
+}
+
+.ps>.ps__scrollbar-x-rail>.ps__scrollbar-x {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    bottom: 2px;
+    height: 6px;
+}

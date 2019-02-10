@@ -472,6 +472,154 @@ html {
   line-height: 1.15;
 }
 
+/************************************
+               body
+************************************/
+.fixed-layout .left-sidebar, .fixed-layout .topbar {
+  position: fixed;
+}
+
+.fixed-layout .topbar {
+  width: 100%;
+}
+
+.skin-default .topbar {
+  background: var(--topbar-bg-color);
+}
+
+/************************************
+            mini-sidebar
+************************************/
+.collapse:not(.show) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mini-sidebar.show-sidebar .left-sidebar, .mini-sidebar.show-sidebar .sidebar-footer {
+    left: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .left-sidebar, .mini-sidebar .user-profile {
+    width: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .scroll-sidebar {
+    padding-bottom: 0px;
+    position: absolute;
+    height: calc(100vh - 70px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .scroll-sidebar .u-dropdown {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mini-sidebar .sidebar-nav {
+    background: transparent;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .sidebar-nav #sidebarnav li {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .sidebar-nav #sidebarnav > li > a {
+    width: 70px;
+    padding: 15px 15px 15px 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
+    width: 290px !important;
+    background: #f9f9f9;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .sidebar-nav #sidebarnav > li:hover > ul, .mini-sidebar .sidebar-nav #sidebarnav > li:hover > ul.collapse {
+    display: block;
+  }
+}
+
+.sidebar-nav > ul > li.mm-active > a {
+  color: var(--primary) !important;
+  font-weight: 500;
+  border-left: 3px solid var(--primary);
+}
+
+.sidebar-nav > ul > li.active > a {
+  color: #fb9678;
+  font-weight: 500;
+  border-left: 3px solid #fb9678;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a .hide-menu {
+    display: inline;
+  }
+}
+
+.sidebar-nav ul li a:hover {
+  color: #fb9678;
+}
+
+.sidebar-nav ul li a.mm-active, .sidebar-nav ul li a:hover {
+  color: #fb9678;
+}
+
+.sidebar-nav ul li a.mm-active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.sidebar-nav .has-arrow {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .mini-sidebar .sidebar-nav #sidebarnav > li:hover > ul {
+    height: auto !important;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .sidebar-nav #sidebarnav > li > ul {
+    position: absolute;
+    left: 70px;
+    top: 46px;
+    width: 220px;
+    padding-bottom: 10px;
+    z-index: 1001;
+    background: #f9f9f9;
+    display: none;
+    padding-left: 1px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mini-sidebar .sidebar-nav #sidebarnav .hide-menu, .mini-sidebar .sidebar-nav #sidebarnav .nav-small-cap, .mini-sidebar .sidebar-nav #sidebarnav .sidebar-footer, .mini-sidebar .sidebar-nav #sidebarnav .user-profile .profile-text, .mini-sidebar .sidebar-nav #sidebarnav > .label, .mini-sidebar .sidebar-nav #sidebarnav > li > a.has-arrow:after {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mini-sidebar .sidebar-nav #sidebarnav .hide-menu, .mini-sidebar .sidebar-nav #sidebarnav .nav-small-cap, .mini-sidebar .sidebar-nav #sidebarnav .sidebar-footer, .mini-sidebar .sidebar-nav #sidebarnav .user-profile .profile-text, .mini-sidebar .sidebar-nav #sidebarnav > .label, .mini-sidebar .sidebar-nav #sidebarnav > li > a.has-arrow:after {
+    display: block;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif !important;
@@ -606,6 +754,11 @@ body a:focus, body a:hover {
 body a:hover {
   color: var(--primary) !important;
   text-decoration: underline;
+}
+
+body img {
+  vertical-align: middle !important;
+  border-style: none;
 }
 
 body i,

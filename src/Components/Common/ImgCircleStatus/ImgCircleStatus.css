@@ -1,11 +1,17 @@
+.user-img-round {
+    line-height: 48px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: var(--cyan);
+}
 .user-img {
     width: 45px;
     position: relative;
     display: inline-block;
     margin: 0 10px 15px 0;
-    
-    
-    
 }
 .user-img img {
     width: 100%;
