@@ -12,7 +12,6 @@
 }
 .profile-timeline-row {
     display: flex;
-    border-bottom: 1px solid #e5e5e5;
     flex-wrap: wrap;
     margin-right: -10px;
     margin-left: -10px;
@@ -49,14 +48,14 @@
     background: var(--cyan);
 } */
 .profile-timeline-date{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     color:var(--gray);
     margin-left: 5px;
 }
-
 .profile-timeline-text {
     width: 100%;
+    margin-bottom: 30px;
 }
 .profile-timeline-text a {
     font-size: 14px;
@@ -72,12 +71,24 @@
     margin-bottom: 1rem;
     font-size: 14px;
     font-weight: 300;
+    margin-top: 0;
+}
+.profile-timeline-updateWhere {
+    color: var(--primary) !important;
+    font-weight: 400 !important;
+}
+.profile-timeline-updateWhere:hover {
+    color: var(--primary-dark) !important;
 }
 .profile-timeline-footer {
     display: flex;
 }
 .profile-timeline-img-div {
     margin-bottom: 20px;
+}
+.profile-timeline-comment-div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 .profile-timeline-img {
     max-width: 100%;
@@ -87,24 +98,35 @@
     border-style: none;
 }
 .profile-timeline-action-icons {
+    display: flex;
     font-size: 12px;
-    visibility: hidden;
 }
-.profile-timeline-date{
-    font-size: 12px;
-    font-weight: 300;
-    color:var(--gray);
-}
-.profile-timeline-action-icons a {
-    padding-left: 7px;
+.profile-timeline-action-icons a:link {
     vertical-align: middle;
-    color: var(--gray);
-    
+    color: var(--gray-extra-dark);
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.profile-timeline-action-icons i {
-        font-size: 14px;
+.profile-timeline-footer-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
+.profile-timeline-action-icons i {
+    font-size: 14px;
+}
+.profile-timeline-action-icons p {
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.profile-timeline-hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 /* active */
 .comment-text.active .comment-footer .action-icons, .comment-text:hover .comment-footer .action-icons {
     visibility: visible;
@@ -125,34 +147,4 @@
         margin-top: 30px;
         margin-left: -157px;
     }
-}
-.comment-footer .action-icons {
-    visibility: visible;
-    
-}
-.comment-footer .action-icons > a {
-    margin-right: 10px;
-    
-}
-.icon-hover-color:hover {
-    color: #01c0c8 !important;
-}
-
-/* scrollbar */
-.ps>.ps__scrollbar-x-rail {
-    display: none;
-    position: absolute;
-    opacity: 0;
-    bottom: 0px;
-    height: 6px;
-}
-
-.ps>.ps__scrollbar-x-rail>.ps__scrollbar-x {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.2);
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    bottom: 2px;
-    height: 6px;
 }

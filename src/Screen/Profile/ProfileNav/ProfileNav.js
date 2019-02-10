@@ -13,7 +13,8 @@ class ProfileNav extends Component {
                  image2: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img2.jpg',
                  image3: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img3.jpg',
                  image4: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img4.jpg',
-                 comment: 'assign a new task Design weblayout',
+                 update: 'assign a new task',
+                 updateWhere: 'Design weblayout',
                  commentNumber: '2',
                  like: '5',
                  time: '5 minutes ago'
@@ -21,12 +22,12 @@ class ProfileNav extends Component {
              {
                 id: 1,
                 name: 'John Doe',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg',
                 image1: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img1.jpg',
-                image2: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img2.jpg',
-                image3: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img3.jpg',
-                image4: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img4.jpg',
-                comment: 'assign a new task Design weblayout',
+                image2: '',
+                image3: '',
+                image4: '',
+                comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
                 commentNumber: '2',
                 like: '5',
                 time: '5 minutes ago'
@@ -34,11 +35,11 @@ class ProfileNav extends Component {
             {
                 id: 2,
                 name: 'John Doe',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
-                image1: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img1.jpg',
-                image2: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img2.jpg',
-                image3: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img3.jpg',
-                image4: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img4.jpg',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg',
+                image1: '',
+                image2: '',
+                image3: '',
+                image4: '',
                 comment: 'assign a new task Design weblayout',
                 commentNumber: '2',
                 like: '5',
@@ -47,11 +48,11 @@ class ProfileNav extends Component {
             {
                 id: 3,
                 name: 'John Doe',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
-                image1: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img1.jpg',
-                image2: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img2.jpg',
-                image3: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img3.jpg',
-                image4: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/big/img4.jpg',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg',
+                image1: '',
+                image2: '',
+                image3: '',
+                image4: '',
                 comment: 'assign a new task Design weblayout',
                 commentNumber: '2',
                 like: '5',
@@ -73,6 +74,8 @@ class ProfileNav extends Component {
                             <CardProfileNavTimeline 
                             key={item.id}
                             name={item.name}
+                            update={item.update}
+                            updateWhere={item.updateWhere}
                             image1={item.image1}
                             image2={item.image2}
                             image3={item.image3}

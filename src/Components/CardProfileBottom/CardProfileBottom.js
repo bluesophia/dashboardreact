@@ -37,7 +37,7 @@ class CardProfileBottom extends Component {
                             <h6>{address}</h6>
                         </div>
                         <div className="map-box">
-                            <iframe className="profile-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470029.1604841957!2d72.29955005258641!3d23.019996818380896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C+Gujarat!5e0!3m2!1sen!2sin!4v1493204785508" frameborder="0"  allowfullscreen=""></iframe>
+                            <iframe className="profile-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470029.1604841957!2d72.29955005258641!3d23.019996818380896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C+Gujarat!5e0!3m2!1sen!2sin!4v1493204785508" frameBorder="0"  allowFullScreen=""></iframe>
                         </div>
                         <div>
                             <small className="profile-card-small">Social Profile</small>
@@ -45,6 +45,7 @@ class CardProfileBottom extends Component {
                             {
                                 icon.map((item, index) => (
                                     <CircleButton 
+                                    key={index}
                                     width={"40px"}
                                     height={"40px"}
                                     border={"1px solid #dee2e6"}
