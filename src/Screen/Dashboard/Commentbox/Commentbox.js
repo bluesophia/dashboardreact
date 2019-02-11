@@ -44,7 +44,7 @@ class Commentbox extends Component {
             {
                 carouselList.map((item, index) => (
                     <CardCommentbox
-                        key={carouselList.id}
+                        key={index}
                         name={item.name}
                         avatar={item.avatar}
                         job={item.job}

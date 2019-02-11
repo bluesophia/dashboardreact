@@ -49,7 +49,7 @@ class Infobox extends Component {
             {   
                 infoList.map((item, index) => (
                     <CardInfobox 
-                    key={infoList.id}
+                    key={index}
                     title={item.title}
                     icon={item.icon}
                     counter={item.counter}

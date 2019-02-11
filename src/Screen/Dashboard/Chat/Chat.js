@@ -71,7 +71,7 @@ class Chat extends Component {
                         {
                             commentList.map((item, index) => (
                             <CardChat 
-                                key={commentList.id} 
+                                key={index} 
                                 name={item.name} 
                                 comment={item.comment} 
                                 time={item.time} 

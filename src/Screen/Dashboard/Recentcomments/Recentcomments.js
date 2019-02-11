@@ -56,7 +56,7 @@ class Recentcomments extends Component {
                         {
                             commentList.map((item, index) => (
                             <CardRecentcomments 
-                                key={commentList.id} 
+                                key={index} 
                                 name={item.name} 
                                 comment={item.comment} 
                                 date={item.date} 

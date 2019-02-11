@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import DashboardScreen from './Screen/Dashboard/DashboardScreen';
 import ProfileScreen from './Screen/Profile/ProfileScreen';
 import InvoiceScreen from './Screen/Invoice/InvoiceScreen'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import './App.css'
+import LoginScreen from './Screen/Login/LoginScreen';
 
 
 class App extends Component {
@@ -12,9 +11,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Wrapper">
-          {/* <DashboardScreen /> */}
+          {/* <DashboardScreen />
           <ProfileScreen />
-          <InvoiceScreen />
+          <InvoiceScreen /> */}
+          <LoginScreen />
         </div>
       </div>
     );

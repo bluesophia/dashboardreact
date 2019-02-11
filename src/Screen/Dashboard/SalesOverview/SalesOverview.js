@@ -105,7 +105,7 @@ class SalesOverview extends Component {
                     {
                         tableList.map((item, index) => (
                             <CardSalesOverviewTable 
-                                key={tableList.id}
+                                key={index}
                                 id={item.id + 1}
                                 name={item.name}
                                 status={item.status}
