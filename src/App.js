@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <div className="Wrapper">
           {/* <DashboardScreen /> */}
-          {/* <ProfileScreen /> */}
+          <ProfileScreen />
           <InvoiceScreen />
         </div>
       </div>

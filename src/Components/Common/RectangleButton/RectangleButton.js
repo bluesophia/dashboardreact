@@ -10,7 +10,7 @@ class RectangleButton extends Component {
         color: "white",
         value: "Design Weblayout",
         fontWeight: "500",
-        marginBottom: "20px"
+        marginBottom: "0"
     }
 
     render(){

@@ -33,7 +33,7 @@ class CardProfileNavTimeline extends Component {
                             { image4 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image4}/></div> : null }
                             <div className="profile-timeline-comments-right">
                             { comment ? <p className="profile-timeline-comment">{comment}</p> : null }
-                            { button ? <RectangleButton /> : null }
+                            { button ? <RectangleButton marginBottom={"20px"}/> : null }
                             </div>
                         </div>
                         <div className="profile-timeline-comment-div col-lg-3 col-md-6">
