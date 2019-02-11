@@ -48,6 +48,30 @@
     display:flex;
     justify-content: flex-start;
 }
+.invoice-card-body-righttext {
+    display:flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+.invoice-card-body-righttext-h3 {
+    margin-bottom: 0.5rem !important;
+}
+.invoice-card-body-righttext h4{
+    margin-top: 0;
+    font-weight: 700;
+}
+.invoice-card-body-righttext-b {
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+.invoice-card-address-right-p {
+    color: var(--gray);
+    margin-left: 5px;
+    line-height: 1.4;
+}
+.invoice-card-address-right-bottom-p {
+    margin-top: 30px;
+}
 .invoice-card-address {
     margin-bottom: 1rem;
     font-style: normal;
@@ -63,6 +87,36 @@
     margin-top: -20px;
     line-height: 1.4;
 }
+
+/************************************
+               footer
+************************************/
+.invoice-card-body-footer-righttext {
+    text-align: right;
+    margin-top: 30px;
+}
+.invoice-card-body-footer-hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.invoice-card-body-footer-righttext-h3 {
+    margin-bottom: 0 !important;
+}
+.invoice-card-body-footer-print {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.invoice-card-body-footer-print-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+/************************************
+                table
+************************************/
 .salestable-table {
     font-size: 14px;
     font-weight: 300;
@@ -109,43 +163,3 @@
 }
 
 
-/************************************
-        custom-color-text
-************************************/
-  
-  .text-danger {
-    color: var(--red) !important;
-  }
-  
-  .text-success {
-    color: var(--teal) !important;
-  }
-  
-  .text-info {
-    color: var(--info) !important;
-  }
-  
-  .text-blue {
-    color: var(--blue) !important;
-  }
-  
-  .text-orange {
-    color: var(--primary) !important;
-  }
-  
-  .text-cyan {
-    color: var(--cyan) !important;
-  }
-  
-  .text-purple {
-    color: var(--purple) !important;
-  }
-  
-  .text-green {
-    color: var(--teal) !important;
-  }
-  
-  .text-white {
-    color: var(--white) !important;
-  }
-    

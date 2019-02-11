@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import './CardInvoice.css'
-import CardSalesOverviewOptions from '../CardSalesOverviewOptions/CardSalesOverviewOptions';
-import CardSalesOverviewReportprice from '../CardSalesOverviewReportprice/CardSalesOverviewReportprice';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faPrint } from '@fortawesome/free-solid-svg-icons';
 import CardInvoiceTable from '../CardInvoiceTable/CardInvoiceTable';
+import RectangleButton from '../Common/RectangleButton/RectangleButton';
 
 class CardInvoice extends Component {
+    // static defaultProps = {
+    //     backgroundColor: "#03a9f3",
+    //     value: 'pending',
+    //     color: "white"
+    // }
  render(){
     const tableList = [
         {
@@ -36,68 +42,115 @@ class CardInvoice extends Component {
             total: '300'
         },
     ]
+
      return(
         <div className="row col-lg-6">
                 <div className="invoice-card">
                     <div className="invoice-card-body">
                         <div className="invoice-card-body-printableArea">
-                        {/* header */}
-                        <h3><b>INVOICE</b><span> #5669626</span></h3>
-                        <hr className="invoice-card-body-hr"/>
-                            <div className="invoice-card-body-lefttext">
+                            {/* header-left */}
+                            <h3><b>INVOICE</b><span> #5669626</span></h3>
+                            <hr className="invoice-card-body-hr"/>
+                                <div className="invoice-card-body-lefttext">
+                                    <address className="invoice-card-address">
+                                        <h3> &nbsp;<b className="invoice-card-title">Material Pro Admin</b></h3>
+                                        <p className="invoice-card-address-p">E 104, Dharti-2,
+                                            <br /> Nr' Viswakarma Temple,
+                                            <br /> Talaja Road,
+                                            <br /> Bhavnagar - 364002</p>
+                                    </address>
+                                </div>
+                            {/* header-right */}
+                            <div className="invoice-card-body-righttext">
                                 <address className="invoice-card-address">
-                                    <h3> &nbsp;<b className="invoice-card-title">Material Pro Admin</b></h3>
-                                    <p className="invoice-card-address-p">E 104, Dharti-2,
+                                    <h3 className="invoice-card-body-righttext-h3">To,</h3>
+                                    <h4>Gaala &amp; Sons,</h4>
+                                    <p className="invoice-card-address-right-p">E 104, Dharti-2,
                                         <br /> Nr' Viswakarma Temple,
                                         <br /> Talaja Road,
                                         <br /> Bhavnagar - 364002</p>
+                                    <p className="invoice-card-address-right-bottom-p">
+                                        <b className="invoice-card-body-righttext-b">Invoice Date :</b> 
+                                        <FontAwesomeIcon icon={faCalendar} style={FontAwesomeIconStyle}/>
+                                         23rd Jan 2017
+                                    </p>
+                                    <p>
+                                        <b className="invoice-card-body-righttext-b">Due Date :</b> 
+                                        <FontAwesomeIcon icon={faCalendar} style={FontAwesomeIconStyle}/>25th Jan 2017
+                                    </p>
                                 </address>
                             </div>
-                            {/* <div class="pull-right text-right">
-                                <address>
-                                    <h3>To,</h3>
-                                    <h4 class="font-bold">Gaala &amp; Sons,</h4>
-                                    <p class="text-muted m-l-30">E 104, Dharti-2,
-                                        <br> Nr' Viswakarma Temple,
-                                        <br> Talaja Road,
-                                        <br> Bhavnagar - 364002</p>
-                                    <p class="m-t-30"><b>Invoice Date :</b> <i class="fa fa-calendar"></i> 23rd Jan 2017</p>
-                                    <p><b>Due Date :</b> <i class="fa fa-calendar"></i> 25th Jan 2017</p>
-                                </address>
-                            </div> */}
-                        <div className="overview-table-responsive">
-                        <table className="overview-table">
-                            <thead className="overview-table-head">
-                                <tr>
-                                    <th>#</th>
-                                    <th>Description</th>
-                                    <th>Quantity</th>
-                                    <th>Unit Cost</th>
-                                    <th>Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            {
-                                tableList.map((item, index) => (
-                                    <CardInvoiceTable 
-                                        key={tableList.id}
-                                        id={item.id + 1}
-                                        name={item.name}
-                                        quantity={item.quantity}
-                                        cost={item.cost}
-                                        total={item.total}
+                            {/* table */}
+                            <div className="overview-table-responsive">
+                                <table className="overview-table">
+                                    <thead className="overview-table-head">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Description</th>
+                                            <th>Quantity</th>
+                                            <th>Unit Cost</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {
+                                        tableList.map((item, index) => (
+                                            <CardInvoiceTable 
+                                                key={tableList.id}
+                                                id={item.id + 1}
+                                                name={item.name}
+                                                quantity={item.quantity}
+                                                cost={item.cost}
+                                                total={item.total}
+                                            />
+                                        ))
+                                    }
+                                    </tbody>
+                                </table>
+                             </div>
+                             {/* footer */}
+                             <div className="invoice-card-body-footer-righttext">
+                                <div className="invoice-card-body-footer-righttext-amount">
+                                    <p>Sub - Total amount: $13,848</p>
+                                    <p>vat (10%) : $138 </p>
+                                    <hr className="invoice-card-body-footer-hr"/>
+                                    <h3 className="invoice-card-body-footer-righttext-h3"><b>Total :</b> $13,986</h3>
+                                </div>
+                                <div className="clearfix"></div>
+                                <hr className="invoice-card-body-footer-hr"/>
+                                {/* footer-print */}
+                                <div className="invoice-card-body-footer-print">
+                                    <RectangleButton 
+                                        value={"Proceed to payment"}
+                                        backgroundColor={"var(--red)"}
+                                        // onclick={handleSubmit}
                                     />
-                                ))
-                            }
-                            </tbody>
-                        </table>
-                    </div>
-                    </div>
-                    </div>        
+                                    <div className="invoice-card-body-footer-print-btn">
+                                        <FontAwesomeIcon icon={faPrint} />
+                                        <RectangleButton 
+                                        value={"Print"}
+                                        backgroundColor={"white"}
+                                        border={"none"}
+                                        borderColor={"none"}
+                                        color={"var(--gray-extra-dartk)"}
+                                        fontWeight={"300"}
+                                        marginBottom={"0"}
+                                        // onclick={handleSubmit}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>        
             </div>            
         </div>
         )
     }   
+}
+// FontAwesomeIconStyle
+const FontAwesomeIconStyle = {
+    marginLeft: '5px',  
+    marginRight: '5px'
 }
 
 export default CardInvoice;

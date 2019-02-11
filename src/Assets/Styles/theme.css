@@ -519,10 +519,6 @@ body .font-20 {
   font-size: 20px;
 }
 
-body .font-bold {
-  font-weight: 700;
-}
-
 body a {
   color: var(--a-color);
   text-decoration: none;
