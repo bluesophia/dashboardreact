@@ -13,7 +13,7 @@ class CardSalesOverviewOptions extends Component {
                     <select className="salestable-form-control">
                         <option>January</option>
                         <option value="1">February</option>
-                        <option value="2" selected="">March</option>
+                        <option value="2">March</option>
                         <option value="3">April</option>
                     </select>
                 </div>

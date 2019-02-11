@@ -12,7 +12,7 @@ class CardTodolist extends Component {
                     <li className="todo-list-group-item">
                         <div className="todo-list-custom-control">
                             <input type="checkbox" className="todo-list-custom-control-input" id="customCheck" />
-                            <label className="custom-control-label" for="customCheck">
+                            <label className="custom-control-label" htmlFor="customCheck">
                                 <span>{comment}</span>
                                 <Badge 
                                     value={status} 
@@ -21,12 +21,12 @@ class CardTodolist extends Component {
                                 />    
                             </label>
                         </div>
-                        <div class="item-date">{date}</div>
-                        <ul class="assignedto">
-                            <li><img src={imgUrl} alt=""/></li>
-                            <li><img src={imgUrl2} alt=""/></li>
-                            <li><img src={imgUrl3} alt=""/></li>
-                            <li><img src={imgUrl4} alt=""/></li>
+                        <div className="item-date">{date}</div>
+                        <ul className="assignedto">
+                            <li><img src={imgUrl} alt={imgUrl}/></li>
+                            <li><img src={imgUrl2} alt={imgUrl2}/></li>
+                            <li><img src={imgUrl3} alt={imgUrl3}/></li>
+                            <li><img src={imgUrl4} alt={imgUrl4}/></li>
                         </ul>
                     </li>
                 </ul>

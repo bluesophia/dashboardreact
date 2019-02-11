@@ -23,8 +23,8 @@ class CardRecentcomments extends Component {
                         <span className="comment-footer-date">{date}</span>
                         <Badge backgroundColor={backgroundColor} value={status} color={"#fff"}/>
                         <span className="action-icons">
-                                <a href="#" class="icon-hover-color"><SimpleLineIcon name="pencil" style={SimpleLineIconStyle}/></a>
-                                <a href="#" class="icon-hover-color"><SimpleLineIcon name="check" style={SimpleLineIconStyle}/></a>
+                                <a href="#" className="icon-hover-color"><SimpleLineIcon name="pencil" style={SimpleLineIconStyle}/></a>
+                                <a href="#" className="icon-hover-color"><SimpleLineIcon name="check" style={SimpleLineIconStyle}/></a>
                                 
                                 <a href="#"><SimpleLineIcon name="heart" style={SimpleLineIconStyle} /></a>    
                         </span>

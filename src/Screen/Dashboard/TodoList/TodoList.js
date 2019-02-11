@@ -74,7 +74,7 @@ class TodoList extends Component {
                         {
                             todoList.map((item, index) => (
                             <CardTodolist 
-                                key={todoList.id} 
+                                key={index} 
                                 comment={item.comment} 
                                 date={item.date} 
                                 imgUrl={item.imgUrl} 

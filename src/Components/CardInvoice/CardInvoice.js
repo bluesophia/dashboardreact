@@ -96,7 +96,7 @@ class CardInvoice extends Component {
                                     {
                                         tableList.map((item, index) => (
                                             <CardInvoiceTable 
-                                                key={tableList.id}
+                                                key={index}
                                                 id={item.id + 1}
                                                 name={item.name}
                                                 quantity={item.quantity}

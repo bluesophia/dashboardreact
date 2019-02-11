@@ -67,7 +67,7 @@ class Messages extends Component {
                         {
                             commentList.map((item, index) => (
                             <CardMessages 
-                                key={commentList.id} 
+                                key={index} 
                                 name={item.name} 
                                 comment={item.comment} 
                                 time={item.time} 
