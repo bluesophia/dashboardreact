@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CardSignIn  from '../../Components/CardSignIn/CardSignIn';
+import CardSignin  from '../../Components/CardSignin/CardSignin';
 
 class LoginScreen extends Component {
     render(){

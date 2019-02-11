@@ -51,7 +51,7 @@ class CardInvoice extends Component {
                     <div className="invoice-card-body">
                         <div className="invoice-card-body-printableArea">
                             {/* header-left */}
-                            <h3><b>INVOICE</b><span>{invoiceNumber}</span></h3>
+                            <h3><b>INVOICE</b><span>#{invoiceNumber}</span></h3>
                             <hr className="invoice-card-body-hr"/>
                                 <div className="invoice-card-body-lefttext">
                                     <address className="invoice-card-address">
