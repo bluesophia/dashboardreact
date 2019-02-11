@@ -5,7 +5,7 @@ class LoginScreen extends Component {
     render(){
         return(
             <div>
-                <div><CardSignin /></div>
+                <div><CardSignIn /></div>
             </div>
         )
     }

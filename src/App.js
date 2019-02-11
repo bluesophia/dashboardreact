@@ -4,6 +4,7 @@ import ProfileScreen from './Screen/Profile/ProfileScreen';
 import InvoiceScreen from './Screen/Invoice/InvoiceScreen';
 import LoginScreen from './Screen/Login/LoginScreen';
 import './App.css'
+import LoginScreen from './Screen/Login/LoginScreen';
 
 
 class App extends Component {
