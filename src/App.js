@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import DashboardScreen from './Screen/Dashboard/DashboardScreen';
 import ProfileScreen from './Screen/Profile/ProfileScreen';
-import InvoiceScreen from './Screen/Invoice/InvoiceScreen'
+import InvoiceScreen from './Screen/Invoice/InvoiceScreen';
+import LoginScreen from './Screen/Login/LoginScreen';
 import './App.css'
 
 
@@ -10,9 +11,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Wrapper">
-          <DashboardScreen />
+          {/* <DashboardScreen />
           <ProfileScreen />
-          <InvoiceScreen />
+          <InvoiceScreen /> */}
+          <LoginScreen />
         </div>
       </div>
     );

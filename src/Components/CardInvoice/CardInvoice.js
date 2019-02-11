@@ -6,11 +6,13 @@ import CardInvoiceTable from '../CardInvoiceTable/CardInvoiceTable';
 import RectangleButton from '../Common/RectangleButton/RectangleButton';
 
 class CardInvoice extends Component {
-    // static defaultProps = {
-    //     backgroundColor: "#03a9f3",
-    //     value: 'pending',
-    //     color: "white"
-    // }
+    static defaultProps = {
+        backgroundColor: "#03a9f3",
+        invoiceNumber: '5669626',
+        invoiceDate: '23rd Jan 2017',
+        dueDate: '25th Jan 2017',
+        to:"Gaala & Sons,"
+    }
  render(){
     const tableList = [
         {
@@ -42,14 +44,14 @@ class CardInvoice extends Component {
             total: '300'
         },
     ]
-
+    const { invoiceNumber, invoiceDate, dueDate, to } = this.props;
      return(
         <div className="row col-lg-6">
                 <div className="invoice-card">
                     <div className="invoice-card-body">
                         <div className="invoice-card-body-printableArea">
                             {/* header-left */}
-                            <h3><b>INVOICE</b><span> #5669626</span></h3>
+                            <h3><b>INVOICE</b><span>#{invoiceNumber}</span></h3>
                             <hr className="invoice-card-body-hr"/>
                                 <div className="invoice-card-body-lefttext">
                                     <address className="invoice-card-address">
@@ -64,7 +66,7 @@ class CardInvoice extends Component {
                             <div className="invoice-card-body-righttext">
                                 <address className="invoice-card-address">
                                     <h3 className="invoice-card-body-righttext-h3">To,</h3>
-                                    <h4>Gaala &amp; Sons,</h4>
+                                    <h4>{to}</h4>
                                     <p className="invoice-card-address-right-p">E 104, Dharti-2,
                                         <br /> Nr' Viswakarma Temple,
                                         <br /> Talaja Road,
@@ -72,11 +74,11 @@ class CardInvoice extends Component {
                                     <p className="invoice-card-address-right-bottom-p">
                                         <b className="invoice-card-body-righttext-b">Invoice Date :</b> 
                                         <FontAwesomeIcon icon={faCalendar} style={FontAwesomeIconStyle}/>
-                                         23rd Jan 2017
+                                        {invoiceDate}
                                     </p>
                                     <p>
                                         <b className="invoice-card-body-righttext-b">Due Date :</b> 
-                                        <FontAwesomeIcon icon={faCalendar} style={FontAwesomeIconStyle}/>25th Jan 2017
+                                        <FontAwesomeIcon icon={faCalendar} style={FontAwesomeIconStyle}/>{dueDate}
                                     </p>
                                 </address>
                             </div>
