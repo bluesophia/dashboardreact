@@ -3,6 +3,45 @@ import './ProfileNav.css';
 import CardProfileNavTimeline from '../../../Components/CardProfileNavTimeline/CardProfileNavTimeline'
 
 class ProfileNav extends Component {
+    constructor(props){
+        super(props);
+        this.showTimelinePage = this.showTimelinePage.bind(this);
+        this.showProfilePage = this.showProfilePage.bind(this);
+        this.showSettingsPage = this.showSettingsPage.bind(this);
+        this.state = {
+            showTimeline: true,
+            showProfile: false,
+            showSettings: false,
+            activeshowTimeline: false,
+            activeshowProfile: false,
+            activeshowProfile: false
+        }
+    }
+    // toggleMenu = () => {
+
+    //     // function that will toggle active/false
+    //       this.setState((prevState) => {
+    //         this.setState.active: !prevState.active
+    //       });
+    // }
+    showTimelinePage() {
+        this.setState({
+            showTimeline: true, 
+            activeshowTimeline: true
+        });
+    }
+    showProfilePage() {
+        this.setState({
+            showProfile: true,
+            activeshowProfile: true
+        });
+    }
+    showSettingsPage() {
+        this.setState({
+            showSettings: true, 
+            activeshowSettings: true
+        });
+    }
     render(){
          const dataList = [
              {
@@ -67,38 +106,101 @@ class ProfileNav extends Component {
                 button: ''
             }
          ]
+        
+         const timelinePage =(
+            
+            <div className="profile-nav-timeline-card">
+                {
+                    dataList.map((item, index) => (
+                        <CardProfileNavTimeline 
+                        style={{display: this.state.activeshowTimeline ? 'block' : 'none' }} 
+                        key={item.id}
+                        name={item.name}
+                        update={item.update}
+                        updateWhere={item.updateWhere}
+                        image1={item.image1}
+                        image2={item.image2}
+                        image3={item.image3}
+                        image4={item.image4}
+                        imgUrl={item.imgUrl}
+                        comment={item.comment}
+                        Blockquote={item.Blockquote}
+                        commentNumber={item.commentNumber}
+                        like={item.like}
+                        time={item.time}
+                        button={item.button}
+                    />
+                    ))
+                }
+
+            </div>
+         )
+         const profilePage = (
+            <div className="profile-nav-timeline-card">
+            {
+                dataList.map((item, index) => (
+                    <CardProfileNavTimeline 
+                    style={{display: this.state.activeshowProfile ? 'block' : 'none' }} 
+                    key={item.id}
+                    name={item.name}
+                    update={item.update}
+                    updateWhere={item.updateWhere}
+                    image1={item.image1}
+                    image2={item.image2}
+                    image3={item.image3}
+                    image4={item.image4}
+                    imgUrl={item.imgUrl}
+                    comment={item.comment}
+                    Blockquote={item.Blockquote}
+                    commentNumber={item.commentNumber}
+                    like={item.like}
+                    time={item.time}
+                    button={item.button}
+                />
+                ))
+            }
+
+        </div>
+         )
+         const settingsPage = (
+            <div className="profile-nav-timeline-card">
+                {
+                    dataList.map((item, index) => (
+                        <CardProfileNavTimeline 
+                        style={{display: this.state.showSettingsPage ? 'block' : 'none' }} 
+                        key={item.id}
+                        name={item.name}
+                        update={item.update}
+                        updateWhere={item.updateWhere}
+                        image1={item.image1}
+                        image2={item.image2}
+                        image3={item.image3}
+                        image4={item.image4}
+                        imgUrl={item.imgUrl}
+                        comment={item.comment}
+                        Blockquote={item.Blockquote}
+                        commentNumber={item.commentNumber}
+                        like={item.like}
+                        time={item.time}
+                        button={item.button}
+                    />
+                    ))
+                }
+
+            </div>
+        )
         return(
             <div className="profile-nav col-lg-8 col-xlg-9 col-md-6">
                 <div className="profile-nav-card">
                     <ul className="profile-nav-tabs" role="tablist">
-                            <li className="profile-nav-item"> <a className="profile-nav-link active" data-toggle="tab" href="#home" role="tab">Timeline</a> </li>
-                            <li className="profile-nav-item"> <a className="profile-nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a> </li>
-                            <li className="profile-nav-item"> <a className="profile-nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a> </li>
+                            <li className="profile-nav-item"> <a className="profile-nav-link" data-toggle="tab" href="#home" role="tab" onClick={this.showTimelinePage}>Timeline</a> </li>
+                            <li className="profile-nav-item"> <a className="profile-nav-link" data-toggle="tab" href="#profile" role="tab" onClick={this.showProfilePage}>Profile</a> </li>
+                            <li className="profile-nav-item"> <a className="profile-nav-link" data-toggle="tab" href="#settings" role="tab" onClick={this.showSettingsPage}>Settings</a> </li>
                     </ul>
                 </div>
-                <div className="profile-nav-timeline-card">
-                    {
-                        dataList.map((item, index) => (
-                            <CardProfileNavTimeline 
-                            key={item.id}
-                            name={item.name}
-                            update={item.update}
-                            updateWhere={item.updateWhere}
-                            image1={item.image1}
-                            image2={item.image2}
-                            image3={item.image3}
-                            image4={item.image4}
-                            imgUrl={item.imgUrl}
-                            comment={item.comment}
-                            Blockquote={item.Blockquote}
-                            commentNumber={item.commentNumber}
-                            like={item.like}
-                            time={item.time}
-                            button={item.button}
-                        />
-                        ))
-                    }
-                </div>
+                {this.state.showTimeline ? timelinePage : null }
+                {this.state.showProfile ? profilePage : profilePage  }
+                {this.state.showSettings ? settingsPage : null }
             </div>
         )
     }
