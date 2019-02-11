@@ -11,19 +11,9 @@ class ProfileNav extends Component {
         this.state = {
             showTimeline: true,
             showProfile: false,
-            showSettings: false,
-            activeshowTimeline: false,
-            activeshowProfile: false,
-            activeshowProfile: false
+            showSettings: false
         }
     }
-    // toggleMenu = () => {
-
-    //     // function that will toggle active/false
-    //       this.setState((prevState) => {
-    //         this.setState.active: !prevState.active
-    //       });
-    // }
     showTimelinePage() {
         this.setState({
             showTimeline: true, 
@@ -113,7 +103,6 @@ class ProfileNav extends Component {
                 {
                     dataList.map((item, index) => (
                         <CardProfileNavTimeline 
-                        style={{display: this.state.activeshowTimeline ? 'block' : 'none' }} 
                         key={item.id}
                         name={item.name}
                         update={item.update}
@@ -140,7 +129,6 @@ class ProfileNav extends Component {
             {
                 dataList.map((item, index) => (
                     <CardProfileNavTimeline 
-                    style={{display: this.state.activeshowProfile ? 'block' : 'none' }} 
                     key={item.id}
                     name={item.name}
                     update={item.update}
@@ -167,7 +155,6 @@ class ProfileNav extends Component {
                 {
                     dataList.map((item, index) => (
                         <CardProfileNavTimeline 
-                        style={{display: this.state.showSettingsPage ? 'block' : 'none' }} 
                         key={item.id}
                         name={item.name}
                         update={item.update}
