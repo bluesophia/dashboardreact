@@ -1,15 +1,5 @@
 @import '../../Assets/Styles/theme.css';
 
-
-/************************************
-          comment-widgets
-************************************/
-.comment-widgets {
-    position: relative;
-    margin-bottom: 10px;
-    height: 630px;
-    position: relative;
-}
 .profile-timeline-row {
     display: flex;
     flex-wrap: wrap;
@@ -36,13 +26,17 @@
     flex-wrap: wrap;
     margin-right: -10px;
     margin-left: -10px;
+    }
 }
-}
-
 @media (min-width: 768px) {
     .profile-timeline-image-row {
         display:grid;
         grid-template-columns:2fr 2fr;
+    }
+  }
+  @media (min-width: 1000px) {
+    .profile-timeline-image-row {
+        display: flex;
     }
   }
 /* .round {
@@ -92,7 +86,6 @@
     font-weight: 300;
     margin-top: 0;
 }
-
 .profile-timeline-updateWhere {
     color: var(--primary) !important;
     font-weight: 400 !important;
@@ -111,6 +104,9 @@
 .profile-timeline-comment-div {
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+.profile-timeline-comments-right {
+    margin-left: 10px;
 }
 .profile-timeline-img {
     max-width: 100%;
@@ -134,7 +130,6 @@
     align-items: center;
     margin-left: 10px;
 }
-
 .profile-timeline-action-icons i {
     font-size: 14px;
 }
@@ -170,7 +165,6 @@
         margin-left: -157px;
     }
 }
-
 .profile-timeline-blockquote {
     border-left: 5px solid #fb9678;
     border: 1px solid #e9ecef;

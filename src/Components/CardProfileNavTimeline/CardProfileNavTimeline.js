@@ -20,19 +20,27 @@ class CardProfileNavTimeline extends Component {
                     </span>
                 </div>
                 <div className="profile-timeline-text">
-                    <a href="#">{name}</a>
-                    <span className="profile-timeline-date">{time}</span>
-                    { update ? <p className="profile-timeline-text-update">{update}<a href="#" className="profile-timeline-updateWhere">  {updateWhere}</a></p> : null }
-                    <div className="profile-timeline-image-row">
-                        { image1 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image1}/></div> : null }
-                        { image2 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image2}/></div> : null }
-                        { image3 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image3}/></div> : null }
-                        { image4 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image4}/></div> : null }
+                    <div>
+                        <a href="#">{name}</a>
+                        <span className="profile-timeline-date">{time}</span>
+                        { update ? <p className="profile-timeline-text-update">{update}<a href="#" className="profile-timeline-updateWhere">  {updateWhere}</a></p> : null }
                     </div>
-                    <div className="profile-timeline-comment-div col-lg-3 col-md-6">
-                        { comment ? <p className="profile-timeline-comment">{comment}</p> : null }
-                        { Blockquote ? <p className="profile-timeline-blockquote">{Blockquote}</p> : null }
-                        { button ? <RectangleButton /> : null }
+                    <div className="profile-timeline-contents">
+                        <div className="profile-timeline-image-row">
+                            { image1 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image1}/></div> : null }
+                            { image2 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image2}/></div> : null }
+                            { image3 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image3}/></div> : null }
+                            { image4 ? <div className="profile-timeline-img-div col-lg-3 col-md-6"><img className="profile-timeline-img" src={image4}/></div> : null }
+                            <div className="profile-timeline-comments-right">
+                            { comment ? <p className="profile-timeline-comment">{comment}</p> : null }
+                            { button ? <RectangleButton marginBottom={"20px"}/> : null }
+                            </div>
+                        </div>
+                        <div className="profile-timeline-comment-div col-lg-3 col-md-6">
+                            
+                            { Blockquote ? <p className="profile-timeline-blockquote">{Blockquote}</p> : null }
+                            
+                        </div>
                     </div>
                     <div className="profile-timeline-footer">
                         <span className="profile-timeline-action-icons">
@@ -45,9 +53,8 @@ class CardProfileNavTimeline extends Component {
                             : null }
                         </span>
                     </div>
-                   
                 </div>
-                <hr className="profile-timeline-hr"/>
+                    <hr className="profile-timeline-hr"/>
                 </div>
             </div>
         )

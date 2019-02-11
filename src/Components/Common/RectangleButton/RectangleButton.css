@@ -12,10 +12,9 @@
         -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-        margin-bottom: 20px;
 }
 .recBtn:hover {
-        color: #fff !important;
+        /* color: #fff !important; */
         background-color: #009c75;
         border-color: #008f6c;
 }
