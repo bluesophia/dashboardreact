@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { Signin, Signup }  from '../Login/LoginExports';
+import { Signin, Signup, LoginForgotPwd }  from '../Login/LoginExports';
 
 class LoginScreen extends Component {
     render(){
         return(
             <div>
                 <Signin />
-                {/* <Signup /> */}
+                <Signup />
+                <LoginForgotPwd />
             </div>
         )
     }

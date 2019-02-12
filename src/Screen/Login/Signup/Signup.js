@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import CardSignin  from '../../../Components/CardSignin/CardSignin';
+import CardSignup  from '../../../Components/CardSignup/CardSignup';
 
 class Signup extends Component {
     render(){
         return(
             <div>
-                <div><CardSignin /></div>
+                <div><CardSignup /></div>
             </div>
         )
     }
