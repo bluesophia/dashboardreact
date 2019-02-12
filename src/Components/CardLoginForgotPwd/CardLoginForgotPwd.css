@@ -1,0 +1,139 @@
+@import '../../Assets/Styles/theme.css';
+
+/************************************
+               signIn
+************************************/
+.singin-card {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+@media (min-width: 767px){
+    .singin-card {
+        margin: 0 auto;
+        margin-top: 150px;
+        width: 400px;
+    }
+}
+.singin-card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+.singin-card-body-form-h3{
+    font-size: 24px !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left;
+}
+.singin-card-body-form-h5{
+    font-size: 15px;
+    text-align: left;
+    color: var(--gray);
+    margin-top: 0;
+}
+.singin-card-body-form {
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center bottom, center calc(100% - 1px);
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 1px;
+    padding: 0;
+    transition: background 0s ease-out 0s;
+    text-align: center;
+}
+.singin-form-group {
+    margin-bottom: 25px;
+}
+.singin-form-group-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.singin-form-group-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.singin-form-control{
+    position: relative;
+    display: block;
+    min-height: 1.3125rem;
+}
+.signin-form-control-label {
+    font-weight: 400;
+    width: 100%;
+    margin-left: 10px;
+}
+.singin-form-group-forgot {
+    margin-left: auto;
+} 
+.singin-form-group-forgot a {
+    color: var(--gray) !important;
+}
+.singin-form-group-social {
+    margin-top: 10px;
+}
+.singin-form-group-social-btn-div {
+    display: block;
+    margin-bottom: 30px;
+}
+.singin-form-group-social-btn-facebook {
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #3b5998;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+.singin-form-group-social-btn-google {
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #dd4b39;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+.singin-form-group-footer {
+    margin-bottom: 0;
+}
+.singin-form-group-footer-signup {
+    text-align: center;
+}
+.singin-form-group-footer-signup-a{
+    margin-left: 5px;
+    color: var(--blue);
+}
+.singin-form-group-footer-signup-b{
+    color: var(--blue);
+}
