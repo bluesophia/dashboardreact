@@ -63,7 +63,7 @@ class CardSignin extends Component {
                             </div>
                             <div class="singin-form-group-footer">
                                 <div class="singin-form-group-footer-signup col-sm-12">
-                                    Don't have an account? 
+                                    Don't have an account?
                                     <a href="#" className="singin-form-group-footer-signup-a">
                                         <b className="singin-form-group-footer-signup-b">Sign Up</b>
                                     </a>
