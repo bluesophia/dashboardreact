@@ -28,7 +28,7 @@ class ImgTimelineBadge extends Component {
                 width: width,
                 height: height
             }}>
-                <img src={src} alt="user" 
+                <img src={src} className="timeline-image-responsive" alt="user" 
                 style={{
                     width: width,
                     height: height,
