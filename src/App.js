@@ -3,7 +3,9 @@ import DashboardScreen from './Screen/Dashboard/DashboardScreen';
 import ProfileScreen from './Screen/Profile/ProfileScreen';
 import InvoiceScreen from './Screen/Invoice/InvoiceScreen';
 import LoginScreen from './Screen/Login/LoginScreen';
+import TimelineScreen from './Screen/Timeline/TimelineScreen';
 import './App.css'
+
 
 
 class App extends Component {
@@ -13,8 +15,9 @@ class App extends Component {
         <div className="Wrapper">
           {/* <DashboardScreen />
           <ProfileScreen />
-          <InvoiceScreen /> */}
-          <LoginScreen />
+          <InvoiceScreen />
+          <LoginScreen /> */}
+          <TimelineScreen />
         </div>
       </div>
     );

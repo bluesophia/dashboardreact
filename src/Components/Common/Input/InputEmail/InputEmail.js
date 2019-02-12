@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './InputUsername.css';
+import './InputEmail.css';
 
-class InputUsername extends Component {
+class InputEmail extends Component {
   constructor(props){
     super(props);
     this.state = {value: ''};
@@ -18,10 +18,12 @@ class InputUsername extends Component {
             <input
             style={InputStyle}
             value={this.state.value}
-            name="username"
-            label="username"
+            type="email"
+            name="email"
+            label="Email"
             onChange={this._handleChange}
-            placeholder="Username"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+            placeholder="Email"
             required
             />
         </div>
@@ -43,4 +45,4 @@ const InputStyle = {
     fontWeight: "500"
   }
 
-export default InputUsername;
+export default InputEmail;

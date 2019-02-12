@@ -35,10 +35,16 @@
     font-weight: 300;
     width: 100%;
 }
-.singin-card-body-form h3{
-    font-size: 24px;
+.singin-card-body-form-h3{
+    font-size: 24px !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left;
+}
+.singin-card-body-form-h5{
+    font-size: 15px;
+    text-align: left;
+    color: var(--gray);
     margin-top: 0;
-    margin-bottom: 1.7rem;
 }
 .singin-card-body-form {
     background-color: rgba(0, 0, 0, 0);
