@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './CardTimelineBubble.css';
-import ImgCircle from '../Common/ImgCircle/ImgCircle';
+import ImgTimelineBadge from '../Common/ImgTimelineBadge/ImgTimelineBadge';
 import SimpleLineIcon from 'react-simple-line-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -31,7 +30,13 @@ class CardTimelineBubble extends Component {
                 <div className="profile-timeline">
                 <div className="profile-timeline-left-image">
                     <span> 
-                        <ImgCircle src={imgUrl} width={"40px"}/>
+                        <ImgTimelineBadge 
+                            src={imgUrl} 
+                            width={"50px"}
+                            height={"50px"}
+                            margin={"3px 0 0 0"}
+                            backgroundcolor={"var(--red)"}
+                        />
                     </span>
                 </div>
                 <div className="profile-timeline-text">
