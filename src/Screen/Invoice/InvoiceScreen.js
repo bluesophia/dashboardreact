@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CardInvoice  from '../../Components/CardInvoice/CardInvoice';
+import './InvoiceScreen.css'
 
 class InvoiceScreen extends Component {
     render(){

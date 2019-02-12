@@ -3,7 +3,7 @@ import './CardInvoice.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faPrint } from '@fortawesome/free-solid-svg-icons';
 import CardInvoiceTable from '../CardInvoiceTable/CardInvoiceTable';
-import RectangleButton from '../Common/RectangleButton/RectangleButton';
+import { RectangleButton } from '../Common/Button/ButtonExports';
 
 class CardInvoice extends Component {
     static defaultProps = {
