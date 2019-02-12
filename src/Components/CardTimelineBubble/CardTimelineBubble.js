@@ -28,7 +28,7 @@ class CardTimelineBubble extends Component {
             updateWhere, comment, time, button, Blockquote, backgroundColor, icon  } = this.props;
         
         return(
-            <div className="profile-timeline-row">
+            <div className="timeline-row">
                 <div className="profile-timeline">
                 <div className="profile-timeline-left-image">
                     <span> 
@@ -42,10 +42,10 @@ class CardTimelineBubble extends Component {
                         /> 
                         :
                         <ImgColorCircle 
-                        width={"50px"}
-                        height={"50px"} 
-                        icon={icon}
-                        backgroundColor={backgroundColor}
+                            width={"50px"}
+                            height={"50px"} 
+                            icon={icon}
+                            backgroundColor={backgroundColor}
                         />
 
                         }
