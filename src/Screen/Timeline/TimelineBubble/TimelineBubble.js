@@ -4,35 +4,6 @@ import CardTimelineBubble from '../../../Components/CardTimelineBubble/CardTimel
 import { faBomb, faSave, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 class TimelineBubble extends Component {
-    constructor(props){
-        super(props);
-        this.showTimelinePage = this.showTimelinePage.bind(this);
-        this.showProfilePage = this.showProfilePage.bind(this);
-        this.showSettingsPage = this.showSettingsPage.bind(this);
-        this.state = {
-            showTimeline: true,
-            showProfile: false,
-            showSettings: false
-        }
-    }
-    showTimelinePage() {
-        this.setState({
-            showTimeline: true, 
-            activeshowTimeline: true
-        });
-    }
-    showProfilePage() {
-        this.setState({
-            showProfile: true,
-            activeshowProfile: true
-        });
-    }
-    showSettingsPage() {
-        this.setState({
-            showSettings: true, 
-            activeshowSettings: true
-        });
-    }
     render(){
          const dataList = [
              {
@@ -43,10 +14,10 @@ class TimelineBubble extends Component {
                  image2: '',
                  image3: '',
                  image4: '',
-                 comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
+                 comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.',
                  updateWhere: 'Design weblayout',
                  Blockquote: '',
-                 time: '5 minutes ago',
+                 time: '11 hours ago via Twitter',
                  button: '',
                  backgroundColor: 'var(--green)',
                  icon: ''
@@ -127,41 +98,38 @@ class TimelineBubble extends Component {
                 icon: faGraduationCap
             },
          ]
-        
-         const timelinePage =(
-            
-            <div className="profile-nav-timeline-card">
-                {
-                    dataList.map((item, index) => (
-                        <CardTimelineBubble 
-                        key={index}
-                        name={item.name}
-                        updateWhere={item.updateWhere}
-                        image1={item.image1}
-                        image2={item.image2}
-                        image3={item.image3}
-                        image4={item.image4}
-                        imgUrl={item.imgUrl}
-                        comment={item.comment}
-                        Blockquote={item.Blockquote}
-                        time={item.time}
-                        button={item.button}
-                        backgroundColor={item.backgroundColor}
-                        icon={item.icon}
-                    />
-                    ))
-                }
-
-            </div>
-         )
          
         return(
-            <div className="profile-nav col-lg-8 col-xlg-9 col-md-6">
-                {this.state.showTimeline ? timelinePage : null }
+        <div className="timeline-card-wrapper">
+            <div className="timeline-card">
+                <div className="timeline-card-body">
+                    <ul className="timeline-card-ul">
+                    {
+                        dataList.map((item, index) => (
+                            <CardTimelineBubble 
+                            key={index}
+                            name={item.name}
+                            updateWhere={item.updateWhere}
+                            image1={item.image1}
+                            image2={item.image2}
+                            image3={item.image3}
+                            image4={item.image4}
+                            imgUrl={item.imgUrl}
+                            comment={item.comment}
+                            Blockquote={item.Blockquote}
+                            time={item.time}
+                            button={item.button}
+                            backgroundColor={item.backgroundColor}
+                            icon={item.icon}
+                        />
+                        ))
+                    }
+                    </ul>
+                </div>
             </div>
+        </div>
         )
     }
 }
-
 
 export default TimelineBubble;

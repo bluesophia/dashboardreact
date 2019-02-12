@@ -13,10 +13,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Wrapper">
-          <DashboardScreen />
+          {/* <DashboardScreen />
           <ProfileScreen />
           <InvoiceScreen />
-          <LoginScreen />
+          <LoginScreen /> */}
           <TimelineScreen />
         </div>
       </div>
