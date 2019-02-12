@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './InputPassword.css';
+import './InputConfirmPassword.css';
 
-class InputPassword extends Component {
+class InputConfirmPassword extends Component {
   constructor(props){
     super(props);
     this.state = {value: ''};
@@ -21,7 +21,7 @@ class InputPassword extends Component {
             value={this.state.value}
             name="input-text"
             label="password"
-            placeholder="Password"
+            placeholder="Confirm Password"
             onChange={this._handleChange}
             />
         </div>
@@ -42,4 +42,4 @@ const InputStyle = {
   marginTop: "10px",
   fontWeight: "500"
 }
-export default InputPassword;
+export default InputConfirmPassword;

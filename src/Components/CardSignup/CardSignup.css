@@ -73,6 +73,9 @@
     width: 100%;
     margin-left: 10px;
 }
+.signin-form-control-label-a {
+    font-weight: 500;
+}
 .singin-form-group-forgot {
     margin-left: auto;
 } 
