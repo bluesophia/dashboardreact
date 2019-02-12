@@ -15,7 +15,7 @@ class CircleButton extends Component {
 
     render(){
 
-        const { index, width, height,border, borderRadius, fontSize, backgroundColor, color, value, icon, padding} = this.props;
+        const { index, width, height,border, borderRadius, fontSize, backgroundColor, color, value, icon, padding, marginBottom} = this.props;
         
         return(
             <div>
@@ -27,7 +27,8 @@ class CircleButton extends Component {
                     height: height,
                     backgroundColor: backgroundColor,
                     color: color,
-                    padding: padding
+                    padding: padding,
+                    marginBottom:marginBottom
                     }}
                     type='submit'
                     >
