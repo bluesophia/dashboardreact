@@ -20,7 +20,8 @@ class TimelineBubble extends Component {
                  time: '11 hours ago via Twitter',
                  button: '',
                  backgroundColor: 'var(--green)',
-                 icon: ''
+                 icon: '',
+                 className: 'even'
              },
              {
                 id: 1,
@@ -35,7 +36,8 @@ class TimelineBubble extends Component {
                 time: '5 minutes ago',
                 button: 'Design Weblayout',
                 backgroundColor: 'var(--yellow)',
-                icon: ''
+                icon: '',
+                className: 'odd'
             },
             {
                 id: 2,
@@ -50,7 +52,8 @@ class TimelineBubble extends Component {
                 time: '5 minutes ago',
                 button: '',
                 backgroundColor: 'var(--green)',
-                icon: ''
+                icon: '',
+                className: 'even'
             },
             {
                 id: 3,
@@ -65,7 +68,8 @@ class TimelineBubble extends Component {
                 time: '5 minutes ago',
                 button: '',
                 backgroundColor: 'var(--red)',
-                icon: faBomb
+                icon: faBomb,
+                className: 'odd'
             },
             {
                 id: 4,
@@ -80,7 +84,8 @@ class TimelineBubble extends Component {
                 time: '5 minutes ago',
                 button: '',
                 backgroundColor: 'var(--blue)',
-                icon: faSave
+                icon: faSave,
+                className: 'even'
             },
             {
                 id: 5,
@@ -95,7 +100,8 @@ class TimelineBubble extends Component {
                 time: '5 minutes ago',
                 button: '',
                 backgroundColor: 'var(--green)',
-                icon: faGraduationCap
+                icon: faGraduationCap,
+                className: 'odd'
             },
          ]
          
@@ -121,6 +127,7 @@ class TimelineBubble extends Component {
                             button={item.button}
                             backgroundColor={item.backgroundColor}
                             icon={item.icon}
+                            className={item.className}
                         />
                         ))
                     }
