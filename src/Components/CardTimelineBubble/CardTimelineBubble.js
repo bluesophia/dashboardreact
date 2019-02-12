@@ -4,6 +4,7 @@ import SimpleLineIcon from 'react-simple-line-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { RectangleButton } from '../Common/Button/ButtonExports';
+import ImgColorCircle from '../Common/ImgColorCircle/ImgColorCircle';
 
 class CardTimelineBubble extends Component {
     static defaultProps=[
@@ -23,20 +24,31 @@ class CardTimelineBubble extends Component {
     ]
     render(){
 
-        const { name, imgUrl, image1, image2, image3, image4, updateWhere, comment, time, button, Blockquote  } = this.props;
+        const { name, imgUrl, image1, image2, image3, image4, 
+            updateWhere, comment, time, button, Blockquote, backgroundColor, icon  } = this.props;
         
         return(
             <div className="profile-timeline-row">
                 <div className="profile-timeline">
                 <div className="profile-timeline-left-image">
                     <span> 
+                        { imgUrl ? 
                         <ImgTimelineBadge 
                             src={imgUrl} 
                             width={"50px"}
                             height={"50px"}
                             margin={"3px 0 0 0"}
-                            backgroundcolor={"var(--red)"}
+                            backgroundColor={backgroundColor}
+                        /> 
+                        :
+                        <ImgColorCircle 
+                        width={"50px"}
+                        height={"50px"} 
+                        icon={icon}
+                        backgroundColor={backgroundColor}
                         />
+
+                        }
                     </span>
                 </div>
                 <div className="profile-timeline-text">

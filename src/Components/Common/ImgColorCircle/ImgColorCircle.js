@@ -1,20 +1,42 @@
 import React, { Component } from 'react';
-import './ImgColorCircle.css'
+import './ImgColorCircle.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBomb, faSave, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 class ImgColorCircle extends Component {
+        static defaultProps = {
+            value: '',
+            width: '50px',
+            height: '50px',
+            icon: faBomb, 
+            backgroundColor: 'var(--green)'
+        }
     constructor(props){
         super(props);
         this.state = {
             value: props.value,
-            width: props.width
+            width: props.width,
+            height: props.height,
+            icon: props.icon,
+            backgroundColor: props.backgroundColor
         }
     }
     render(){
+        const { value, width, height, icon, backgroundColor } = this.props;
         return(
             <div>
-                <span className="user-color-img-round" style={{width: this.props.with}}><p>{this.props.value}</p></span>
+                <span className="user-color-img-round" style={{width: width, height: height, backgroundColor:backgroundColor }}><p>{value}</p>
+                {
+                    icon ? <FontAwesomeIcon icon={icon} style={FontAwesomeIconStyle}/> : null
+                }
+                </span>
             </div>
         )
     }
+}
+
+const FontAwesomeIconStyle = {
+    
+    fontSize: "20px"
 }
 export default ImgColorCircle;
