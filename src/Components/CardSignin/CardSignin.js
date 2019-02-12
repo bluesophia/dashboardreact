@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../';
+import './CardSignin.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
-import { InputEmail, InputPassword } from '../Common/Input/InputExports';
+import { InputUsername, InputPassword } from '../Common/Input/InputExports';
 import { CircleButton } from '../Common/Button/ButtonExports';
 
 class CardSignin extends Component {
@@ -18,7 +18,7 @@ class CardSignin extends Component {
                             <h3>Sign In</h3>
                             <div className="singin-form-group">
                                 <div class="col-xs-12">
-                                    <InputEmail />
+                                    <InputUsername />
                                 </div>
                                 <div class="col-xs-12">
                                     <InputPassword />
@@ -50,7 +50,6 @@ class CardSignin extends Component {
                                         padding={".75rem 1.5rem;"}
                                         fontSize={"17.5px"}
                                         marginBottom={"20px"}
-                                        fontWeight={"500"}
                                     />
                                 </div>
                             </div>
@@ -83,5 +82,4 @@ const FontAwesomeIconStyle = {
     marginLeft: '5px',  
     marginRight: '5px'
 }
-
 export default CardSignin;

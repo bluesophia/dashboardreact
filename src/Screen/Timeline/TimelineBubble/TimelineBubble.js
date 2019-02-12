@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './TimelineBubble.css';
 import CardTimelineBubble from '../../../Components/CardTimelineBubble/CardTimelineBubble'
+import { faBomb, faSave, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 class TimelineBubble extends Component {
     constructor(props){
@@ -46,7 +47,9 @@ class TimelineBubble extends Component {
                  updateWhere: 'Design weblayout',
                  Blockquote: '',
                  time: '5 minutes ago',
-                 button: ''
+                 button: '',
+                 backgroundColor: 'var(--green)',
+                 icon: ''
              },
              {
                 id: 1,
@@ -59,7 +62,9 @@ class TimelineBubble extends Component {
                 comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.',
                 Blockquote: '',
                 time: '5 minutes ago',
-                button: 'Design Weblayout'
+                button: 'Design Weblayout',
+                backgroundColor: 'var(--yellow)',
+                icon: ''
             },
             {
                 id: 2,
@@ -72,12 +77,14 @@ class TimelineBubble extends Component {
                 comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.',
                 Blockquote: '',
                 time: '5 minutes ago',
-                button: ''
+                button: '',
+                backgroundColor: 'var(--green)',
+                icon: ''
             },
             {
                 id: 3,
                 name: 'Lorem ipsum dolor',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg',
+                imgUrl: '',
                 image1: '',
                 image2: '',
                 image3: '',
@@ -85,12 +92,14 @@ class TimelineBubble extends Component {
                 comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!',
                 Blockquote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do',
                 time: '5 minutes ago',
-                button: ''
+                button: '',
+                backgroundColor: 'var(--red)',
+                icon: faBomb
             },
             {
                 id: 4,
                 name: 'Lorem ipsum dolor',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg',
+                imgUrl: '',
                 image1: '',
                 image2: '',
                 image3: '',
@@ -98,12 +107,14 @@ class TimelineBubble extends Component {
                 comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!',
                 Blockquote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do',
                 time: '5 minutes ago',
-                button: ''
+                button: '',
+                backgroundColor: 'var(--blue)',
+                icon: faSave
             },
             {
                 id: 5,
                 name: 'Lorem ipsum dolor',
-                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg',
+                imgUrl: '',
                 image1: '',
                 image2: '',
                 image3: '',
@@ -111,7 +122,9 @@ class TimelineBubble extends Component {
                 comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!',
                 Blockquote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do',
                 time: '5 minutes ago',
-                button: ''
+                button: '',
+                backgroundColor: 'var(--green)',
+                icon: faGraduationCap
             },
          ]
         
@@ -121,7 +134,7 @@ class TimelineBubble extends Component {
                 {
                     dataList.map((item, index) => (
                         <CardTimelineBubble 
-                        key={item.id}
+                        key={index}
                         name={item.name}
                         updateWhere={item.updateWhere}
                         image1={item.image1}
@@ -133,6 +146,8 @@ class TimelineBubble extends Component {
                         Blockquote={item.Blockquote}
                         time={item.time}
                         button={item.button}
+                        backgroundColor={item.backgroundColor}
+                        icon={item.icon}
                     />
                     ))
                 }

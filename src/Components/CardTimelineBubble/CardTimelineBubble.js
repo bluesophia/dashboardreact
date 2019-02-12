@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './CardTimelineBubble.css';
-import ImgCircle from '../Common/ImgCircle/ImgCircle';
+import ImgTimelineBadge from '../Common/ImgTimelineBadge/ImgTimelineBadge';
 import SimpleLineIcon from 'react-simple-line-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { RectangleButton } from '../Common/Button/ButtonExports';
+import ImgColorCircle from '../Common/ImgColorCircle/ImgColorCircle';
 
 class CardTimelineBubble extends Component {
     static defaultProps=[
@@ -24,14 +24,31 @@ class CardTimelineBubble extends Component {
     ]
     render(){
 
-        const { name, imgUrl, image1, image2, image3, image4, updateWhere, comment, time, button, Blockquote  } = this.props;
+        const { name, imgUrl, image1, image2, image3, image4, 
+            updateWhere, comment, time, button, Blockquote, backgroundColor, icon  } = this.props;
         
         return(
             <div className="profile-timeline-row">
                 <div className="profile-timeline">
                 <div className="profile-timeline-left-image">
                     <span> 
-                        <ImgCircle src={imgUrl} width={"40px"}/>
+                        { imgUrl ? 
+                        <ImgTimelineBadge 
+                            src={imgUrl} 
+                            width={"50px"}
+                            height={"50px"}
+                            margin={"3px 0 0 0"}
+                            backgroundColor={backgroundColor}
+                        /> 
+                        :
+                        <ImgColorCircle 
+                        width={"50px"}
+                        height={"50px"} 
+                        icon={icon}
+                        backgroundColor={backgroundColor}
+                        />
+
+                        }
                     </span>
                 </div>
                 <div className="profile-timeline-text">
