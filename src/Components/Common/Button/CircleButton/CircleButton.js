@@ -9,24 +9,28 @@ class CircleButton extends Component {
         border: "none",
         backgroundColor: "#20c997",
         fontSize:"20px",
-        color: "white"
+        color: "white",
+        borderRadius: "100%"
     }
 
     render(){
 
-        const { index, width, height,border, fontSize, backgroundColor, color, value, icon} = this.props;
+        const { index, width, height,border, borderRadius, fontSize, backgroundColor, color, value, icon, padding} = this.props;
         
         return(
             <div>
                 <button key={index} style={{
-                    borderRadius: "100%", 
+                    borderRadius: borderRadius, 
                     border: border,
                     fontSize: fontSize,
                     width: width,
                     height: height,
                     backgroundColor: backgroundColor,
-                    color: color
-                    }}>
+                    color: color,
+                    padding: padding
+                    }}
+                    type='submit'
+                    >
                     <FontAwesomeIcon icon={icon}/>
                     <span>{value}</span>
                 </button>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './CardProfileBottom.css'
-import CircleButton from '../../Components/Common/CircleButton/CircleButton'
+import { CircleButton } from '../Common/Button/ButtonExports'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';

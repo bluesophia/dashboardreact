@@ -4,7 +4,7 @@ import ImgCircle from '../Common/ImgCircle/ImgCircle';
 import SimpleLineIcon from 'react-simple-line-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import RectangleButton from '../Common/RectangleButton/RectangleButton';
+import { RectangleButton } from '../Common/Button/ButtonExports';
 
 class CardProfileNavTimeline extends Component {
     render(){
