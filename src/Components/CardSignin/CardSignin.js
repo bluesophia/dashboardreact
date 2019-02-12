@@ -77,6 +77,7 @@ class CardSignin extends Component {
         )
     }   
 }
+
 // FontAwesomeIconStyle
 const FontAwesomeIconStyle = {
     marginLeft: '5px',  
