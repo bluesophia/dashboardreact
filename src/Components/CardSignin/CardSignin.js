@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CardSignin.css'
+import '../';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
