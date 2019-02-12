@@ -5,8 +5,8 @@ class LoginScreen extends Component {
     render(){
         return(
             <div>
-                {/* <Signin /> */}
-                {/* <Signup /> */}
+                <Signin />
+                <Signup />
                 <LoginForgotPwd />
             </div>
         )
