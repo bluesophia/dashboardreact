@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import '../../../Assets/Styles/theme.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBomb, faSave, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import './ImgTimelineBadgeColor.css';
 
-class ImgTimelneBadgeColor extends Component {
+class ImgTimelineBadgeColor extends Component {
     static defaultProps = {
         icon: faBomb,
         width: "50px",
@@ -20,9 +21,9 @@ class ImgTimelneBadgeColor extends Component {
         }
     }
     render(){
-        const { icon, width, height, backgroundColor } = this.props;
+        const { icon, width, height, backgroundColor, idName } = this.props;
         return(
-            <div className="timeline-badge" style={{
+            <div className="timeline-badge" id={idName} style={{
                 backgroundColor: backgroundColor,
                 width: width,
                 height: height
@@ -31,9 +32,9 @@ class ImgTimelneBadgeColor extends Component {
             style={{
                 fontSize: "20px",
                 }} />
-            </div>
+            </div> 
         )
     }
 }
 
-export default ImgTimelneBadgeColor;
+export default ImgTimelineBadgeColor;

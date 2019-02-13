@@ -4,7 +4,7 @@ import SimpleLineIcon from 'react-simple-line-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { RectangleButton } from '../Common/Button/ButtonExports';
-import ImgTimelneBadgeColor from '../Common/ImgTimelneBadgeColor/ImgTimelneBadgeColor';
+import ImgTimelineBadgeColor from '../Common/ImgTimelineBadgeColor/ImgTimelneBadgeColor';
 import './CardTimelineBubble.css';
     
 class CardTimelineBubble extends Component {
@@ -25,8 +25,7 @@ class CardTimelineBubble extends Component {
     ]
     render(){
 
-        const { name, imgUrl, image1, image2, image3, image4, 
-            updateWhere, comment, time, button, Blockquote, backgroundColor, icon  } = this.props;
+        const { name, imgUrl, image1, image2, image3, image4, comment, time, backgroundColor, icon, className, idName  } = this.props;
         
         return(
             <div>
@@ -40,7 +39,8 @@ class CardTimelineBubble extends Component {
                                 backgroundColor={backgroundColor}
                             /> 
                             :
-                            <ImgTimelneBadgeColor 
+                            <ImgTimelineBadgeColor 
+                                idName={idName}
                                 width={"50px"}
                                 height={"50px"} 
                                 icon={icon}
@@ -48,16 +48,16 @@ class CardTimelineBubble extends Component {
                             />
 
                     }
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">{name}</h4>
+                <div className={'timeline-panel ' + className}>
+                    <div className="timeline-heading">
+                        <h4 className="timeline-title">{name}</h4>
                         <p>
-                            <small class="text-muted">
-                                <i class="fa fa-clock-o"></i>{time}</small>
+                            { time ? <small className="timeline-text-small">{time}</small> : null }
                         </p>
                     </div>
-                    <div class="timeline-body">
-                        <p>{comment}</p>
+                    <div className="timeline-body">
+                        { image1 ? <img className="timeline-img-responsive" src={image1} /> : null }
+                        <p className="timeline-text-p" >{comment}</p>
                     </div>
                 </div>
             </li>

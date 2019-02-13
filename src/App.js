@@ -4,6 +4,7 @@ import ProfileScreen from './Screen/Profile/ProfileScreen';
 import InvoiceScreen from './Screen/Invoice/InvoiceScreen';
 import LoginScreen from './Screen/Login/LoginScreen';
 import TimelineScreen from './Screen/Timeline/TimelineScreen';
+import PricingScreen from './Screen/Pricing/PricingScreen';
 import './App.css'
 
 
@@ -16,8 +17,9 @@ class App extends Component {
           {/* <DashboardScreen />
           <ProfileScreen />
           <InvoiceScreen />
-          <LoginScreen /> */}
-          <TimelineScreen />
+          <LoginScreen />
+          <TimelineScreen /> */}
+          <PricingScreen />
         </div>
       </div>
     );
