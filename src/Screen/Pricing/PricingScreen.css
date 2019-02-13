@@ -16,15 +16,9 @@
     border-radius: 0px;
     margin-left: -10px;
     margin-right: -10px;
+    margin-top: 20px;
+    
 }
-/* @media (min-width: 767px){
-    .regular-price-card {
-        margin: 0 auto;
-        margin-top: 150px;
-        width: 400px;
-    }
-} */
-
 .regular-price-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
@@ -34,9 +28,23 @@
     font-weight: 300;
     width: 100%;
 }
+
+@media (min-width: 576px){
+    .regular-price-card-body-plan {
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: -10px;
+        margin-left: -10px;
+    } 
+}
+
 @media (min-width: 768px){
-    .regular-price-card-body {
-        display: flex;
-        justify-content: space-around;
-    }
+    .regular-price-card-body-plan {
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-right: -10px;
+        margin-left: -10px;
+    } 
 }

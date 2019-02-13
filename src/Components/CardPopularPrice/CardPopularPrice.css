@@ -1,0 +1,82 @@
+@import '../../Assets/Styles/theme.css';
+
+/************************************
+        Pricing card & header
+************************************/
+.popular-price-card-body-plan-list {
+    padding: 0;
+}
+.popular-price-card-body-plan {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 0 15px;
+}
+.popular-price-card-pricingbox {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+.popular-price-card-pricingbox-body {
+    vertical-align: middle;
+    position: relative;
+    padding: 60px 0;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+.popular-price-card-body-form h3{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+}
+
+.popular-price-card-title-h2 {
+    position: relative;
+    font-size: 56px;
+    margin: 20px 0 10px;
+    font-weight: 500;
+}
+.popular-price-card-title-h4 {
+    margin-top: 0;
+}
+.popular-price-card-title-span {
+    position: absolute;
+    font-size: 15px;
+    top: -10px;
+    margin-left: -10px;
+}
+.popular-price-card-title-p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.popular-price-card-title-header {
+    color: white;
+    background-color: var(--yellow);
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: inline-block;
+    width: 100px;
+    left: 0px;
+    right: 0px;
+}
+
+/************************************
+          Pricing content
+************************************/
+.popular-price {
+    padding: 20px 0;
+    border-top: 1px solid var(--border-bottom-color);
+    display: flex;
+    justify-content: center;
+}
+.popular-price-btn {
+    padding: 20px 0;
+    border-top: 1px solid var(--border-bottom-color);
+    display: flex;
+    justify-content: center;
+}
