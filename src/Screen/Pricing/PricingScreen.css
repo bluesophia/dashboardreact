@@ -17,14 +17,6 @@
     margin-left: -10px;
     margin-right: -10px;
 }
-/* @media (min-width: 767px){
-    .regular-price-card {
-        margin: 0 auto;
-        margin-top: 150px;
-        width: 400px;
-    }
-} */
-
 .regular-price-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
