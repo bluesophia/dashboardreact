@@ -1,0 +1,42 @@
+/************************************
+        Pricing card & header
+************************************/
+.regular-price-card {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+/* @media (min-width: 767px){
+    .regular-price-card {
+        margin: 0 auto;
+        margin-top: 150px;
+        width: 400px;
+    }
+} */
+
+.regular-price-card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+@media (min-width: 768px){
+    .regular-price-card-body {
+        display: flex;
+        justify-content: space-around;
+    }
+}
