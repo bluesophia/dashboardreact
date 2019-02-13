@@ -4,7 +4,7 @@ import SimpleLineIcon from 'react-simple-line-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { RectangleButton } from '../Common/Button/ButtonExports';
-import ImgTimelneBadgeColor from '../Common/ImgTimelneBadgeColor/ImgTimelneBadgeColor';
+import ImgTimelineBadgeColor from '../Common/ImgTimelineBadgeColor/ImgTimelneBadgeColor';
 import './CardTimelineBubble.css';
     
 class CardTimelineBubble extends Component {
@@ -25,7 +25,7 @@ class CardTimelineBubble extends Component {
     ]
     render(){
 
-        const { name, imgUrl, image1, image2, image3, image4, comment, time, backgroundColor, icon, className  } = this.props;
+        const { name, imgUrl, image1, image2, image3, image4, comment, time, backgroundColor, icon, className, idName  } = this.props;
         
         return(
             <div>
@@ -39,7 +39,8 @@ class CardTimelineBubble extends Component {
                                 backgroundColor={backgroundColor}
                             /> 
                             :
-                            <ImgTimelneBadgeColor 
+                            <ImgTimelineBadgeColor 
+                                idName={idName}
                                 width={"50px"}
                                 height={"50px"} 
                                 icon={icon}
