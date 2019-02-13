@@ -8,13 +8,12 @@ class PricingScreen extends Component {
             <div className="row col-12">
                 <div className="regular-price-card">
                     <div className="regular-price-card-body">
-                {/* <div><PopularPrice /></div> */}
-                        <RegularPrice />
                         <RegularPrice />
                         <RegularPrice 
                             title='Gold'
                             price='34'
                         />
+                        <PopularPrice />
                         <RegularPrice 
                             title='Dimond'
                             price='54'
