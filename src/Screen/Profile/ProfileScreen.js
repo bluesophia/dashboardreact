@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Profile, ProfileNav } from './ProfileExports.js';
-import './profileScreen.css'
+import './ProfileScreen.css'
 
 class ProfileScreen extends Component {
     render(){
