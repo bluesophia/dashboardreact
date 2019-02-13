@@ -19,8 +19,7 @@ class RegularPrice extends Component {
     render(){
         const { title, price, icon1, icon2, icon3, icon4, text1, text2, text3, text4  } = this.props;
         return(
-                <div>
-                    <CardRegularPrice 
+                    <CardRegularPrice className="regular-price-card-body-plan-row"
                         title={title}
                         icon1={icon1}
                         icon2={icon2}
@@ -32,9 +31,9 @@ class RegularPrice extends Component {
                         text4={text4}
                         price={price}
                     />
-                </div>
         )
     }
 }
+
 
 export default RegularPrice;

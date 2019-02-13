@@ -15,7 +15,7 @@ class RectangleButton extends Component {
 
     render(){
 
-        const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop } = this.props;
+        const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop, fontSize } = this.props;
         
         return(
             <div>
@@ -27,7 +27,8 @@ class RectangleButton extends Component {
                     backgroundColor: backgroundColor,
                     fontWeight:fontWeight,
                     marginBottom:marginBottom,
-                    marginTop:marginTop
+                    marginTop:marginTop,
+                    fontSize:fontSize
                 }}>
                     <span>{value}</span>
                 </a>

@@ -3,26 +3,18 @@
 /************************************
         Pricing card & header
 ************************************/
-
-.regular-price-card-body-form h3{
-    font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 1.7rem;
-}
-.regular-price-card-body-plan {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
-    padding: 0 15px;
-}
 .regular-price-card-body-plan-list {
     padding: 0;
 }
 .regular-price-card-pricingbox {
     position: relative;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 30px !important;
+}
+.regular-price-card-body-form h3{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 1.7rem;
 }
 .regular-price-card-pricingbox-body {
     border-radius: 0px;
@@ -32,14 +24,18 @@
     padding: 30px 0;
     position: relative;
 }
+.regular-price-card-title-h4 {
+    margin-top: 0;
+}
 .regular-price-card-title-h2 {
     position: relative;
     font-size: 56px;
     margin: 20px 0 10px;
     font-weight: 500;
 }
-.regular-price-card-title-h4 {
+.regular-price-card-title-p {
     margin-top: 0;
+    margin-bottom: 1rem;
 }
 .regular-price-card-title-span {
     position: absolute;
@@ -47,17 +43,13 @@
     top: -10px;
     margin-left: -10px;
 }
-.regular-price-card-title-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
 
 /************************************
           Pricing content
 ************************************/
-.regular-price {
+.regular-price{
     padding: 20px 0;
-    border-top: 1px solid var(--border-bottom-color);
+    border-top: 1px solid rgba(120, 130, 140, 0.13);
     display: flex;
     justify-content: center;
 }
