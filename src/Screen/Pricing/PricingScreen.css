@@ -1,7 +1,7 @@
 /************************************
         Pricing card & header
 ************************************/
-.regular-price-card {
+.price-card {
     position: relative;
     display: flex;
     -webkit-box-orient: vertical;
@@ -19,7 +19,7 @@
     margin-top: 20px;
     
 }
-.regular-price-card-body {
+.price-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     padding-top: 30px;
@@ -30,7 +30,7 @@
 }
 
 @media (min-width: 576px){
-    .regular-price-card-body-plan {
+    .price-card-body-plan {
         padding: 0 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: 768px){
-    .regular-price-card-body-plan {
+    .price-card-body-plan {
         padding: 0 15px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
