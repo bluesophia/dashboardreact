@@ -3,7 +3,7 @@
 /************************************
                signUp
 ************************************/
-.alert-card {
+.differentcolor-alert-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -16,16 +16,12 @@
     margin-left: -10px;
     margin-right: -10px;
 }
-.alert-card-body {
+.differentcolor-alert-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
-}
-.alert-card-toaster-btn {
-    display: flex;
-    flex-wrap: wrap;
 }
 /************************************
         toast-card
