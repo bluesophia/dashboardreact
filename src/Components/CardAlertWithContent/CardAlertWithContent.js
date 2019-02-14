@@ -59,10 +59,10 @@ class CardAlertWithContent extends Component {
         
         return(
             <div className="row col-lg-6">
-                <div className="alert-card">
-                    <div className="alert-card-body">
+                <div className="withcontent-alert-card">
+                    <div className="withcontent-alert-card-body">
                         <h3>Alert with content</h3>
-                            <div className="alert-card-toaster-btn">
+                            <div className="withcontent-alert-card-toaster-btn">
                                 {
                                     AlertDissmissalList.map((item, index)=> (
                                         <AlertIconWithContent

@@ -1,8 +1,5 @@
 @import '../../Assets/Styles/theme.css';
 
-/************************************
-               signUp
-************************************/
 .alert-card {
     position: relative;
     display: flex;
@@ -31,7 +28,7 @@
     flex-wrap: wrap;
 }
 /************************************
-        toast-card
+            toast-card
 ************************************/
 .alerttoast-card {
     display: grid;

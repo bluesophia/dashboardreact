@@ -52,10 +52,10 @@ class CardAlertRoundedCorner extends Component {
         
         return(
             <div className="row col-lg-6">
-                <div className="alert-card">
-                    <div className="alert-card-body">
+                <div className="roundedcorner-alert-card">
+                    <div className="roundedcorner-alert-card-body">
                         <h3>Alert with image / icon</h3>
-                            <div className="alert-card-toaster-btn">
+                            <div className="roundedcorner-alert-card-toaster-btn">
                                 {
                                     AlertDissmissalList.map((item, index)=> (
                                         <AlertImgRoundedCorner

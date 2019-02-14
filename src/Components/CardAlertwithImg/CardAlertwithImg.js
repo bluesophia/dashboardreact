@@ -50,10 +50,10 @@ class CardAlertwithImg extends Component {
         
         return(
             <div className="row col-lg-6">
-                <div className="alert-card">
-                    <div className="alert-card-body">
+                <div className="withimg-alert-card">
+                    <div className="withimg-alert-card-body">
                         <h3>Alert with image / icon</h3>
-                            <div className="alert-card-toaster-btn">
+                            <div className="withimg-alert-card-toaster-btn">
                                 {
                                     AlertDissmissalList.map((item, index)=> (
                                         <AlertImgDissmissal
