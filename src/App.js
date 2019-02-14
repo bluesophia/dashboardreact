@@ -5,9 +5,9 @@ import InvoiceScreen from './Screen/Invoice/InvoiceScreen';
 import LoginScreen from './Screen/Login/LoginScreen';
 import TimelineScreen from './Screen/Timeline/TimelineScreen';
 import PricingScreen from './Screen/Pricing/PricingScreen';
-import './App.css'
-
-
+import AlertScreen from './Screen/Alert/AlertScreen';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 class App extends Component {
   render() {
@@ -18,8 +18,12 @@ class App extends Component {
           <ProfileScreen />
           <InvoiceScreen />
           <LoginScreen />
-          <TimelineScreen /> */}
-          <PricingScreen />
+          <TimelineScreen />
+          <PricingScreen /> */}
+          <AlertScreen />
+          <ToastContainer
+            autoClose={false}
+          />
         </div>
       </div>
     );

@@ -6,9 +6,9 @@ class PricingScreen extends Component {
     render(){
         return(
             <div className="row col-12">
-                <div className="regular-price-card">
-                    <div className="regular-price-card-body">
-                        <div className="regular-price-card-body-plan">   
+                <div className="price-card">
+                    <div className="price-card-body">
+                        <div className="price-card-body-plan">   
                         <RegularPrice />
                         <RegularPrice 
                             title='Gold'
