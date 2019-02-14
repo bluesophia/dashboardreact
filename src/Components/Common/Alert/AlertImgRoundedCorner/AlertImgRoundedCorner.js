@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import './AlertImgDissmissal.css'
+import './AlertImgRoundedCorner.css'
 import SimpleLineIcon from 'react-simple-line-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-class AlertImgDissmissal extends Component {
+class AlertImgRoundedCorner extends Component {
     
     static defaultProps = {
+        src: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
         border: "1px solid #b8eee0",
         backgroundColor: "#ccf3e9",
         color: "#00654c",
@@ -20,7 +21,7 @@ class AlertImgDissmissal extends Component {
         const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop, fontSize, src, onClick } = this.props;
         
         return(
-            <div className="rec-img-dissmissal" 
+            <div className="roundedcorner-img-dissmissal" 
             key={index}
             style={{
                 color: color,
@@ -50,8 +51,9 @@ class AlertImgDissmissal extends Component {
                 }}
                />
             }
+            
             {value}
-            <button className="rec-img-dissmissal-close" onClick={onClick}>
+            <button className="roundedcorner-img-dissmissal-close" onClick={onClick}>
             <span>
                 <FontAwesomeIcon 
                     icon={faTimes} 
@@ -64,4 +66,4 @@ class AlertImgDissmissal extends Component {
     }
 }
 
-export default AlertImgDissmissal;
+export default AlertImgRoundedCorner;

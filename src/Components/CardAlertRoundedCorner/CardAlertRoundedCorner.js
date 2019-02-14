@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './CardAlertwithImg.css'
-import { AlertImgDissmissal } from '../Common/Alert/AlertExports';
+import './CardAlertRoundedCorner.css'
+import { AlertImgRoundedCorner } from '../Common/Alert/AlertExports';
 
-class CardAlertwithImg extends Component {
+class CardAlertRoundedCorner extends Component {
     constructor(props){
         super(props);
         const AlertDissmissalList=[
             {
                id:0,
+               src: "",
             },
             {
                id:1,
@@ -19,13 +20,14 @@ class CardAlertwithImg extends Component {
             {
                id:2,
                backgroundColor: "#fff3cd",
-               src: "http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg",
+               src: "http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg",
                border: "1px solid #ffeeba",
                color: "#846404"
             },
             {
                id:3,
                backgroundColor: "#cdeefd",
+               src: "",
                border: "1px solid #b8e7fc",
                color: "#02587e"
             }
@@ -56,7 +58,7 @@ class CardAlertwithImg extends Component {
                             <div className="alert-card-toaster-btn">
                                 {
                                     AlertDissmissalList.map((item, index)=> (
-                                        <AlertImgDissmissal
+                                        <AlertImgRoundedCorner
                                             onClick={this.removeCard}
                                             key={item.id}
                                             src={item.src}
@@ -73,4 +75,4 @@ class CardAlertwithImg extends Component {
             )
         }   
     }
-export default CardAlertwithImg;
+export default CardAlertRoundedCorner;
