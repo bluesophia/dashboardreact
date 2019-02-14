@@ -1,5 +1,6 @@
 .toastBtn {
         display: inline-block;
+        cursor: pointer;
         font-weight: 500 !important;
         text-align: center;
         vertical-align: middle;
@@ -18,35 +19,7 @@
         background-color: #009c75;
         border-color: #008f6c;
 }
-.Toastify__toast--success {
-background: var(--teal) !important;
-}
-.Toastify__toast--info {
-background: var(--blue) !important;
-}
-.Toastify__toast--warning {
-background: var(--yellow) !important;
-}
-.Toastify__toast--error {
-background: var(--red) !important;
-}
-/************************************
-        toast-info-card
-************************************/
-.toastinfo-card {
-display: grid;
-grid-template: "icon icon header" 4ch "icon icon main" 6ch;
-grid-column-gap: 8px;
-}
-.toastinfo-card-header-icon {
-font-size: 20px;
-padding-left: 3px;
-margin-left: 10px;
-margin-top: 3px;
-}
-.toastinfo-card-header {
-grid-area: header;
-}
-.toastinfo-card-contents {
-grid-area: main;
+.toast-btn-container {
+        margin-left: 5px;
+        margin-top: 5px;
 }

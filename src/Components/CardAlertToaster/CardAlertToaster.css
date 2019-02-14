@@ -35,3 +35,41 @@
     font-weight: 300;
     width: 100%;
 }
+.alert-card-toaster-btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+/************************************
+        toast-card
+************************************/
+.alerttoast-card {
+    display: grid;
+    grid-template: "icon icon header" 4ch "icon icon main" 6ch;
+    grid-column-gap: 8px;
+}
+.alerttoast-card-header-icon {
+font-size: 20px;
+padding-left: 3px;
+margin-left: 10px;
+margin-top: 3px;
+}
+.alerttoast-card-header {
+grid-area: header;
+}
+.alerttoast-card-contents {
+grid-area: main;
+}
+
+.Toastify__toast--success {
+background: var(--teal) !important;
+}
+.Toastify__toast--info {
+background: var(--blue) !important;
+}
+.Toastify__toast--warning {
+background: var(--yellow) !important;
+}
+.Toastify__toast--error {
+background: var(--red) !important;
+}
+

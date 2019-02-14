@@ -21,9 +21,7 @@ class App extends Component {
           <TimelineScreen />
           <PricingScreen /> */}
           <AlertScreen />
-          <ToastContainer
-            autoClose={false}
-          />
+          <ToastContainer/>
         </div>
       </div>
     );
