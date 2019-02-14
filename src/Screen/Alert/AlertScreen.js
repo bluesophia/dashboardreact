@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Toast, AlertRectangle }  from '../Alert/AlertExports';
+import { Toast, AlertRectangle, AlertRoundedCorner }  from '../Alert/AlertExports';
 class AlertScreen extends Component {
     render(){
         return(
             <div>
                 <Toast />
                 <AlertRectangle />
+                <AlertRoundedCorner />
             </div>
         )
     }

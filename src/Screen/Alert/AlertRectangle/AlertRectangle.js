@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardAlertDifferentColor  from '../../../Components/CardAlertDifferentColor/CardAlertDifferentColor';
 import CardAlertDissmissal  from '../../../Components/CardAlertDissmissal/CardAlertDissmissal';
+import CardAlertwithImg  from '../../../Components/CardAlertwithImg/CardAlertwithImg';
 import './AlertRectangle.css'
 
 class AlertRectangle extends Component {
@@ -12,6 +13,7 @@ class AlertRectangle extends Component {
                         <div className="toast-card-body">
                             <CardAlertDifferentColor />
                             <CardAlertDissmissal />
+                            <CardAlertwithImg />
                         </div>
                     </div>
                 </div>

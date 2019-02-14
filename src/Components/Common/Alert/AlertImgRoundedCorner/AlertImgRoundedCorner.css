@@ -1,4 +1,4 @@
-.rec-dissmissal {
+.roundedcorner-img-dissmissal {
     display: inline-block;
     font-weight: 300;
     text-align: left;
@@ -7,13 +7,13 @@
     padding: 0.75rem 1.25rem;
     font-size: 0.875rem;
     line-height: 1.5;
-    border-radius: 0.25rem;
+    border-radius: 60px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-.rec-dissmissal-close {
+.roundedcorner-img-dissmissal-close {
     float: right;
     font-size: 1.3125rem;
     font-weight: 700;
@@ -25,6 +25,6 @@
     background-color: transparent;
     border: 0;
 }
-.rec-dissmissal-close:not(:disabled):not(.disabled) {
+.roundedcorner-img-dissmissal-close:not(:disabled):not(.disabled) {
     cursor: pointer;
 }

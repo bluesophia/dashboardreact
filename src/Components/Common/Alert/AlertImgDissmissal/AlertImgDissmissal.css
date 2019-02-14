@@ -1,4 +1,4 @@
-.rec-dissmissal {
+.rec-img-dissmissal {
     display: inline-block;
     font-weight: 300;
     text-align: left;
@@ -13,7 +13,7 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-.rec-dissmissal-close {
+.rec-img-dissmissal-close {
     float: right;
     font-size: 1.3125rem;
     font-weight: 700;
@@ -25,6 +25,6 @@
     background-color: transparent;
     border: 0;
 }
-.rec-dissmissal-close:not(:disabled):not(.disabled) {
+.rec-img-dissmissal-close:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
