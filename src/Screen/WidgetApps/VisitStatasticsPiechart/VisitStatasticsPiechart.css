@@ -1,0 +1,77 @@
+@import '../../../Assets/Styles/theme.css';
+
+/************************************
+          VisitStatastics
+************************************/
+.visitStatasticse-pie-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: var(--purple);
+    color: var(--white);
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.visitStatasticse-pie-card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    height: 210px;
+}
+.visitStatasticse-pie-card-body .row{
+    display: flex;
+}
+
+.visitStatasticse-pie-card-title {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+}
+.visitStatasticse-pie-card-title > h5{
+    font-weight: 500;
+    margin-top: 0;
+}
+.visitStatasticse-pie-card-contents {
+    margin-left: auto;
+}
+.visitStatasticse-pie-card-contents > ul {
+    display: flex;
+    margin-left: auto;
+    font-size: 12px;
+    list-style: none;
+}
+
+.visitStatasticse-pie-card-lefttext {
+    margin-top: 15px;
+}
+.visitStatasticse-pie-card-lefttext > h1 {
+    color :var(--white);
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 0;
+}
+.visitStatasticse-pie-card-lefttext > p, b {
+    color: var(--white);
+    font-weight: 500;
+}
+.visitStatasticse-pie-card-lefttext > b {
+    font-weight: 500;
+}
+.visitStatasticse-pie-card-righttext {
+    text-align: right;
+    display:flex;
+    justify-content: flex-end;
+    margin-top: -60px;
+}

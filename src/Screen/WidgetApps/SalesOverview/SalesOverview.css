@@ -1,0 +1,112 @@
+@import '../../../Assets/Styles/theme.css';
+
+/************************************
+       sales overview ,table
+************************************/
+.salestable-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: var(--white);
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.salestable-card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+.salestable-table {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.salestable > h5 {
+    font-size: 16px;
+    margin-top: 0;
+}   
+.salestable-table > th {
+    font-weight: 500;
+}
+.salestable-table > td .sales-price {
+    font-size: 14px;
+}
+.overview-table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+.overview-table {
+        display: block;
+        border-collapse: collapse;
+        width: 100%;
+        flex-wrap: nowrap;
+}
+@media (min-width: 500px){
+    .overview-table {
+        display: inline-table;
+    }
+}   
+.overview-table > thead > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.overview-table thead th:first-child {
+    text-align: center;
+}
+.overview-table th, .overview-table thead th {
+    font-weight: 500;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    white-space: nowrap;
+}
+
+
+/************************************
+        custom-color-text
+************************************/
+  
+  .text-danger {
+    color: var(--red) !important;
+  }
+  
+  .text-success {
+    color: var(--teal) !important;
+  }
+  
+  .text-info {
+    color: var(--info) !important;
+  }
+  
+  .text-blue {
+    color: var(--blue) !important;
+  }
+  
+  .text-orange {
+    color: var(--primary) !important;
+  }
+  
+  .text-cyan {
+    color: var(--cyan) !important;
+  }
+  
+  .text-purple {
+    color: var(--purple) !important;
+  }
+  
+  .text-green {
+    color: var(--teal) !important;
+  }
+  
+  .text-white {
+    color: var(--white) !important;
+  }
+    
