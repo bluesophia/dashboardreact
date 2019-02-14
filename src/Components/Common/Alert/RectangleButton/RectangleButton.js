@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import './ToasterButton.css'
+import './RectangleButton.css'
 
-class ToasterButton extends Component {
+class RectangleButton extends Component {
     
     static defaultProps = {
         border: "1px solid transparent",
-        backgroundColor: "var(--blue)",
+        backgroundColor: "rgb(0, 194, 146)",
         borderColor: "#00c292",
         color: "white",
-        value: "Info Message",
+        value: "Design Weblayout",
         fontWeight: "500",
         marginBottom: "0"
     }
-    render(){
-        
-        const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop, fontSize, onClick } = this.props;
 
+    render(){
+
+        const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop, fontSize } = this.props;
+        
         return(
-            <div className="toast-btn-container">
-                <button 
-                key={index} className="toastBtn" 
-                onClick={onClick}
+            <div>
+                <a key={index} className="recBtn" 
                 style={{
                     color: color,
                     borderColor: borderColor,
@@ -30,11 +29,12 @@ class ToasterButton extends Component {
                     marginBottom:marginBottom,
                     marginTop:marginTop,
                     fontSize:fontSize
-                }}
-                >{value}</button>
+                }}>
+                    <span>{value}</span>
+                </a>
             </div>
         )
     }
 }
 
-export default ToasterButton;
+export default RectangleButton;

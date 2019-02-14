@@ -1,6 +1,5 @@
-.toastBtn {
+.recBtn {
         display: inline-block;
-        cursor: pointer;
         font-weight: 500 !important;
         text-align: center;
         vertical-align: middle;
@@ -14,12 +13,8 @@
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-.toastBtn:hover {
+.recBtn:hover {
         /* color: #fff !important; */
         background-color: #009c75;
         border-color: #008f6c;
-}
-.toast-btn-container {
-        margin-left: 5px;
-        margin-top: 5px;
 }
