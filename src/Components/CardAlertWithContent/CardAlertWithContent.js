@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import './CardAlertwithImg.css'
-import { AlertImgDissmissal } from '../Common/Alert/AlertExports';
+import './CardAlertWithContent.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExclamationCircle, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+import { AlertIconWithContent } from '../Common/Alert/AlertExports';
 
-class CardAlertwithImg extends Component {
+class CardAlertWithContent extends Component {
     constructor(props){
         super(props);
         const AlertDissmissalList=[
@@ -11,23 +13,30 @@ class CardAlertwithImg extends Component {
             },
             {
                id:1,
+               title: "Danger",
+               titleColor: "var(--red)",
                backgroundColor: "#fae1e4",
                border: "1px solid #f7d5d9",
-               src: "http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg",
-               color: "#77373d"
+               color: "#77373d",
+               icon: faExclamationCircle
             },
             {
                id:2,
+               title: "Warning",
+               titleColor: "var(--yellow)",
                backgroundColor: "#fff3cd",
-               src: "http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg",
                border: "1px solid #ffeeba",
-               color: "#846404"
+               color: "#846404",
+               icon: faExclamationTriangle
             },
             {
                id:3,
+               title: "Information",
+               titleColor: "var(--blue)",
                backgroundColor: "#cdeefd",
                border: "1px solid #b8e7fc",
-               color: "#02587e"
+               color: "#02587e",
+               icon: faExclamationCircle
             }
         ];
         this.state = {
@@ -50,16 +59,18 @@ class CardAlertwithImg extends Component {
         
         return(
             <div className="row col-lg-6">
-                <div className="withimg-alert-card">
-                    <div className="withimg-alert-card-body">
-                        <h3>Alert with image / icon</h3>
-                            <div className="withimg-alert-card-toaster-btn">
+                <div className="withcontent-alert-card">
+                    <div className="withcontent-alert-card-body">
+                        <h3>Alert with content</h3>
+                            <div className="withcontent-alert-card-toaster-btn">
                                 {
                                     AlertDissmissalList.map((item, index)=> (
-                                        <AlertImgDissmissal
+                                        <AlertIconWithContent
                                             onClick={this.removeCard}
                                             key={item.id}
-                                            src={item.src}
+                                            icon={item.icon}
+                                            title={item.title}
+                                            titleColor={item.titleColor}
                                             backgroundColor={item.backgroundColor}
                                             border={item.border}
                                             color={item.color}
@@ -73,4 +84,4 @@ class CardAlertwithImg extends Component {
             )
         }   
     }
-export default CardAlertwithImg;
+export default CardAlertWithContent;

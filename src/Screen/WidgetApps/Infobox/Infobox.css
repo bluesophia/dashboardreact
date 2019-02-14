@@ -1,0 +1,19 @@
+/************************************
+            wrap & card
+************************************/
+.wrapper {
+    background: #edf1f5;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card-group  {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 576px){
+    .card-group {
+        display: flex;
+        flex-basis: auto;
+        flex-flow: row wrap;
+    } 
+}

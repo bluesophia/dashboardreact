@@ -1,5 +1,4 @@
 .recAlert {
-    display: inline-block;
     font-weight: 300;
     text-align: left;
     vertical-align: middle;
@@ -8,13 +7,5 @@
     font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-/* .recAlert:hover {
-    color: #fff !important;
-    background-color: #009c75;
-    border-color: #008f6c;
-} */
