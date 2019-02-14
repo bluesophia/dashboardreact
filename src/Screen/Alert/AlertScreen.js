@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Toast, AlertRectangle, AlertRoundedCorner }  from '../Alert/AlertExports';
+import { Toast, AlertRectangle, AlertRoundedCorner, AlertWithContent }  from '../Alert/AlertExports';
 class AlertScreen extends Component {
     render(){
         return(
@@ -7,6 +7,7 @@ class AlertScreen extends Component {
                 <Toast />
                 <AlertRectangle />
                 <AlertRoundedCorner />
+                <AlertWithContent />
             </div>
         )
     }
