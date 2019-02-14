@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CardAlertDissmissal  from '../../../Components/CardAlertDissmissal/CardAlertDissmissal';
+import CardAlertWithContent  from '../../../Components/CardAlertWithContent/CardAlertWithContent';
 import './AlertWithContent.css'
 
 class AlertWithContent extends Component {
@@ -9,7 +9,7 @@ class AlertWithContent extends Component {
                 <div className="col-lg-6">
                     <div className="toast-card">
                         <div className="toast-card-body">
-                            <CardAlertDissmissal />
+                            <CardAlertWithContent />
                         </div>
                     </div>
                 </div>
