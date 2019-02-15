@@ -1,6 +1,6 @@
 @import '../../../Assets/Styles/theme.css';
 
-.cardRecentcomments-card {
+.widgetrecentcomments-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,23 +14,24 @@
     margin-right: 5px;
     margin-bottom: 20px;
 }
-.cardRecentcomments-card-body {
+.widgetrecentcomments-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
 }
-.cardRecentcomments-card-title {
+.widgetrecentcomments-card-title {
     position: relative;
     font-weight: 500;
+    font-size: 18px;
     margin-bottom: 0.75rem;
     margin-top: 0;
 }
 
-.comment-widgets {
+.widgetrecentcomments-widgets {
     position: relative;
     margin-bottom: 10px;
-    height: 630px;
+    height: auto;
     position: relative;
 }

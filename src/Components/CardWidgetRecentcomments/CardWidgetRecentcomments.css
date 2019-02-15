@@ -1,0 +1,103 @@
+@import '../../Assets/Styles/theme.css';
+
+.widgetrecentcomment-row {
+    border-bottom: 1px solid transparent;
+    padding: 14px;
+}
+.widgetrecentcomment-row:hover {
+    background: #f8f9fa;
+}
+
+.widgetrecentcomment-widgets .widgetrecentcomment-row .widgetrecentcomment-row-image {
+    padding: 0.5rem;
+}
+.widgetrecentcomment-round {
+    line-height: 48px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: var(--cyan);
+}
+.widgetrecentcomment-text {
+    padding: 14px 15px 14px 20px;
+    width: 100%;
+}
+.widgetrecentcomment-text h5 {
+    font-size: 16px;
+    margin-top: 0;
+}
+.widgetrecentcomment-text p {
+    max-height: 66px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+}
+.widgetrecentcomment-footer {
+    display: flex;
+}
+
+.widgetrecentcomment-footer .action-icons {
+    font-size: 12px;
+    visibility: hidden;
+}
+.widgetrecentcomment-footer-date{
+    font-size: 14px;
+    font-weight: 300;
+
+}
+.widgetrecentcomment-footer .action-icons a {
+    padding-left: 7px;
+    vertical-align: middle;
+    color: #6c757d;
+}
+.widgetrecentcomment-footer .action-icons i {
+        font-size: 14px;
+}
+
+/* active */
+.widgetrecentcomment-text.active .widgetrecentcomment-footer .action-icons, .widgetrecentcomment-text:hover .widgetrecentcomment-footer .action-icons {
+    visibility: visible;
+}
+.widgetrecentcomment-text .widgetrecentcomment-footer .action-icons {
+    padding: 10px 0;
+    display: flex;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-top:-5px;
+}
+
+@media (max-width: 767px){
+    .widgetrecentcomment-text .widgetrecentcomment-footer .action-icons {
+        padding: 10px 0;
+        display: flex;
+        padding: 10px 0;
+        margin-top: 30px;
+        margin-left: -157px;
+    }
+}
+.widgetrecentcomment-action-icons {
+    /* visibility: visible; */
+    display:flex;
+    margin-left: 5px;
+    margin-top: 13px;
+}
+.widgetrecentcomment-footer .widgetrecentcomment-action-icons > a {
+    margin-right: 12px;
+}
+.widgetrecentcomment-icon-hover-color {
+    margin-right: 12px;
+}
+.widgetrecentcomment-icon-hover-color:hover {
+    color: #01c0c8 !important;
+}
+/* .widgetrecentcomment-hidden {
+    visibility: hidden;
+} */
+
