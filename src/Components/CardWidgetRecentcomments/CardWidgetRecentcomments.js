@@ -57,6 +57,7 @@ class CardWidgetRecentcomments extends Component {
         )
     }
 };
+
 // SimpleLineIconStyle
 const SimpleLineIconStylePencil = {
     fontSize: '10px',
