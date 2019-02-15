@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import CardRecentcomments from '../../../Components/CardRecentcomments/CardRecentcomments'
-import './Recentcomments.css'
-import '../../../Assets/Styles/theme.css'
-import { Scrollbars } from 'react-custom-scrollbars';
+import CardWidgetRecentcomments from '../../../Components/CardWidgetRecentcomments/CardWidgetRecentcomments'
+import './WidgetRecentcomments.css';
+import '../../../Assets/Styles/theme.css';
 
-class Recentcomments extends Component {
+class WidgetRecentcomments extends Component {
     render(){
         const commentList = [
             {
@@ -47,15 +46,14 @@ class Recentcomments extends Component {
         return(
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="cardRecentcomments-card">
-                        <div className="cardRecentcomments-card-body">
-                            <h5 className="cardRecentcomments-card-title">Recent Comments</h5>
+                    <div className="widgetrecentcomments-card">
+                        <div className="widgetrecentcomments-card-body">
+                            <h5 className="widgetrecentcomments-card-title">Recent Comments</h5>
                         </div>
-                        <div className="comment-widgets" id="comment">
-                        <Scrollbars autoHide>
+                        <div className="widgetrecentcomments-widgets" id="comment">
                         {
                             commentList.map((item, index) => (
-                            <CardRecentcomments 
+                            <CardWidgetRecentcomments 
                                 key={index} 
                                 name={item.name} 
                                 comment={item.comment} 
@@ -66,7 +64,6 @@ class Recentcomments extends Component {
                             />
                             ))
                         }
-                        </Scrollbars>
                         </div>
                     </div>
                 </div>
@@ -76,4 +73,4 @@ class Recentcomments extends Component {
 }
 
 
-export default Recentcomments;
+export default WidgetRecentcomments;
