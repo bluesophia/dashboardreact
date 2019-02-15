@@ -83,7 +83,6 @@
     }
 }
 .widgetrecentcomment-action-icons {
-    /* visibility: visible; */
     display:flex;
     margin-left: 5px;
     margin-top: 13px;
@@ -94,10 +93,3 @@
 .widgetrecentcomment-icon-hover-color {
     margin-right: 12px;
 }
-.widgetrecentcomment-icon-hover-color:hover {
-    color: #01c0c8 !important;
-}
-/* .widgetrecentcomment-hidden {
-    visibility: hidden;
-} */
-

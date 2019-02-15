@@ -3,7 +3,6 @@ import './CardWidgetRecentcomments.css';
 import ImgCircle from '../Common/ImgCircle/ImgCircle';
 import Badge from '../Common/Badge/Badge'
 import SimpleLineIcon from 'react-simple-line-icons';
-import { hidden } from 'ansi-colors';
 
 class CardWidgetRecentcomments extends Component {
     state={
@@ -71,4 +70,5 @@ const SimpleLineIconStyleHeart = {
     fontSize: '10px',
     color: 'var(--red)'
 }
+
 export default CardWidgetRecentcomments;
