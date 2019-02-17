@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { WidgetRecentcomments, Weatherbox, Commentbox, SalesOverview, 
+import { WidgetRecentcomments, WidgetProjectoftheMonth, 
     WidgetTodoList, Messages, Chat } from './WidgetAppsExports';
 
 class WidgetApps extends Component {
@@ -8,9 +8,7 @@ class WidgetApps extends Component {
             <div>
                 <WidgetRecentcomments />
                 <WidgetTodoList />
-                <Weatherbox />
-                <Commentbox />
-                <SalesOverview />
+                <WidgetProjectoftheMonth />
                 <Messages />
                 <Chat />
             </div>

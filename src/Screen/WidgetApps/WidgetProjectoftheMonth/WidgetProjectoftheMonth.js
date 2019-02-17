@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './SalesOverview.css'
-import CardSalesOverviewOptions from '../../../Components/CardSalesOverviewOptions/CardSalesOverviewOptions';
+import './WidgetProjectoftheMonth.css'
+import CardTitlewithOptions from '../../../Components/CardTitlewithOptions/CardTitlewithOptions';
 import CardSalesOverviewReportprice from '../../../Components/CardSalesOverviewReportprice/CardSalesOverviewReportprice';
 import CardSalesOverviewTable from '../../../Components/CardSalesOverviewTable/CardSalesOverviewTable';
 
-class SalesOverview extends Component {
+class WidgetProjectoftheMonth extends Component {
  render(){
     const tableList = [
         {
@@ -86,7 +86,7 @@ class SalesOverview extends Component {
         <div className="salestable-card">
             <div className="salestable-card-body">
                 <div className="salestable-table">
-                    <CardSalesOverviewOptions />
+                    <CardTitlewithOptions />
                 </div> 
             </div>
             <CardSalesOverviewReportprice />
@@ -125,4 +125,4 @@ class SalesOverview extends Component {
     }   
 }
 
-export default SalesOverview;
+export default WidgetProjectoftheMonth;
