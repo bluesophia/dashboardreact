@@ -5,7 +5,8 @@ import Badge from '../Common/Badge/Badge'
 class CardTodolist extends Component {
     render(){
 
-        const { comment, date, imgUrl, imgUrl2, imgUrl3, imgUrl4, backgroundColor, status, value, color } = this.props;
+        const { comment, date, imgUrl, imgUrl2, imgUrl3, imgUrl4, backgroundColor, status, color } = this.props;
+
         return(
             <div>
                 <ul className="todo-list">

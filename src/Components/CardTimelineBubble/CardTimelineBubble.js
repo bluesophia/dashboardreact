@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import ImgTimelineBadge from '../Common/ImgTimelineBadge/ImgTimelineBadge';
-import SimpleLineIcon from 'react-simple-line-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { RectangleButton } from '../Common/Button/ButtonExports';
 import ImgTimelineBadgeColor from '../Common/ImgTimelineBadgeColor/ImgTimelneBadgeColor';
 import './CardTimelineBubble.css';
     
@@ -65,9 +61,4 @@ class CardTimelineBubble extends Component {
         )
     }
 };
-// FontAwesomeIconStyle
-const FontAwesomeIconStyle = {
-    fontSize: '14px',
-    color: '#e46a76',
-}
 export default CardTimelineBubble;
