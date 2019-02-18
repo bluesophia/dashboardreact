@@ -1,0 +1,28 @@
+/************************************
+            table
+************************************/
+.widgetweather-table-tr > td{
+    padding: 1rem;
+    vertical-align: top;
+    border: 0px;
+    
+} 
+
+.widgetweather-table-tr > td:first-child {
+    white-space: nowrap;
+    text-align: left;
+}
+.widgetweather-table-tr > td:nth-child(2) {
+    padding: 1rem;
+    vertical-align: top;
+    padding-left: 60px;
+    font-weight: 500;
+}
+.widgetweather-table-tr > td > span {
+    font-size: 14px;
+    font-weight: 400;
+}
+.widgetweather-table-h6 {
+    font-size: 14px;
+    margin-top: 0;
+}

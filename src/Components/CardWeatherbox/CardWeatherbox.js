@@ -5,6 +5,13 @@ import WeatherIcons from 'react-weathericons';
 import '../../Assets/Styles/weather-icons.css';
 
 class CardWeatherBox extends Component {
+    static defaultProps ={
+        wiIcon: 'day-cloudy-high',
+        weather: 'SUNNY DAY',
+        degree: '73',
+        country: 'AHMEDABAD, INDIA',
+        date: 'April 14'
+    }
     render(){
         const { degree, country, wiIcon, weather, date } = this.props;
         return(
