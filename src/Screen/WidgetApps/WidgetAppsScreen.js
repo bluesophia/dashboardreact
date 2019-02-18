@@ -6,11 +6,11 @@ class WidgetApps extends Component {
     render(){
         return(
             <div>
-                <WidgetRecentcomments />
+                {/* <WidgetRecentcomments />
                 <WidgetTodoList />
-                <WidgetProjectoftheMonth />
+                <WidgetProjectoftheMonth /> */}
                 <WidgetWeatherReport />
-                <Chat />
+                {/* <Chat /> */}
             </div>
         )
     }

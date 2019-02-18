@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './WidgetWeatherReport.css'
 import CardTitlewithOptions from '../../../Components/CardTitlewithOptions/CardTitlewithOptions';
-import CardWidgetProjectofMonthTable from '../../../Components/CardWidgetProjectofMonthTable/CardWidgetProjectofMonthTable';
+import CardWidgetWeatherTable from '../../../Components/CardWidgetWeatherTable/CardWidgetWeatherTable';
+import WeatherIcons from 'react-weathericons';
+import '../../../Assets/Styles/weather-icons.css';
 
 class WidgetWeatherReport extends Component {
  render(){
@@ -91,29 +93,38 @@ class WidgetWeatherReport extends Component {
     ]
      return(
         <div className="col-lg-6">
-        <div className="projectomonth-card">
-            <div className="projectomonth-card-body">
-                <div className="projectomonth-table">
+        <div className="widgetweather-card">
+            {/* weather title */}
+            <div className="widgetweather-card-body">
+                <div className="widgetweather-table">
                     <CardTitlewithOptions 
                         titleName="Weather Report"
                         optionList={weatherList}
                     />
                 </div> 
             </div>
-            <div className="projectomonth-table-responsive">
+            {/* weather icon */}
+            <div className="widgetweather-card-icon-body">
+                <div className="widgetweather-weather">
+                    <div className="widgetweather-weather-icon">
+                        <h1 className="widgetweather-weather-icon-wi">
+                            <WeatherIcons name="day-showers" size="lg" style={WeatherIconsStyle} />
+                        </h1>
+                        <h1 className="widgetweather-weather-icon-h1">73</h1>
+                        <sup className="widgetweather-weather-icon-sup">°</sup>
+                    </div>
+                    <div className="widgetweather-weather-area">
+                        <h3>Saturday</h3>
+                        <small>Ahmedabad, India</small>
+                    </div>
+                </div>
+                {/* weather table */}
+                <div className="projectomonth-table-responsive">
                 <table className="projectomonth-table">
-                    <thead className="projectomonth-table-head">
-                        <tr>
-                            <th colSpan="2">Assigned</th>
-                            <th>NAME</th>
-                            <th>Priority</th>
-                            <th>Budget</th>
-                        </tr>
-                    </thead>
                     <tbody>
                     {
                         tableList.map((item, index) => (
-                            <CardWidgetProjectofMonthTable 
+                            <CardWidgetWeatherTable 
                                 key={index}
                                 src={item.src}
                                 assignedName={item.assignedName}
@@ -129,10 +140,15 @@ class WidgetWeatherReport extends Component {
                     </tbody>
                 </table>
             </div>
+            </div>
         </div>
         </div>
         )
     }   
+}
+
+const WeatherIconsStyle = {
+    marginLeft: "10px"
 }
 
 export default WidgetWeatherReport;
