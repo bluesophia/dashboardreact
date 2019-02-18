@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CardChat from '../../../Components/CardChat/CardChat'
+import CardChatDifferentOption from '../../../Components/CardChatDifferentOption/CardChatDifferentOption'
 import './WidgetChat.css'
 import { Scrollbars } from 'react-custom-scrollbars';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
@@ -25,15 +25,17 @@ class WidgetChat extends Component {
             },
             {
                 id: 2,
-                name: "reply",
-                comment: "I would love to join the team.",
-                time: '10:58 am'
+                name: "Steave Doe",
+                comment: "It’s Great opportunity to work.",
+                time: '10:58 am',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/5.jpg'
             },
             {
                 id: 3,
-                name: "reply",
-                comment: "Whats budget of the new project.",
-                time: '10:59 am'
+                name: "Steave Doe",
+                comment: "It’s Great opportunity to work.",
+                time: '10:58 am',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/5.jpg'
             },
             {
                 id: 4,
@@ -45,17 +47,16 @@ class WidgetChat extends Component {
         ]
 
         return(
-            <div className="row">
-                <div className="col-lg-6">
-                    <div className="chat-card">
-                        <div className="chat-card-body">
-                            <h5 className="chat-card-title">Recent Chats</h5>
+            <div className="widgetchat-row">
+                <div className="widgetchat-col-lg-6">
+                    <div className="widgetchat-card">
+                        <div className="widgetchat-card-body">
+                            <h5 className="widgetchat-card-title">Recent Chats</h5>
                         </div>
-                        <div className="chat-comment-widgets" id="comment">
-                        <Scrollbars autoHide>
+                        <div className="widgetchat-comment-widgets" id="comment">
                         {
                             commentList.map((item, index) => (
-                            <CardChat 
+                            <CardChatDifferentOption 
                                 key={index} 
                                 name={item.name} 
                                 comment={item.comment} 
@@ -66,14 +67,13 @@ class WidgetChat extends Component {
                             />
                             ))
                         }
-                        </Scrollbars>
                         </div>
-                        <div className="chat-card-body-typemessage">
-                            <div className="chat-row">
+                        <div className="widgetchat-card-body-typemessage">
+                            <div className="widgetchat-row">
                                 <div>
-                                    <textarea placeholder="Type your message here" className="chat-form-control"></textarea>
+                                    <textarea placeholder="Type your message here" className="widgetchat-form-control"></textarea>
                                 </div>
-                                <div className="chat-text-right">
+                                <div className="widgetchat-text-right">
                                     <CircleButton 
                                         backgroundColor={"#1eaaf0"}
                                         icon={faPaperPlane}

@@ -1,6 +1,6 @@
 @import '../../../Assets/Styles/theme.css';
 
-.chat-card {
+.widgetchat-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,11 +10,11 @@
     background-color: var(--white);
     border: 0px solid transparent;
     border-radius: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 20px;
 }
-.chat-card-body {
+.widgetchat-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     padding-bottom: 0;
@@ -22,23 +22,22 @@
     font-weight: 300;
     width: 100%;
 }
-.chat-card-title {
+.widgetchat-card-title {
     position: relative;
     font-weight: 500;
     margin-bottom: 0.75rem;
     margin-top: 0;
 }
 
-.chat-comment-widgets {
+.widgetchat-comment-widgets {
     position: relative;
     margin-bottom: 10px;
-    height: 342px;
     position: relative;
     padding: 1.25rem;
     padding-top: 0;
 }
 
-.chat-card-body-typemessage {
+.widgetchat-card-body-typemessage {
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
@@ -46,12 +45,12 @@
     width: 100%;
     border-top: 1px solid #e9ecef;
 }
-.chat-row {
+.widgetchat-row {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
 }
-.chat-form-control {
+.widgetchat-form-control {
     color: #212529;
     min-height: 38px;
     display: initial;
@@ -59,19 +58,19 @@
     width: 240px;
     height: auto;
 }
-.chat-text-right {
+.widgetchat-text-right {
     text-align: right;
 }
-.chat-card-body-typemessage textarea {
+.widgetchat-card-body-typemessage textarea {
     resize: none;
 }
-.chat-col-8 {
+.widgetchat-col-8 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.66667%;
     flex: 0 0 66.66667%;
     max-width: 66.66667%;
 }
-.chat-col-4 {
+.widgetchat-col-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
