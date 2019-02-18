@@ -8,11 +8,14 @@ import '../../../Assets/Styles/weather-icons.css';
 // List class
 class Lists extends Component {
     render(){
+
+        const { icon, time, degree } = this.props;
+
         return(
             <div className="projectomonth-li-div">
-                <li className="projectomonth-li"><WeatherIcons name={this.props.icon} /></li>
-                <li className="projectomonth-li">{this.props.time}</li>
-                <li className="projectomonth-li">{this.props.degree}<sup>°</sup></li>
+                <li className="projectomonth-li"><WeatherIcons name={icon} /></li>
+                <li className="projectomonth-li">{time}</li>
+                <li className="projectomonth-li">{degree}<sup>°</sup></li>
             </div>
         )
     }
