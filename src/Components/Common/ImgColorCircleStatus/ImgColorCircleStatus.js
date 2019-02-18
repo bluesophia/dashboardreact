@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './ImgColorCircleStatus.css'
+import './ImgColorCircleStatus.css';
+import '../../../Assets/Styles/theme.css';
 
 class ImgColorCircleStatus extends Component {
     constructor(props){
