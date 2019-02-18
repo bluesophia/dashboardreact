@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CardChatDifferentOption from '../../../Components/CardChatDifferentOption/CardChatDifferentOption'
 import './WidgetChat.css'
-import { Scrollbars } from 'react-custom-scrollbars';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { CircleButton } from '../../../Components/Common/Button/ButtonExports'
 
