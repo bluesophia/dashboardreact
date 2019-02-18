@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './CardWidgetWeatherTable.css';
-import ImgColorCircleStatus from '../Common/ImgColorCircleStatus/ImgColorCircleStatus';
-import ImgCircle from '../Common/ImgCircle/ImgCircle';
 
 class CardWidgetWeatherTable extends Component {
     render(){

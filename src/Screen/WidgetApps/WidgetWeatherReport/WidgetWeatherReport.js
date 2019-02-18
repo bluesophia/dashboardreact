@@ -5,6 +5,19 @@ import CardWidgetWeatherTable from '../../../Components/CardWidgetWeatherTable/C
 import WeatherIcons from 'react-weathericons';
 import '../../../Assets/Styles/weather-icons.css';
 
+// List class
+class Lists extends Component {
+    render(){
+        return(
+            <div className="projectomonth-li-div">
+                <li className="projectomonth-li"><WeatherIcons name={this.props.icon} /></li>
+                <li className="projectomonth-li">{this.props.time}</li>
+                <li className="projectomonth-li">{this.props.degree}<sup>°</sup></li>
+            </div>
+        )
+    }
+}
+
 class WidgetWeatherReport extends Component {
  render(){
     const tableList = [
@@ -45,9 +58,37 @@ class WidgetWeatherReport extends Component {
             name: 'Weekly'
         }
     ]
+    // weather footer list
+    const weatherFooter = [
+        {
+            id: 0,
+            icon: 'day-sunny',
+            time: '09:30',
+            degree: '70'
+        },
+        {
+            id: 1,
+            icon: 'day-cloudy',
+            time: '11:30',
+            degree: '72'
+        },
+        {
+            id: 2,
+            icon: 'day-hail',
+            time: '13:30',
+            degree: '75'
+        },
+        {
+            id: 3,
+            icon: 'day-sprinkle',
+            time: '15:30',
+            degree: '76'
+        },
+    ]
      return(
         <div className="col-lg-6">
         <div className="widgetweather-card">
+
             {/* weather title */}
             <div className="widgetweather-card-body">
                 <div className="widgetweather-table">
@@ -57,6 +98,7 @@ class WidgetWeatherReport extends Component {
                     />
                 </div> 
             </div>
+
             {/* weather icon */}
             <div className="widgetweather-card-icon-body">
                 <div className="widgetweather-weather">
@@ -72,22 +114,37 @@ class WidgetWeatherReport extends Component {
                         <small>Ahmedabad, India</small>
                     </div>
                 </div>
+
                 {/* weather table */}
                 <div className="projectomonth-table-responsive">
-                <table className="projectomonth-table">
-                    <tbody>
+                    <table className="projectomonth-table">
+                        <tbody>
+                        {
+                            tableList.map((item, index) => (
+                                <CardWidgetWeatherTable 
+                                    key={index}
+                                    name={item.name}
+                                    value={item.value}
+                                />
+                            ))
+                        }
+                        </tbody>
+                    </table>
+                </div>  
+                <hr className="projectomonth-hr"/>
+
+                {/* weather footer */}
+                <ul className="projectomonth-ul">
                     {
-                        tableList.map((item, index) => (
-                            <CardWidgetWeatherTable 
-                                key={index}
-                                name={item.name}
-                                value={item.value}
+                        weatherFooter.map((item, index) => (
+                            <Lists 
+                                icon={item.icon} 
+                                time={item.time}
+                                degree={item.degree}
                             />
                         ))
                     }
-                    </tbody>
-                </table>
-            </div>
+                </ul>
             </div>
         </div>
         </div>
