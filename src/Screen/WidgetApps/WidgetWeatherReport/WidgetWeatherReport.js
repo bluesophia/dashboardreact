@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './WidgetProjectoftheMonth.css'
+import './WidgetWeatherReport.css'
 import CardTitlewithOptions from '../../../Components/CardTitlewithOptions/CardTitlewithOptions';
 import CardWidgetProjectofMonthTable from '../../../Components/CardWidgetProjectofMonthTable/CardWidgetProjectofMonthTable';
 
-class WidgetProjectoftheMonth extends Component {
+class WidgetWeatherReport extends Component {
  render(){
     const tableList = [
         {
@@ -78,32 +78,25 @@ class WidgetProjectoftheMonth extends Component {
             backgroundColor: 'var(--red)'
         }
     ]
-    const monthList = [
-    {
-        id:0,
-        name: 'January'
-    },
-    {
-        id:1,
-        name: 'February'
-    },
-    {
-        id:2,
-        name: 'March'
-    },
-    {
-        id:3,
-        name: 'April'
-    },
-]
+    // weather select option list
+    const weatherList = [
+        {
+            id:0,
+            name: 'Today'
+        },
+        {
+            id:1,
+            name: 'Weekly'
+        }
+    ]
      return(
         <div className="col-lg-6">
         <div className="projectomonth-card">
             <div className="projectomonth-card-body">
                 <div className="projectomonth-table">
                     <CardTitlewithOptions 
-                        titleName="Projects of the Month"
-                        optionList={monthList}
+                        titleName="Weather Report"
+                        optionList={weatherList}
                     />
                 </div> 
             </div>
@@ -142,4 +135,4 @@ class WidgetProjectoftheMonth extends Component {
     }   
 }
 
-export default WidgetProjectoftheMonth;
+export default WidgetWeatherReport;

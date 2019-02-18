@@ -16,13 +16,12 @@ class ImgCircleStatus extends Component {
         }
     }
     render(){
-        const condition = this.props.src;
         const { src, status, circleName, backgroundColor, width, height } = this.props;
         return(
             <div>
                 <div className="user-img">
                 {
-                    condition ? <img src={src} alt="user" style={{borderRadius: "100%", width: width, height:height , marginBottom: "10px"}} /> : <ImgColorCircleStatus circleName={circleName} backgroundColor={backgroundColor} width={"50px"} height={"50px"}/>
+                    src ? <img src={src} alt="user" style={{borderRadius: "100%", width: width, height:height , marginBottom: "10px"}} /> : <ImgColorCircleStatus circleName={circleName} backgroundColor={backgroundColor} width={"50px"} height={"50px"}/>
                 }
                 
                 <span id="stauscircle" className={status}></span>
