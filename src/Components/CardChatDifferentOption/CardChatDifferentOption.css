@@ -1,41 +1,41 @@
 @import '../../Assets/Styles/theme.css';
 
 
-.cardchat-row {
+.cardchatdifferentoption-row {
     display: flex;
     text-decoration: none;
     padding: 1.25rem;
 }
-.cardchat-row .cardchat-row-image {
+.cardchatdifferentoption-row .cardchatdifferentoption-row-image {
     display: flex;
     padding: 0.5rem;
 }
-.cardchat-text {
+.cardchatdifferentoption-text {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 70%;
 }
-.cardchat-text h5 {
+.cardchatdifferentoption-text h5 {
     font-size: 16px;
     margin-top: 0;
     color: #6c757d;
 }
-.cardchat-text > span {
+.cardchatdifferentoption-text > span {
     white-space: nowrap;
     max-height: 66px;
     font-size: 12px !important;
     font-weight: 300;
 }
-.cardchat-footer {
+.cardchatdifferentoption-footer {
     display: flex;
     margin-top: -4px;
 }
-.cardchat-footer-date{
+.cardchatdifferentoption-footer-date{
     font-size: 12px;
     font-weight: 300;
 
 }
-.cardchat-round {
+.cardchatdifferentoption-round {
     line-height: 48px;
     color: #fff;
     width: 50px;
@@ -48,31 +48,31 @@
     font-size: 14px;
     margin-right: 10px;
 }
-.cardchat-list-ul {
+.cardchatdifferentoption-list-ul {
     margin: 0;
     padding: 0;
 }
-.cardchat-list-ul > li {
+.cardchatdifferentoption-list-ul > li {
     margin-top: 30px;
     list-style: none;
 }
-.cardchat-img {
+.cardchatdifferentoption-img {
     display: inline-block;
     vertical-align: top;
 }
-.cardchat-content {
+.cardchatdifferentoption-content {
     display: inline-block;
     padding-left: 15px;
 }
 @media (max-width: 767px){
-    .cardchat-content {
+    .cardchatdifferentoption-content {
         width: calc(100% - 80px);
     }
 }
-.cardchat-content h5{
+.cardchatdifferentoption-content h5{
     margin-top: 0;
 }
-.cardchat-content-box {
+.cardchatdifferentoption-content-box {
     display: inline-block;
     color: #343a40;
     color: var(--gray-dark);
@@ -83,7 +83,7 @@
     font-size: 14px;
     font-weight: 300;
 }
-.cardchat-time {
+.cardchatdifferentoption-time {
     display: block;
     font-size: 10px;
     color: #6c757d;
@@ -92,22 +92,35 @@
 /************************************
                 odd
 ************************************/
-.cardchat-list-odd-li-cardchat-content {
-    display: flex;
-    padding-left: 15px;
-    justify-content: flex-end;
+.cardchatdifferentoption-list-odd-li {
+    text-align: right;
 }
-.cardchat-list-odd-li-cardchat-content-box {
+.cardchatdifferentoption-list-odd-li-cardchat-content {
+    display: inline-block;
+    padding-right: 15px;
+}
+.cardchatdifferentoption-list-odd-li-cardchat-content > h5 {
+    margin-top: 0;
+}
+.cardchatdifferentoption-list-odd-li-cardchat-content-box {
+    display: inline-block;
+    color: #343a40;
+    color: var(--gray-dark);
+    background: #f8f9fa;
+    background: var(--secondary);
     border-radius: 0.25rem;
     padding: 10px;
-    clear: both;
-    color: var(--white);
-    background: var(--primary) !important;
+    font-size: 14px;
+    font-weight: 300;
 }
-.cardchat-list-odd-li-cardchat-time {
-    text-align: right;
+.cardchatdifferentoption-list-odd-li-cardchat-time {
+    text-align: left;
     display: block;
     font-size: 10px;
     color: #6c757d;
     margin: 5px 0 15px 65px;
+}
+.cardchatdifferentoption-odd-img {
+    display: inline-block;
+    vertical-align: top;
 }

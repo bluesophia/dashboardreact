@@ -8,7 +8,6 @@ class ImgColorCircle extends Component {
             value: '',
             width: '50px',
             height: '50px',
-            icon: faBomb, 
             backgroundColor: 'var(--green)'
         }
     constructor(props){
