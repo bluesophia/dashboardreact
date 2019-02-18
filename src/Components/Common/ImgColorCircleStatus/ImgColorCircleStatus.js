@@ -17,7 +17,14 @@ class ImgColorCircleStatus extends Component {
         const { backgroundColor, circleName, width, height } = this.props;
         return(
             <div>
-                <span className="imgcolorcircle-user-img-round" style={{backgroundColor: backgroundColor, width:width, height:height }}><p>{circleName}</p></span>
+                <span className="imgcolorcircle-user-img-round" 
+                style={{
+                    backgroundColor: backgroundColor, 
+                    width:width, 
+                    height:height 
+                    }}>
+                    <p>{circleName}</p>
+                </span>
             </div>
         )
     }
