@@ -22,8 +22,11 @@
     font-size: 14px;
     font-weight: 400;
 }
+.projectofmonth-table-tr {
+    border-left: 3px solid transparent;
+}
 .projectofmonth-table-tr:hover {
-    background-color: #f8f9fa;
+    border-color: #fb9678;
 }
 .projectofmonth-table-h6 {
     font-size: 14px;
