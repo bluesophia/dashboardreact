@@ -5,16 +5,11 @@ import ImgCircle from '../Common/ImgCircle/ImgCircle';
 
 class CardWidgetWeatherTable extends Component {
     render(){
-        const { src,assignedName,  name, job, priority, budget, priceColor, backgroundColor, circleName } = this.props;
+        const { name, value } = this.props;
         return(
-                <tr className="projectofmonth-table-tr">
-                    <td>{ src ? <ImgCircle src={src} width={"50px"}/> : <ImgColorCircleStatus backgroundColor={backgroundColor} circleName={circleName}/> }</td>
-                    <td><h6 className="projectofmonth-table-h6">{assignedName}</h6>
-                        <small className="projectofmonth-table-small">{job}</small>
-                    </td>
+                <tr className="widgetweather-table-tr">
                     <td>{name}</td>
-                    <td>{priority}</td>
-                    <td>${budget}K</td>
+                    <td>{value}</td>
                 </tr>
         )
     }

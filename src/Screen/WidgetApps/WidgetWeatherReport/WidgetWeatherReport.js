@@ -10,75 +10,29 @@ class WidgetWeatherReport extends Component {
     const tableList = [
         {
             id: 0,
-            assignedName: 'Sunil Joshi',
-            job: 'Web Designer',
-            name:'Elite Admin',
-            circleName: 'S',
-            status: 'sale',
-            date: 'April 18, 2017',
-            budget: '3.9',
-            badgeBackground: '#20c997',
-            backgroundColor: 'var(--cyan)'
+            name:'Wind',
+            value:'ESE 17 mph'
         },
         {
             id: 1,
-            assignedName: 'Andrew',
-            job: 'Project Manager',
-            name:'Real Homes',
-            src: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg',
-            status: 'extended',
-            date: 'April 19, 2017',
-            budget: '23.9',
-            badgeBackground: '#03a9f3'
+            name:'Humidity',
+            value:'83%'
         },
         {
             id: 2,
-            assignedName: 'Bhavesh patel',
-            job: 'Developer',
-            name:'MedicalPro Theme',
-            circleName: 'B',
-            status: 'extended',
-            date: 'April 19, 2017',
-            budget: '12.9',
-            badgeBackground: '#03a9f3',
-            backgroundColor: 'var(--teal)'
+            name:'Pressure',
+            value:'28.56 in'
         },
         {
             id: 3,
-            assignedName: 'Nirav Joshi',
-            job: 'Frontend Eng',
-            name:'Elite Admin',
-            circleName: 'N',
-            status: 'tax',
-            date: 'April 20, 2017',
-            budget: '10.9',
-            badgeBackground: '#E26B78',
-            backgroundColor: 'var(--primary)'
+            name:'Cloud Cover',
+            value:'78%'
         },
         {
             id: 4,
-            assignedName: 'Micheal Doe',
-            job: 'Content Writer',
-            name:'Helping Hands',
-            circleName: 'M',
-            status: 'sale',
-            date: 'April 21, 2017',
-            budget: '12.9',
-            badgeBackground: '#20c997',
-            backgroundColor: 'var(--yellow)'
+            name:'Ceiling',
+            value:'25760 ft'
         },
-        {
-            id: 5,
-            assignedName: 'Johnathan',
-            job: 'Graphic',
-            name:'Digital Agency',
-            circleName: 'N',
-            status: 'sale',
-            date: 'April 23, 2017',
-            budget: '2.6',
-            badgeBackground: '#20c997',
-            backgroundColor: 'var(--red)'
-        }
     ]
     // weather select option list
     const weatherList = [
@@ -126,14 +80,8 @@ class WidgetWeatherReport extends Component {
                         tableList.map((item, index) => (
                             <CardWidgetWeatherTable 
                                 key={index}
-                                src={item.src}
-                                assignedName={item.assignedName}
                                 name={item.name}
-                                job={item.job}
-                                circleName={item.circleName}
-                                priority={item.priority}
-                                budget={item.budget}
-                                backgroundColor={item.backgroundColor}
+                                value={item.value}
                             />
                         ))
                     }
