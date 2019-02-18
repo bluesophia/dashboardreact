@@ -7,6 +7,7 @@ class RectangleButton extends Component {
         border: "1px solid transparent",
         backgroundColor: "rgb(0, 194, 146)",
         borderColor: "#00c292",
+        borderRadius: "0.25rem",
         color: "white",
         value: "Design Weblayout",
         fontWeight: "500",
@@ -15,7 +16,7 @@ class RectangleButton extends Component {
 
     render(){
 
-        const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop, fontSize } = this.props;
+        const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop, fontSize, borderRadius, padding } = this.props;
         
         return(
             <div>
@@ -24,6 +25,8 @@ class RectangleButton extends Component {
                     color: color,
                     borderColor: borderColor,
                     border: border,
+                    borderRadius: borderRadius,
+                    padding: padding,
                     backgroundColor: backgroundColor,
                     fontWeight:fontWeight,
                     marginBottom:marginBottom,

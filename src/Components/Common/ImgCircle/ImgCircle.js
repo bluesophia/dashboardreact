@@ -9,9 +9,10 @@ class ImgCircle extends Component {
         }
     }
     render(){
+        const { src, width } = this.props;
         return(
             <div>
-                <img src={this.props.src} alt="user" style={{borderRadius: "100%", width: this.props.width}} />
+                <img src={src} alt="user" style={{borderRadius: "100%", width:width}} />
             </div>
         )
     }

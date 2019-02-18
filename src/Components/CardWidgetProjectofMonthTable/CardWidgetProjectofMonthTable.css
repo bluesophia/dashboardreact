@@ -1,0 +1,36 @@
+/************************************
+            table
+************************************/
+.projectofmonth-table-tr > td{
+    padding: 1rem;
+    vertical-align: top;
+    border: 0px;
+    border-top: 1px solid #dee2e6;
+    
+} 
+
+.projectofmonth-table-tr > td:first-child {
+    text-align: center;
+    width: 50px;
+}
+.projectofmonth-table-tr > td:nth-child(2) {
+    padding: 1rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.projectofmonth-table-tr > td > span {
+    font-size: 14px;
+    font-weight: 400;
+}
+.projectofmonth-table-tr:hover {
+    background-color: #f8f9fa;
+}
+.projectofmonth-table-h6 {
+    font-size: 14px;
+    margin-top: 0;
+}
+.projectofmonth-table-small {
+    color: #6c757d;
+    font-size: 80%;
+    font-weight: 400;
+}

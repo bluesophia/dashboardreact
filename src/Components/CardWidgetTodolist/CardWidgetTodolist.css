@@ -1,0 +1,146 @@
+@import '../../Assets/Styles/theme.css';
+
+ul.widgettodo-list {
+    padding-left: 15px;
+}
+.widgettodo {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+.widgettodo-list li {
+    border: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    padding: 10px 15px 0px 0px;
+    list-style-type: none;
+}
+.widgettodo-control-badege {
+    order: 2;
+    align-self: flex-end;
+}
+.widgettodo-list li .widgettodo-assignedto {
+    padding: 0px 0 0 30px;
+    margin: 0px;
+}
+.widgettodo-list li .widgettodo-assignedto li {
+    list-style: none;
+    padding: 0px;
+    display: inline-block;
+    border: 0px;
+    margin-right: 2px;
+}
+.widgettodo-list li .widgettodo-assignedto img {
+    border-radius: 100%;
+    width: 40px;
+}
+.widgettodo-list li .widgettodo-item-date {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 32px;
+    color: var(--gray);
+}
+.widgettodo-list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.widgettodo-list-custom-control {
+    position: relative;
+    display: grid;
+    min-height: 1.3125rem;
+    width: 100%;
+    grid-template-columns: 1fr 14fr;
+}
+.widgettodo-list-custom-control-input {
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 6px;
+    font-size: 30px;
+}
+.widgettodo-list-custom-control > label {
+    display:flex;
+    justify-content: space-between;
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+.widgettodo-list-custom-control > label > span:first-child {
+    width: 70%;
+    display: inline-block;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+/************************************
+             checkbox
+************************************/
+.widgettodo-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+.widgettodo-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.widgettodo-checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.widgettodo-checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.widgettodo-checkbox-checkmark-checked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+.widgettodo-checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border: 1px solid var(--border-bottom-color);
+    border-radius: 5px;
+}
+.widgettodo-checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+.widgettodo-checkbox-input:checked ~ .checkmark:after {
+    display: block;
+  }
+.widgettodo-checkbox .widgettodo-checkbox-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }  

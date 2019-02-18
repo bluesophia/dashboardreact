@@ -1,9 +1,9 @@
 @import '../../../Assets/Styles/theme.css';
 
 /************************************
-       sales overview ,table
+       projectomonth table
 ************************************/
-.salestable-card{
+.projectomonth-card{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,52 +17,52 @@
     margin-right: 5px;
     margin-bottom: 20px;
 }
-.salestable-card-body {
+.projectomonth-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
 }
-.salestable-table {
+.projectomonth-table {
     font-size: 14px;
     font-weight: 300;
 }
-
-.salestable > h5 {
+.projectomonth > h5 {
     font-size: 16px;
     margin-top: 0;
 }   
-.salestable-table > th {
+.projectomonth-table > th {
     font-weight: 500;
 }
-.salestable-table > td .sales-price {
+.projectomonth-table > td .sales-price {
     font-size: 14px;
 }
-.overview-table-responsive {
+.projectomonth-table-responsive {
     display: block;
     width: 100%;
     overflow-x: auto;
+    margin-top: 20px;
 }
-.overview-table {
+.projectomonth-table {
         display: block;
         border-collapse: collapse;
         width: 100%;
         flex-wrap: nowrap;
 }
 @media (min-width: 500px){
-    .overview-table {
+    .projectomonth-table {
         display: inline-table;
     }
 }   
-.overview-table > thead > th {
+.projectomonth-table > thead > th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
 }
-.overview-table thead th:first-child {
-    text-align: center;
+.projectomonth-table thead th:first-child {
+    text-align: left;
 }
-.overview-table th, .overview-table thead th {
+.projectomonth-table th, .overview-table thead th {
     font-weight: 500;
     padding: 1rem;
     border-top: 1px solid #dee2e6;
