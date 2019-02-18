@@ -1,45 +1,41 @@
 import React, { Component } from 'react';
 import './CardTitlewithOptions.css';
 
-class CardTitlewithOptions extends Component {  
+// option class
+class Options extends Component {
     render(){
-        const selectList = [
-        {
-            id:0,
-            name: 'January'
-        },
-        {
-            id:1,
-            name: 'February'
-        },
-        {
-            id:2,
-            name: 'March'
-        },
-        {
-            id:3,
-            name: 'April'
-        },
-    ]
+        return(
+            <option>{this.props.name}</option>
+        )
+    }
+}
+
+
+class CardTitlewithOptions extends Component {  
+    constructor(props){
+        super(props);
+        this.state= {
+            optionList: this.props.optionList
+        }
+    }
+    render(){
+
+        const { titleName, optionList=[] } = this.props; 
+
         return(
             <div>
                 <div>
                     <h5 className="titlewithoption-card-title">
-                        Projects of the Month
+                        {titleName}
                     </h5>
                 </div>
                 <div className="titlewithoption-card-option">
                 <select className="titlewithoption-select">
-                    {
-                        selectList.map((item, index) => (
-                        <option 
-                            value={item.id + 1}
-                            key={index}
-                        >
-                        {item.name}
-                        </option>
-                        ))
-                    }
+                {
+                    optionList.map((item, index) => (
+                        <Options name={item.name} />
+                    ))
+                }
                 </select>
                 </div>
             </div>

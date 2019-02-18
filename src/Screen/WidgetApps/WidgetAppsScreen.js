@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { WidgetRecentcomments, WidgetProjectoftheMonth, 
-    WidgetTodoList, Messages, Chat } from './WidgetAppsExports';
+    WidgetTodoList, WidgetWeatherReport, Chat } from './WidgetAppsExports';
 
 class WidgetApps extends Component {
     render(){
@@ -9,7 +9,7 @@ class WidgetApps extends Component {
                 <WidgetRecentcomments />
                 <WidgetTodoList />
                 <WidgetProjectoftheMonth />
-                <Messages />
+                <WidgetWeatherReport />
                 <Chat />
             </div>
         )
