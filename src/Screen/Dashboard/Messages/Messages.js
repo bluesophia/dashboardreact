@@ -26,9 +26,11 @@ class Messages extends Component {
             {
                 id: 2,
                 name: 'Arijit Sinh',
+                circleName: 'A',
                 comment: 'Simply dummy text of the printing and typesetting industry.',
                 time: '9:08 AM',
-                status: 'away'
+                status: 'away',
+                backgroundColor: 'var(--cyan)'
             },
             {
                 id: 3,
@@ -69,10 +71,12 @@ class Messages extends Component {
                             <CardMessages 
                                 key={index} 
                                 name={item.name} 
+                                circleName={item.circleName}
                                 comment={item.comment} 
                                 time={item.time} 
                                 imgUrl={item.imgUrl}
                                 status={item.status}
+                                backgroundColor={item.backgroundColor}
                             />
                             ))
                         }

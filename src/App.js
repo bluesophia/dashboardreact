@@ -16,8 +16,8 @@ class App extends Component {
       <div className="App">
         <div className="Wrapper">
           <ToastContainer/> 
-          {/* <DashboardScreen />
-          <ProfileScreen />
+          <DashboardScreen />
+          {/* <ProfileScreen />
           <InvoiceScreen />
           <LoginScreen />
           <TimelineScreen />

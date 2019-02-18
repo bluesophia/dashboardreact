@@ -1,4 +1,4 @@
-.user-img-round {
+.imgcolorcircle-user-img-round {
     line-height: 48px;
     color: #fff;
     width: 50px;
@@ -9,9 +9,11 @@
     border-radius: 100%;
 }
 
-.user-img-round > p {
-    position: absolute;
-    margin-left: 19px;
-    margin-top: -3px;
+.imgcolorcircle-user-img-round > p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 

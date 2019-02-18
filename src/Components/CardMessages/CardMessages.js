@@ -5,18 +5,19 @@ import ImgCircleStatus from '../Common/ImgCircleStatus/ImgCircleStatus';
 class CardMessages extends Component {
     render(){
 
-        const { name, comment, time, imgUrl, status } = this.props;
+        const { name, comment, time, imgUrl, status, circleName, backgroundColor } = this.props;
 
         return(
             <div className="message-row-card">
             <a href="#" className="message-row-a">
             <div className="message-row">
                 <div className="message-row-image">
-                    <span className="round"> 
+                    <span> 
                         <ImgCircleStatus 
                         src={imgUrl} 
-                        width={"50px"}
                         status={status}
+                        circleName={circleName}
+                        backgroundColor={backgroundColor}
                         />
                     </span>
                 </div>

@@ -34,18 +34,6 @@
     margin-left: auto;
     background: url('../../Assets/Images/selectarrow.png') right 0.75rem center no-repeat;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    /* color: var(--gray-extra-dark);
-    min-height: 38px;
-    background-color: #fff;
-    border: 1px solid #e9ecef;
-    font-size: 0.875rem;
-    width: 100%;
-    height: calc(2.0625rem + 2px);
-    overflow: auto;
-    resize: none;
-    background-clip: padding-box;
-    margin-bottom: 0;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; */
 }
 .titlewithoption-form-control:focus {
     color: #495057;

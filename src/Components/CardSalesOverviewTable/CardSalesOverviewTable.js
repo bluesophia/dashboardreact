@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './CardSalesOverviewTable.css';
 import Badge from '../Common/Badge/Badge'
-// import { Scrollbars } from 'react-custom-scrollbars';
 
 class CardSalesOverviewTable extends Component {
     render(){

@@ -7,7 +7,7 @@
     border-radius: 100%;
 }
 .user-img {
-    width: 45px;
+    /* width: 45px; */
     position: relative;
     display: inline-block;
     margin: 0 10px 15px 0;
