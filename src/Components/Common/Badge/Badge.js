@@ -7,7 +7,8 @@ class Badge extends Component {
         this.state = {
             backgroundColor: props.backgroundColor,
             value: props.value,
-            color: props.color
+            color: props.color,
+            borderRadius: props.borderRadius
         }
         
     }
@@ -18,13 +19,14 @@ class Badge extends Component {
     }
 
     render(){
-        const { backgroundColor, value, color } = this.props;
+        const { backgroundColor, value, color, borderRadius } = this.props;
         return(
             <div>
                 <span className="badge" 
                 style={{
                     backgroundColor:backgroundColor, 
                     color:color,
+                    borderRadius
                 }}
                 >
                 {value}

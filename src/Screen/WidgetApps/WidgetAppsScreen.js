@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { WidgetRecentcomments, WidgetProjectoftheMonth, 
     WidgetTodoList, WidgetWeatherReport, WidgetRecentChat, WidgetChatDifferentOption,
-    WidgetRecentMessages, WidgetProfileDetail
+    WidgetRecentMessages, WidgetProfileDetail, WidgetBrowserStats
 } from './WidgetAppsExports';
 
 class WidgetApps extends Component {
@@ -13,9 +13,10 @@ class WidgetApps extends Component {
                 <WidgetProjectoftheMonth />
                 <WidgetWeatherReport />
                 <WidgetRecentChat />
-                <WidgetChatDifferentOption /> */}
-                <WidgetRecentMessages />
+                <WidgetChatDifferentOption />
+                <WidgetRecentMessages /> */}
                 <WidgetProfileDetail />
+                <WidgetBrowserStats />
             </div>
         )
     }
