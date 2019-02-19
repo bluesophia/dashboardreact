@@ -29,29 +29,6 @@ class CardWidgetProfileDetailBottom extends Component {
     }
 
     render(){
-        const icon = [
-            {
-                id: 0,
-                icon: faGlobe
-            },
-            {
-                id: 1,
-                icon: faTwitter
-            },
-            {
-                id: 2,
-                icon: faFacebook
-            },
-            {
-                id: 3,
-                icon: faYoutube
-            },
-            {
-                id: 4,
-                icon: faLinkedin
-            },
-        ]
-        
         return(
             <div className="widgetprofiledetailbottom-card-body-bottom">
                     <div className="widgetprofiledetailbottom-card-footer">
@@ -60,25 +37,86 @@ class CardWidgetProfileDetailBottom extends Component {
                         </div>
                         <div>
                             <div className="widgetprofiledetailbottom-card-body-bottom-button">
-                            {
-                                icon.map((item, index) => (
-                                    <a href="#" onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff}>
-                                    <ReactTooltip id='widgetprofiledetailbottom-tootip-icon'>
-                                        <p>website</p>
-                                    </ReactTooltip>
-                                        <FontAwesomeIcon 
-                                            id='widgetprofiledetailbottom-tootip-icon'
-                                            icon={item.icon} 
-                                            style={{
-                                                width: "20px", 
-                                                height: "20px", 
-                                                margin: "5px",
-                                                color: this.setState.mouseOn ? "var(--primary)" : null
-                                            }}
-                                        />  
-                                    </a>
-                                ))
-                            }    
+                            <a href="#" onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff} >
+                                <FontAwesomeIcon 
+                                    data-tip 
+                                    data-for='widgetprofiledetailbottom-tootip-icon-globe'
+                                    icon={faGlobe} 
+                                    style={{
+                                        width: "20px", 
+                                        height: "20px", 
+                                        margin: "5px",
+                                        color: this.setState.mouseOn ? "var(--primary)" : null
+                                    }}
+                                />
+                                <ReactTooltip id='widgetprofiledetailbottom-tootip-icon-globe'>
+                                    <span>Website</span>
+                                </ReactTooltip>  
+                            </a>
+                            <a href="#" onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff} >
+                                <FontAwesomeIcon 
+                                    data-tip 
+                                    data-for='widgetprofiledetailbottom-tootip-icon-twitter'
+                                    icon={faTwitter} 
+                                    style={{
+                                        width: "20px", 
+                                        height: "20px", 
+                                        margin: "5px",
+                                        color: this.setState.mouseOn ? "var(--primary)" : null
+                                    }}
+                                />
+                                <ReactTooltip id='widgetprofiledetailbottom-tootip-icon-twitter'>
+                                    <span>Twitter</span>
+                                </ReactTooltip>  
+                            </a>
+                            <a href="#" onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff} >
+                                <FontAwesomeIcon 
+                                    data-tip 
+                                    data-for='widgetprofiledetailbottom-tootip-icon-facebook'
+                                    icon={faFacebook} 
+                                    style={{
+                                        width: "20px", 
+                                        height: "20px", 
+                                        margin: "5px",
+                                        color: this.setState.mouseOn ? "var(--primary)" : null
+                                    }}
+                                />
+                                <ReactTooltip id='widgetprofiledetailbottom-tootip-icon-facebook'>
+                                    <span>Facebook</span>
+                                </ReactTooltip>  
+                            </a>
+                            <a href="#" onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff} >
+                                <FontAwesomeIcon 
+                                    data-tip 
+                                    data-for='widgetprofiledetailbottom-tootip-icon-youtube'
+                                    icon={faYoutube} 
+                                    style={{
+                                        width: "20px", 
+                                        height: "20px", 
+                                        margin: "5px",
+                                        color: this.setState.mouseOn ? "var(--primary)" : null
+                                    }}
+                                />
+                                <ReactTooltip id='widgetprofiledetailbottom-tootip-icon-youtube'>
+                                    <span>Youtube</span>
+                                </ReactTooltip>  
+                            </a>
+                            <a href="#" onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff} >
+                                <FontAwesomeIcon 
+                                    data-tip 
+                                    data-for='widgetprofiledetailbottom-tootip-icon-linkedin'
+                                    icon={faLinkedin} 
+                                    style={{
+                                        width: "20px", 
+                                        height: "20px", 
+                                        margin: "5px",
+                                        color: this.setState.mouseOn ? "var(--primary)" : null
+                                    }}
+                                />
+                                <ReactTooltip id='widgetprofiledetailbottom-tootip-icon-linkedin'>
+                                    <span>Linkedin</span>
+                                </ReactTooltip>  
+                            </a>
                             </div>
                         </div>
                     <div>
