@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
-    "@fortawesome/free-brands-svg-icons": "^5.7.1",
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
     "@fortawesome/free-solid-svg-icons": "^5.7.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "font-awesome": "^4.7.0",
@@ -16,6 +16,7 @@
     "react-simple-line-icons": "^1.0.8",
     "react-slick": "^0.23.2",
     "react-toastify": "^4.5.2",
+    "react-tooltip": "^3.9.2",
     "react-weathericons": "^1.0.4",
     "recharts": "^1.4.2",
     "slick-carousel": "^1.8.1"

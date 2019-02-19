@@ -10,6 +10,14 @@
     flex-direction: column;
     align-items: flex-start;
 }
+@media(min-width: 757px){
+    .widgetprofiledetail-card-header {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
 .widgetprofiledetail-card-title {
     text-align: left;
     padding-left: 20px;
