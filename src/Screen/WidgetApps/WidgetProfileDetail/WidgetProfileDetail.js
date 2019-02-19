@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './WidgetProfileDetail.css';
 import CardWidgetProfileDetailHeader from '../../../Components/CardWidgetProfileDetailHeader/CardWidgetProfileDetailHeader'
-import CardProfileBottom from '../../../Components/CardProfileBottom/CardProfileBottom';
+import CardWidgetProfileDetailBottom from '../../../Components/CardWidgetProfileDetailBottom/CardWidgetProfileDetailBottom';
 import Plus from '../../../Assets/Images/plus.svg';
 
 class WidgetProfileDetail extends Component {
@@ -34,7 +34,7 @@ class WidgetProfileDetail extends Component {
                     videos={this.state.videos}
                     tasks={this.state.tasks}
                 />
-                <CardProfileBottom 
+                <CardWidgetProfileDetailBottom 
                     email={this.state.email}
                     phone={this.state.phone}
                     address={this.state.address}

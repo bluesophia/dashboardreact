@@ -1,0 +1,36 @@
+@import '../../Assets/Styles/theme.css';
+
+.widgetprofiledetailbottom-card-body-bottom { 
+    padding: 1.25rem;
+    margin-top: 15px;
+}
+.widgetprofiledetailbottom-card-footer-content {
+    text-align: center;
+    line-height: 1.25;
+}
+.widgetprofiledetailbottom-card-footer-content > p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.widgetprofiledetailbottom-card-body-bottom-button {
+    display: flex;
+    padding-top: 10px;
+    margin: 5px 0;
+}
+@media (max-width: 767px){
+    .widgetprofiledetailbottom-card-body-bottom-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.widgetprofiledetailbottom-card-body-bottom-button > a {
+    text-decoration: none;
+    color: black;
+}
+.widgetprofiledetailbottom-card-body-bottom-button > div {
+    margin-right: 5px;
+}
