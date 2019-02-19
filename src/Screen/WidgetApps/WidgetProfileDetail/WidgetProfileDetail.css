@@ -1,6 +1,6 @@
 @import '../../../Assets/Styles/theme.css';
 
-.profile-card {
+.widgetprofile-card {
     position: relative;
     display: flex;
     -webkit-box-orient: vertical;
@@ -13,6 +13,8 @@
     background-clip: border-box;
     border: 0px solid transparent;
     border-radius: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 20px;
 }
 
