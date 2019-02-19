@@ -9,4 +9,4 @@ export { default as SalesDifferenceBarchart } from './SalesDifferenceBarchart/Sa
 export { default as VisitStatasticsPiechart } from './VisitStatasticsPiechart/VisitStatasticsPiechart';
 export { default as TodoList } from './TodoList/TodoList';
 export { default as Messages } from './Messages/Messages';
-export { default as Chat } from './Chat/Chat';
+export { default as DashboardChat } from './DashboardChat/DashboardChat';

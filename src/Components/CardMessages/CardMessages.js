@@ -18,6 +18,7 @@ class CardMessages extends Component {
                         status={status}
                         circleName={circleName}
                         backgroundColor={backgroundColor}
+                        marginBottom="0"
                         />
                     </span>
                 </div>

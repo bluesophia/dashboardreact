@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import CardChatDifferentOption from '../../../Components/CardChatDifferentOption/CardChatDifferentOption'
-import './WidgetChat.css'
+import CardChat from '../../../Components/CardChat/CardChat'
+import './DashboardChat.css'
+import { Scrollbars } from 'react-custom-scrollbars';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { CircleButton } from '../../../Components/Common/Button/ButtonExports'
 
 
-class WidgetChat extends Component {
+class DashboardChat extends Component {
     render(){
         const commentList = [
             {
@@ -24,15 +25,15 @@ class WidgetChat extends Component {
             },
             {
                 id: 2,
-                name: "Steave Doe",
+                name: "reply",
                 comment: "It’s Great opportunity to work.",
                 time: '10:58 am',
                 imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/5.jpg'
             },
             {
                 id: 3,
-                name: "Steave Doe",
-                comment: "It’s Great opportunity to work.",
+                name: "reply",
+                comment: "Whats budget of the new project.",
                 time: '10:58 am',
                 imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/5.jpg'
             },
@@ -44,18 +45,18 @@ class WidgetChat extends Component {
                 imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg'
             },
         ]
-
         return(
-            <div className="widgetchat-row">
-                <div className="widgetchat-col-lg-6">
-                    <div className="widgetchat-card">
-                        <div className="widgetchat-card-body">
-                            <h5 className="widgetchat-card-title">Recent Chats</h5>
+            <div className="row">
+                <div className="col-lg-6">
+                    <div className="dashboardchat-card">
+                        <div className="dashboardchat-card-body">
+                            <h5 className="dashboardchat-card-title">CHAT</h5>
                         </div>
-                        <div className="widgetchat-comment-widgets" id="comment">
+                        <div className="dashboardchat-comment-widgets" id="comment">
+                        <Scrollbars autoHide>
                         {
                             commentList.map((item, index) => (
-                            <CardChatDifferentOption 
+                            <CardChat 
                                 key={index} 
                                 name={item.name} 
                                 comment={item.comment} 
@@ -66,13 +67,14 @@ class WidgetChat extends Component {
                             />
                             ))
                         }
+                        </Scrollbars>
                         </div>
-                        <div className="widgetchat-card-body-typemessage">
-                            <div className="widgetchat-row">
+                        <div className="dashboardchat-card-body-typemessage">
+                            <div className="dashboardchat-row">
                                 <div>
-                                    <textarea placeholder="Type your message here" className="widgetchat-form-control"></textarea>
+                                    <textarea placeholder="Type your message here" className="dashboardchat-form-control"></textarea>
                                 </div>
-                                <div className="widgetchat-text-right">
+                                <div className="dashboardchat-text-right">
                                     <CircleButton 
                                         backgroundColor={"#1eaaf0"}
                                         icon={faPaperPlane}
@@ -91,4 +93,4 @@ class WidgetChat extends Component {
 }
 
 
-export default WidgetChat;
+export default DashboardChat;
