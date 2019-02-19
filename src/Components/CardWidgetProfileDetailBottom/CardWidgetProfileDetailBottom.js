@@ -3,6 +3,7 @@ import './CardWidgetProfileDetailBottom.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import ReactTooltip from 'react-tooltip'
 import '../../Assets/Styles/theme.css'
 
 class CardWidgetProfileDetailBottom extends Component {
@@ -62,7 +63,11 @@ class CardWidgetProfileDetailBottom extends Component {
                             {
                                 icon.map((item, index) => (
                                     <a href="#" onMouseEnter={this.handleHover} onMouseLeave={this.handleHoverOff}>
+                                    <ReactTooltip id='widgetprofiledetailbottom-tootip-icon'>
+                                        <p>website</p>
+                                    </ReactTooltip>
                                         <FontAwesomeIcon 
+                                            id='widgetprofiledetailbottom-tootip-icon'
                                             icon={item.icon} 
                                             style={{
                                                 width: "20px", 
@@ -70,7 +75,7 @@ class CardWidgetProfileDetailBottom extends Component {
                                                 margin: "5px",
                                                 color: this.setState.mouseOn ? "var(--primary)" : null
                                             }}
-                                        />
+                                        />  
                                     </a>
                                 ))
                             }    

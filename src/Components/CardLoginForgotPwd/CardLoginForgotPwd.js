@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './CardLoginForgotPwd.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
-import { InputEmail, InputPassword } from '../Common/Input/InputExports';
+import { InputEmail } from '../Common/Input/InputExports';
 import { CircleButton } from '../Common/Button/ButtonExports';
 
 class CardLoginForgotPwd extends Component {
