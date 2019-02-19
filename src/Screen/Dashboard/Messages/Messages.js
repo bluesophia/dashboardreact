@@ -60,11 +60,11 @@ class Messages extends Component {
         return(
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="messages-card">
-                        <div className="messages-card-body">
-                            <h5 className="messages-card-title">YOU HAVE 5 NEW MESSAGES</h5>
+                    <div className="dashboard-messages-card">
+                        <div className="dashboard-messages-card-body">
+                            <h5 className="dashboard-messages-card-title">YOU HAVE 5 NEW MESSAGES</h5>
                         </div>
-                        <div className="comment-widgets" id="comment">
+                        <div className="dashboard-comment-widgets" id="comment">
                         <Scrollbars autoHide>
                         {
                             commentList.map((item, index) => (

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import CardChat from '../../../Components/CardChat/CardChat'
 import './Chat.css'
 import { Scrollbars } from 'react-custom-scrollbars';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { CircleButton } from '../../../Components/Common/Button/ButtonExports'
 

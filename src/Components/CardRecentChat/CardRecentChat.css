@@ -1,0 +1,117 @@
+@import '../../Assets/Styles/theme.css';
+
+
+.cardrecentchat-row {
+    display: flex;
+    text-decoration: none;
+    padding: 1.25rem;
+}
+.cardrecentchat-row .cardchat-row-image {
+    display: flex;
+    padding: 0.5rem;
+}
+.cardrecentchat-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+}
+.cardrecentchat-text h5 {
+    font-size: 16px;
+    margin-top: 0;
+    color: #6c757d;
+}
+.cardrecentchat-text > span {
+    white-space: nowrap;
+    max-height: 66px;
+    font-size: 12px !important;
+    font-weight: 300;
+}
+.cardrecentchat-footer {
+    display: flex;
+    margin-top: -4px;
+}
+.cardrecentchat-footer-date{
+    font-size: 12px;
+    font-weight: 300;
+
+}
+.cardrecentchat-round {
+    line-height: 48px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: #01c0c8;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.cardrecentchat-list-ul {
+    margin: 0;
+    padding: 0;
+}
+.cardrecentchat-list-ul > li {
+    margin-top: 30px;
+    list-style: none;
+}
+.cardrecentchat-img {
+    display: inline-block;
+    vertical-align: top;
+}
+.cardrecentchat-content {
+    display: inline-block;
+    padding-left: 15px;
+}
+@media (max-width: 767px){
+    .cardrecentchat-content {
+        width: calc(100% - 80px);
+    }
+}
+.cardrecentchat-content h5{
+    margin-top: 0;
+}
+.cardrecentchat-content-box {
+    display: inline-block;
+    color: #343a40;
+    color: var(--gray-dark);
+    background: #f8f9fa;
+    background: var(--secondary);
+    border-radius: 0.25rem;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.cardrecentchat-time {
+    display: block;
+    font-size: 10px;
+    color: #6c757d;
+    margin: 5px 0 15px 65px;
+}
+/************************************
+                odd
+************************************/
+.cardrecentchat-list-odd-li-cardchat-content {
+    display: flex;
+    padding-left: 15px;
+    justify-content: flex-end;
+}
+.cardrecentchat-list-odd-li-cardchat-content-box {
+    display: inline-block;
+    color: #343a40;
+    color: var(--gray-dark);
+    background: #f8f9fa;
+    background: var(--secondary);
+    border-radius: 0.25rem;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.cardrecentchat-list-odd-li-cardchat-time {
+    text-align: left;
+    display: block;
+    font-size: 10px;
+    color: #6c757d;
+    margin: 5px 0 15px 65px;
+}
