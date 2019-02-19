@@ -16,7 +16,7 @@ class RectangleButton extends Component {
 
     render(){
 
-        const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop, fontSize, borderRadius, padding } = this.props;
+        const { index, color, borderColor,border, backgroundColor, value, fontWeight, marginBottom, marginTop, fontSize, borderRadius, padding, iconsrc } = this.props;
         
         return(
             <div>
@@ -33,6 +33,7 @@ class RectangleButton extends Component {
                     marginTop:marginTop,
                     fontSize:fontSize
                 }}>
+                    { iconsrc ? <img src={iconsrc} style={{width: "10px", marginRight: "10px"}}/> : null }
                     <span>{value}</span>
                 </a>
             </div>
