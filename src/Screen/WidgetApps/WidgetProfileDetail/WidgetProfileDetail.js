@@ -23,7 +23,7 @@ class WidgetProfileDetail extends Component {
     }
     render(){
         return(
-            <div className="widgetprofile-card">
+            <div className="widgetprofiledetail-card">
                 <CardWidgetProfileDetailHeader 
                     id={this.state.id}
                     imgUrl={this.state.imgUrl}

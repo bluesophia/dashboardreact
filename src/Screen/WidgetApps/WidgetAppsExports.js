@@ -8,4 +8,5 @@ export { default as WidgetRecentMessages } from './WidgetRecentMessages/WidgetRe
 export { default as WidgetProfileDetail } from './WidgetProfileDetail/WidgetProfileDetail';
 export { default as WidgetBrowserStats } from './WidgetBrowserStats/WidgetBrowserStats';
 export { default as WidgetSubscribe } from './WidgetSubscribe/WidgetSubscribe';
+export { default as WidgetProfile } from './WidgetProfile/WidgetProfile';
 
