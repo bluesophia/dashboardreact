@@ -7,4 +7,5 @@ export { default as WidgetChatDifferentOption } from './WidgetChatDifferentOptio
 export { default as WidgetRecentMessages } from './WidgetRecentMessages/WidgetRecentMessages';
 export { default as WidgetProfileDetail } from './WidgetProfileDetail/WidgetProfileDetail';
 export { default as WidgetBrowserStats } from './WidgetBrowserStats/WidgetBrowserStats';
+export { default as WidgetSubscribe } from './WidgetSubscribe/WidgetSubscribe';
 
