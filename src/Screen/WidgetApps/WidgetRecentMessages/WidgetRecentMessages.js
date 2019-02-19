@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import CardChat from '../../../Components/CardChat/CardChat'
-import './Chat.css'
+import CardMessages from '../../../Components/CardMessages/CardMessages'
+import './WidgetRecentMessages.css'
+import '../../../Assets/Styles/theme.css'
 import { Scrollbars } from 'react-custom-scrollbars';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { CircleButton } from '../../../Components/Common/Button/ButtonExports'
 
-
-class Chat extends Component {
+class WidgetRecentMessages extends Component {
     render(){
         const commentList = [
             {
                 id: 0,
-                name: 'James Anderson',
+                name: 'Pavan kumar',
                 comment: 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum',
                 time: '9:30 AM',
                 imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
@@ -19,8 +17,8 @@ class Chat extends Component {
             },
             {
                 id: 1,
-                name: 'Bianca Doe',
-                comment: "It’s Great opportunity to work.",
+                name: 'Sonu Nigam',
+                comment: "I've sung a song! See you at",
                 time: '9:10 AM',
                 imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg',
                 status: 'busy'
@@ -28,10 +26,11 @@ class Chat extends Component {
             {
                 id: 2,
                 name: 'Arijit Sinh',
-                value: 'A',
+                circleName: 'A',
                 comment: 'Simply dummy text of the printing and typesetting industry.',
                 time: '9:08 AM',
-                status: 'away'
+                status: 'away',
+                backgroundColor: 'var(--cyan)'
             },
             {
                 id: 3,
@@ -43,8 +42,8 @@ class Chat extends Component {
             },
             {
                 id: 4,
-                name: 'Angelina Rhodes',
-                comment: 'Well we have good budget for the project',
+                name: 'Pavan kumar',
+                comment: 'Welcome to the Elite Admin',
                 time: '9:30 AM',
                 imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/1.jpg',
                 status: 'online'
@@ -56,47 +55,46 @@ class Chat extends Component {
                 time: '9:10 AM',
                 imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/2.jpg',
                 status: 'busy'
+            },
+            {
+                id: 6,
+                name: 'Arijit Sinh',
+                comment: 'I am a singer!',
+                time: '9:08 AM',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/3.jpg',
+                status: 'away'
+            },
+            {
+                id: 7,
+                name: 'Pavan kumar',
+                comment: "Just see the my admin!",
+                time: '9:02 AM',
+                imgUrl: 'http://eliteadmin.themedesigner.in/demos/bt4/assets/images/users/4.jpg',
+                status: 'away'
             }
         ]
         return(
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="chat-card">
-                        <div className="chat-card-body">
-                            <h5 className="chat-card-title">CHAT</h5>
+                    <div className="widget-messages-card">
+                        <div className="widget-messages-card-body">
+                            <h5 className="widget-messages-card-title">Recent Messages</h5>
                         </div>
-                        <div className="chat-comment-widgets" id="comment">
-                        <Scrollbars autoHide>
+                        <div className="widget-comment-widgets" id="comment">
                         {
                             commentList.map((item, index) => (
-                            <CardChat 
+                            <CardMessages 
                                 key={index} 
                                 name={item.name} 
+                                circleName={item.circleName}
                                 comment={item.comment} 
                                 time={item.time} 
                                 imgUrl={item.imgUrl}
                                 status={item.status}
-                                value={item.value}
+                                backgroundColor={item.backgroundColor}
                             />
                             ))
                         }
-                        </Scrollbars>
-                        </div>
-                        <div className="chat-card-body-typemessage">
-                            <div className="chat-row">
-                                <div>
-                                    <textarea placeholder="Type your message here" className="chat-form-control"></textarea>
-                                </div>
-                                <div className="chat-text-right">
-                                    <CircleButton 
-                                        backgroundColor={"#1eaaf0"}
-                                        icon={faPaperPlane}
-                                        width={"50px"}
-                                        height={"50px"}
-                                        color={"white"}
-                                    />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,4 +104,4 @@ class Chat extends Component {
 }
 
 
-export default Chat;
+export default WidgetRecentMessages;

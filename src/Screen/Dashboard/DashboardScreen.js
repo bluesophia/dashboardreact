@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Infobox, YearlySales, Weatherbox, Commentbox, Recentcomments, SalesOverview, 
     SalesDifferenceAreachart, SalesDifferenceBarchart, VisitStatasticsPiechart,
-    TodoList, Messages, Chat, DashboardChat } from './DashboardExports';
+    TodoList, Messages, DashboardChat } from './DashboardExports';
 
 class DashboardScreen extends Component {
     render(){
@@ -18,7 +18,6 @@ class DashboardScreen extends Component {
                 <VisitStatasticsPiechart />
                 <TodoList />
                 <Messages />
-                <Chat />
                 <DashboardChat />
             </div>
         )

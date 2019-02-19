@@ -4,4 +4,5 @@ export { default as WidgetProjectoftheMonth } from './WidgetProjectoftheMonth/Wi
 export { default as WidgetWeatherReport } from './WidgetWeatherReport/WidgetWeatherReport';
 export { default as WidgetRecentChat } from './WidgetRecentChat/WidgetRecentChat';
 export { default as WidgetChatDifferentOption } from './WidgetChatDifferentOption/WidgetChatDifferentOption';
+export { default as WidgetRecentMessages } from './WidgetRecentMessages/WidgetRecentMessages';
 
