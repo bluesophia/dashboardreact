@@ -12,12 +12,6 @@
     background-color: #fff;
     flex-basis: auto;
 }
-@media (min-width: 576px){
-    .widgetvisitscard-card {
-        flex: 1 0 0%;
-        word-wrap: break-word;
-    } 
-}
 .widgetvisitscard-card h3{
     margin-top: 0;
     font-size: 24px;

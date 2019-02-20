@@ -43,10 +43,3 @@
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 576px){
-    .widgetvisits-card-group {
-        display: flex;
-        flex-basis: auto;
-        flex-flow: row wrap;
-    } 
-}
