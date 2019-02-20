@@ -3,11 +3,10 @@
 .cardwidgettotalearning-row {
     border-bottom: 1px solid transparent;
     padding: 14px;
+    padding-top: 0;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     align-items: center;
-    /* justify-content: space-between;
-    align-items: center; */
 }
 .cardwidgettotalearning-row > img{
     width: 30px;
