@@ -3,6 +3,7 @@
 .widgetbrowserstats-row {
     border-bottom: 1px solid transparent;
     padding: 14px;
+    padding-top: 16px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     /* justify-content: space-between;

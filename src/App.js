@@ -25,7 +25,6 @@ class App extends Component {
           <PricingScreen />
           <AlertScreen /> */}
           <WidgetAppsScreen />
-          
         </div>
       </div>
     );

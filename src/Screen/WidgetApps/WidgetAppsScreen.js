@@ -10,7 +10,7 @@ class WidgetApps extends Component {
     render(){
         return(
             <div>
-                {/* <WidgetRecentcomments />
+                <WidgetRecentcomments />
                 <WidgetTodoList />
                 <WidgetProjectoftheMonth />
                 <WidgetWeatherReport />
@@ -22,7 +22,7 @@ class WidgetApps extends Component {
                 <WidgetSubscribe />
                 <WidgetProfile/>
                 <WidgetProfileSolid/>
-                <WidgetVisitsaroundCountries /> */}
+                <WidgetVisitsaroundCountries />
                 <WidgetFeeds />
                 <WidgetTotalEarning />
             </div>
