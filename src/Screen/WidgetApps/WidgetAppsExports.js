@@ -11,4 +11,5 @@ export { default as WidgetSubscribe } from './WidgetSubscribe/WidgetSubscribe';
 export { default as WidgetProfile } from './WidgetProfile/WidgetProfile';
 export { default as WidgetProfileSolid } from './WidgetProfileSolid/WidgetProfileSolid';
 export { default as WidgetVisitsaroundCountries } from './WidgetVisitsaroundCountries/WidgetVisitsaroundCountries';
+export { default as WidgetFeeds } from './WidgetFeeds/WidgetFeeds';
 

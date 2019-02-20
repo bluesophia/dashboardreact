@@ -58,7 +58,7 @@ class WidgetVisitsaroundCountries extends Component {
                                         />
                                     ))
                                 }    
-                                </div>  
+                            </div>  
                         </div>
                     </div>
                 </div>
