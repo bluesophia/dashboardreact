@@ -5,12 +5,12 @@ import './CardWidgetProfile.css';
 class CardWidgetProfile extends Component {
     render(){
 
-        const { id, imgUrl, name, followers, following, tweets, backgroundSrc } = this.props;
+        const { id, imgUrl, name, followers, following, tweets, backgroundSrc, backgroundColor } = this.props;
 
         return(
             <div className="widgetprofile-card-body">
                 <img src={backgroundSrc} className="widgetprofile-card-body-img"/>
-                <div className="widgetprofile-card-header">
+                <div className="widgetprofile-card-header" style={{backgroundColor: backgroundColor}}>
                     <ImgCircle key={id} src={imgUrl} width={"100px"}/>
                     <div className="widgetprofile-card-title">
                         <h3 className="widgetprofile-card-name">{name}</h3>

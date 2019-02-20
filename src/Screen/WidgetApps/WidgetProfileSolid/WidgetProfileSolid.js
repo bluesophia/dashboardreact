@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './WidgetProfile.css';
+import './WidgetProfileSolid.css';
 import CardWidgetProfile from '../../../Components/CardWidgetProfile/CardWidgetProfile'
 import Plus from '../../../Assets/Images/plus.svg';
 
-class WidgetProfile extends Component {
+class WidgetProfileSolid extends Component {
     constructor(props){
         super(props);
         
@@ -18,7 +18,7 @@ class WidgetProfile extends Component {
             email: 'hannagover@gmail.com',
             phone: '+91 654 784 547',
             address: '71 Pilgrim Avenue Chevy Chase, MD 20815',
-            backgroundColor: 'rgba(56, 83, 161, 0.7)'
+            backgroundColor: 'var(--blue)'
         }
     }
     render(){
@@ -42,4 +42,4 @@ class WidgetProfile extends Component {
 }
 
 
-export default WidgetProfile;
+export default WidgetProfileSolid;
