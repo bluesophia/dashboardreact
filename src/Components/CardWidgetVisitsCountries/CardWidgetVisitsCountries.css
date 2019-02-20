@@ -1,0 +1,108 @@
+@import '../../Assets/Styles/theme.css';
+
+/************************************
+         widgetvisitscard
+************************************/
+
+.widgetvisitscard-card {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+    min-width: 0;
+    background-color: #fff;
+    flex-basis: auto;
+}
+.widgetvisitscard-card h3{
+    margin-top: 0;
+    font-size: 24px;
+}
+.widgetvisitscard-card h3 > i {
+    font-size: 24px;
+}
+.widgetvisitscard-card h2 {
+    font-size: 30px;
+}
+.widgetvisitscard-card p {
+    font-size: 14px;
+    font-weight: 300;
+}
+.widgetvisitscard-card .wi {
+    font-size: 36px;
+}
+.widgetvisitscard-card-body {
+    flex: 1 1 auto;
+    font-size: 14px;
+    font-weight: 300;
+}
+.widgetvisitscard-card-body h6 {
+    font-size: 14px;    
+}
+.widgetvisitscard-contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.widgetvisitscard-contentBox > p {
+    color: #6c757d;
+}
+.widgetvisitscard-contentBox h3 {
+    text-align: left;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 30px;
+}
+.widgetvisitscard-contentBox small {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* .widgetvisitscard-counterBox {
+    margin-left: auto;
+}    */
+/************************************
+              progress
+************************************/
+.widgetvisitscard-progress {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    font-size: 0.65625rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+}
+/************************************
+      custom-color-progress-bar
+************************************/
+.widget-progress-bar-primary {
+    background-color: var(--primary);
+    height: 6px;
+}
+.widget-progress-bar-cyan {
+    background-color: var(--cyan);
+    height: 6px;
+}
+.widget-progress-bar-purple {
+    background-color: var(--purple);
+    height: 6px;
+}
+.widget-progress-bar-green {
+    background-color: var(--teal);
+    height: 6px;
+}
+.widget-progress-bar-blue {
+    background-color: var(--blue);
+    height: 6px;
+}
+.widget-progress-bar-black {
+    background-color: var(--gray-m-dark);
+    height: 6px;
+}
+.widget-progress-bar-yellow {
+    background-color: var(--yellow);
+    height: 6px;
+}
+
+
+
+
+
