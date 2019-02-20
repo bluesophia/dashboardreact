@@ -1,6 +1,6 @@
 @import '../../../Assets/Styles/theme.css';
 
-.widgetsubscribe-card {
+.widgetvisits-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,14 +14,14 @@
     margin-right: 5px;
     margin-bottom: 20px;
 }
-.widgetsubscribe-card-body {
+.widgetvisits-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
 }
-.widgetsubscribe-card-title {
+.widgetvisits-card-title {
     position: relative;
     font-weight: 500;
     font-size: 18px;
@@ -29,13 +29,24 @@
     margin-top: 0;
 }
 
-.widgetsubscribe-input {
+.widgetvisits-input {
     position: relative;
     margin-bottom: 10px;
     height: auto;
     position: relative;
 }
-.widgetsubscribe-submit {
+.widgetvisits-submit {
     display: flex;
     justify-content: flex-start;
+}
+.widgetvisits-card-group  {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 576px){
+    .widgetvisits-card-group {
+        display: flex;
+        flex-basis: auto;
+        flex-flow: row wrap;
+    } 
 }
