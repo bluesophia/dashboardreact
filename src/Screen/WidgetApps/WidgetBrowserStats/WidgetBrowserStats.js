@@ -56,7 +56,7 @@ class WidgetBrowserStats extends Component {
                         <div className="widgetbrowserstats-card-body">
                             <h5 className="widgetbrowserstats-card-title">Browser Stats</h5>
                         </div>
-                        <div className="widgetbrowserstats-widgets" id="comment">
+                        <div className="widgetbrowserstats-list" id="comment">
                         {
                             browserList.map((item, index) => (
                             <CardWidgetBrowserStats 
