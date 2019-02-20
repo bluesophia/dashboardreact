@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './CardWidgetBrowserStats.css';
+import './CardWidgetTotalEarning.css';
 import Badge from '../Common/Badge/Badge'
+import ImgCircle from '../Common/ImgCircle/ImgCircle';
 
-class CardWidgetBrowserStats extends Component {
+class CardWidgetTotalEarning extends Component {
     state={
         visible: false
     }
@@ -23,16 +24,15 @@ class CardWidgetBrowserStats extends Component {
     }
     render(){
 
-        const { name, imgUrl, backgroundColor, percent } = this.props;
+        const { name, imgUrl, backgroundColor, earning } = this.props;
 
         return(
-            <div className="widgetbrowserstats-row" onMouseEnter={this.visibleIcon} onMouseLeave={this.hideIcon}>
-                <img src={imgUrl} />
+            <div className="cardwidgettotalearning-row" onMouseEnter={this.visibleIcon} onMouseLeave={this.hideIcon}>
+                <ImgCircle src={imgUrl} width="50px"/>
                 <h5>{name}</h5>
-                <Badge backgroundColor={backgroundColor} value={percent} color={"#fff"} borderRadius={"5px"}/>
+                <Badge backgroundColor={backgroundColor} value={earning} color={"#fff"} borderRadius={"5px"}/>
             </div>
         )
     }
 };
-
-export default CardWidgetBrowserStats;
+export default CardWidgetTotalEarning;

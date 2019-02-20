@@ -20,12 +20,12 @@ class CardTitlewithOptions extends Component {
     }
     render(){
 
-        const { titleName, optionList=[] } = this.props; 
+        const { titleName, optionList=[], fontSize, fontWeight } = this.props; 
 
         return(
             <div>
                 <div>
-                    <h5 className="titlewithoption-card-title">
+                    <h5 className="titlewithoption-card-title" style={{fontSize: fontSize, fontWeight: fontWeight}}>
                         {titleName}
                     </h5>
                 </div>

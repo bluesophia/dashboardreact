@@ -1,21 +1,22 @@
 @import '../../Assets/Styles/theme.css';
 
-.widgetbrowserstats-row {
+.cardwidgettotalearning-row {
     border-bottom: 1px solid transparent;
     padding: 14px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
     /* justify-content: space-between;
     align-items: center; */
 }
-.widgetbrowserstats-row > img{
+.cardwidgettotalearning-row > img{
     width: 30px;
     height: 30px;
     margin: 1rem;
     margin-top: 0;
     margin-bottom: 0;
 }
-.widgetbrowserstats-row > h5{
+.cardwidgettotalearning-row > h5{
     margin-top: 0;
     margin-bottom: 0;
     padding: 1rem;
@@ -24,6 +25,3 @@
     font-size: 14px;
 }
 
-.widgetbrowserstats-row:hover {
-    background: #f8f9fa;
-}
