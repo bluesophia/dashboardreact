@@ -1,9 +1,6 @@
 @import '../../../Assets/Styles/theme.css';
 
-/************************************
-           widgetweather
-************************************/
-.widgetweather-card{
+.treeviewdefault-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,105 +10,56 @@
     background-color: var(--white);
     border: 0px solid transparent;
     border-radius: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 20px;
 }
-.widgetweather-card-body {
+.treeviewdefault-card-body {
+    display: flex;
+    justify-content: space-between;
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
 }
-.widgetweather-card-icon-body {
-    flex: 1 1 auto;
+.treeviewdefault-card-title {
+    align-self: center;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.treeviewdefault-card-title > h5 {
+    margin-bottom: 0;
+}
+
+.treeviewdefault-tree {
+    position: relative;
+    margin-bottom: 10px;
     padding: 1.25rem;
-    font-size: 14px;
-    font-weight: 300;
-    width: 100%;
-    padding-top: 0;
 }
-.widgetweather > h5 {
-    font-size: 16px;
-    margin-top: 0;
-}   
-.widgetweather-weather {
-    display: flex; 
-    flex-direction: column;
-    margin-top: 10px;
-}
-.widgetweather-weather-icon {
-    padding: 0.5rem;
-    display: flex;
-    color: var(--blue);
-}
-.widgetweather-weather-icon-wi {
-    font-size:36px;
-    margin-right: 14px;
-    margin-top: 0;
-}
-.widgetweather-weather-icon-h1 {
-    font-size: 48px;
-    margin-top: 0;
-    font-weight: 300;
-}
-.widgetweather-weather-icon-sup {
-    top: 0.5em;
-    font-size: 36px;
-}
-.widgetweather-weather-area {
-    padding: 0.5rem;
-}
-.widgetweather-weather-area > h3{
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 24px;
-}
-.widgetweather-weather-area > small{
-    font-size: 80%;
-    font-weight: 400;
-}
-.projectomonth-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-.projectomonth-ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin-bottom: 0;
-}
-
-.projectomonth-li-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0;
-}    
-.projectomonth-li {
-    list-style-type: none;
-}
-
-.projectomonth-li:first-child {
+.tree-view_item  {
+    position: relative;
     display: block;
-    font-size: 20px;
-    color: #fb9678;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
-.projectomonth-li:nth-child(2) {
+.tree-view_children {
+    position: relative;
     display: block;
-    padding: 10px 0 0;
-    color: #6c757d;
-    font-size: 14px;
-    font-weight: 400;
+    /* padding: 0.75rem 1.25rem; */
+    margin-bottom: -1px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-.projectomonth-li:nth-child(3) {
+.treeviewdefault-treeview-grandchildren {
+    position: relative;
     display: block;
-    padding: 10px 0 0;
-    margin-top: 5px;
-    font-size: 24px;
-    font-weight: 400;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
