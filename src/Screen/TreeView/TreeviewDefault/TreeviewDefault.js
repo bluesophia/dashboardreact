@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './TreeviewDefault.css';
-import TreeView from 'react-treeview';
+// import TreeView from 'react-treeview';
 import '../../../Assets/Styles/weather-icons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFolder, faPlus } from '@fortawesome/free-solid-svg-icons';
-import Plus from '../../../Assets/Images/plus-black.svg';
-import Minus from '../../../Assets/Images/minus-black.svg';
+import { faFolder } from '@fortawesome/free-solid-svg-icons';
 
 // treevew default list
 const treeviewDefaultList = [
@@ -38,28 +36,38 @@ const treeviewDefaultList = [
         children: [],
     },
   ];
-
 class TreeviewDefault extends Component {
     constructor(props){
         super(props);
         this.state = {
             foldercollapsed: treeviewDefaultList.map(() => false),
+            togglePlus: false,
+            classon: false
         }
-        this.handleToggle = this.handleToggle.bind(this);
+        this.handleClick = this.handleClick.bind(this);
 
     }
-
-    handleToggle(i) {
-        
-        let [...foldercollapsed] = this.state.foldercollapsed;
-        foldercollapsed[i] = !foldercollapsed[i];
-        this.setState({
-            foldercollapsed: foldercollapsed
-        })
+    
+    // onclick change plus minus icon + folder collapsed
+    handleClick() {
+        this.setState(prevstate => ({
+            classon: !prevstate.classon
+        }))
+    //    document.getElementsByClassName(".nested").classList.toggle("active");
+    //    var css = (this.props.showHideSidenav === "hidden") ? "show" : "hidden";
+    //    this.setState({"showHideSidenav":css});
     }
 
     render(){
-
+        let toggler = document.getElementsByClassName("caret");
+        var i;
+        
+        // for (i = 0; i < toggler.length; i++) {
+        //   toggler[i].addEventListener("click", function() {
+        //     //   alert("hi");
+        //     this.classList.toggle("caret-down");
+        //   });
+        // }
         const foldercollapsed = this.state.foldercollapsed;
 
      return(
@@ -67,56 +75,34 @@ class TreeviewDefault extends Component {
         <div className="treeviewdefault-col-lg-6">
             <div className="treeviewdefault-card">
                 <div className="treeviewdefault-card-body">
-                    <h5 className="treeviewdefault-card-title">TO DO LIST</h5>
+                    <h5 className="treeviewdefault-card-title">Default</h5>
                 </div>
                 <div className="treeviewdefault-tree">
+                    <div className="treeviewdefault-tree-border">
                     {/* data mapping */}
-                    { treeviewDefaultList.map((item, i) => {
-
-                        // Parent folder
-                        const label = 
-                            <span className="treeviewdefault-parent" onClick={this.handleToggle.bind(null, i)}>
-                                { foldercollapsed ? 
-                                    <img src={Plus} style={{ width: '10px', marginRight: '10px' }}/> 
-                                    :  
-                                    <img src={Minus} style={{ width: '10px', marginRight: '10px' }}/> 
-                                } 
-                                <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
-                                Parent {i + 1}
-                            </span>;
-
-                        return (
-                            <TreeView
-                            className="treeviewdefault-treeview"
-                            key={i}
-                            nodeLabel={ label ? label : null }
-                            defaultCollapsed={false}
-                            collapsed={foldercollapsed[i]}
-                            >
-                            {/* Children folder */}
-                            {item.children.map(child => {
-                                const label2 = <span className="treeviewdefault-children-name"><FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>{child.name}</span>;
-                                return(
-                                    // grandchildren folder
-                                    <TreeView nodeLabel={ label2 ? label2 : null } key={child.name} defaultCollapsed={false} onClick={this.handleToggle.bind(null, i)}>
-                                        { child.detail1 ? 
-                                            <div className="treeviewdefault-treeview-grandchildren">
-                                                <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
-                                                {child.detail1}
-                                            </div> 
-                                        : null }
-                                        { child.detail2 ? 
-                                            <div className="treeviewdefault-treeview-grandchildren">
-                                                <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
-                                                    {child.detail2}
-                                            </div> 
-                                        : null }
-                                    </TreeView>
-                                )
-                            })}
-                            </TreeView>
-                        );
-                    })}
+                    <ul id="myUL">
+                        <li><span class={ this.state.classon ? "caret active caret-down" : "caret"} onClick={this.handleClick}>Beverages</span>
+                            <li class={ this.state.classon ? "active" : "nested"}>
+                            <li>Water</li>
+                            <li>Coffee</li>
+                            <li><span class="caret">Tea</span>
+                                <li class={ this.state.classon ? "active" : "nested"}>
+                                <li>Black Tea</li>
+                                <li>White Tea</li>
+                                <li><span class="caret">Green Tea</span>
+                                    <ul class={ this.state.classon ? "active" : "nested"}>
+                                    <li>Sencha</li>
+                                    <li>Gyokuro</li>
+                                    <li>Matcha</li>
+                                    <li>Pi Lo Chun</li>
+                                    </ul>
+                                </li>
+                                </li>
+                            </li>
+                            </li>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
