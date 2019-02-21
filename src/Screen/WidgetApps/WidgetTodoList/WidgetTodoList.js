@@ -48,8 +48,8 @@ class WidgetTodoList extends Component {
             },
         ]
         return(
-            <div className="row">
-                <div className="col-lg-6">
+            <div className="widgettodolist-row">
+                <div className="widgettodolist-col-lg-6">
                     <div className="widgettodolist-card">
                         <div className="widgettodolist-card-body">
                             <h5 className="widgettodolist-card-title">TO DO LIST</h5>
