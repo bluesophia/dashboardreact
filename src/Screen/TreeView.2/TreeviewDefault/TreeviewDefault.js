@@ -54,7 +54,7 @@ class TreeviewDefault extends Component {
     
     // onclick change plus minus icon + folder collapsed
     handleClick(e) {
-        // alert(e.target.id);
+        alert(e.target.id);
             this.setState(prevstate => ({
                 classon: !prevstate.classon,
                 childclaasson:!prevstate.childclaasson
