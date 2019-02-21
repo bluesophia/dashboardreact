@@ -7,3 +7,4 @@ export { default as PricingScreen } from './Pricing/PricingScreen';
 export { default as AlertScreen } from './Alert/AlertScreen';
 export { default as WidgetAppsScreen } from './WidgetApps/WidgetAppsScreen';
 export { default as TreeViewScreen } from './TreeView/TreeViewScreen';
+export { default as Nestable } from './Nestable/NestableScreen';
