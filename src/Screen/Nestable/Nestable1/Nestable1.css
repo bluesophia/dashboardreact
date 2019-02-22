@@ -64,7 +64,6 @@
 .nestable-item:first-child, .nestable-item-copy:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    margin-bottom: 1rem;
 }
 
 .nestable {
