@@ -1,0 +1,56 @@
+.nestable-item, .nestable-item-copy {
+    margin: 0 !important;
+}
+.nestable-item .nestable-list, .nestable-item-copy .nestable-list {
+    margin: 0 !important;
+}
+.nestable-group {
+    padding: 0 0 0 0 !important;
+}
+.nestable-item.is-dragging:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.25rem;
+    background: white !important;
+    border: 1px dashed #eee !important;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+.nestable-item-name > div {
+    background: #fff; 
+    font-size: 13px;  
+    padding: 6px 16px;
+    margin: 5px 0; 
+    border:  1px solid rgba(120, 130, 140, 0.13);
+    position: relative;
+    cursor: all-scroll;
+}
+.nestable-item-name > div:hover {
+    color: #317eeb;
+}
+.nestable-item:first-child, .nestable-item-copy:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nestable {
+    position: relative; 
+    padding: 1.25rem;
+    padding-top: 0.5rem;
+    background: var(--white); 
+    cursor: all-scroll;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    border-radius: 0;
+    color: #979898;
+    font-size: 13px;
+}
+.icon-minus-gray {
+    width: 20px;
+    height: 20px;
+    transform: scale(0.6);
+}

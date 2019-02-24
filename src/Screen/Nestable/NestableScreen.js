@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nestable1, Nestable2 } from './NestableExports.js';
+import { Nestable1, Nestable2, Nestable3 } from './NestableExports.js';
 
 class NestableScreen extends Component {
     render(){
@@ -7,6 +7,7 @@ class NestableScreen extends Component {
             <div className="nestablescreen-wrapper">
                 <Nestable1 />
                 <Nestable2 />
+                <Nestable3 />
             </div>
         )
     }

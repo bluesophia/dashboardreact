@@ -1,7 +1,7 @@
 @import '../../../Assets/Styles/theme.css';
 @import '../NestableCommon.css';
 
-.nestable2-card {
+.nestable3-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     margin-right: 15px;
     margin-bottom: 20px;
 }
-.nestable2-card-body {
+.nestable3-card-body {
     display: flex;
     justify-content: space-between;
     flex: 1 1 auto;
@@ -25,13 +25,13 @@
     font-weight: 300;
     width: 100%;
 }
-.nestable2-card-title {
+.nestable3-card-title {
     align-self: center;
     position: relative;
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
 }
-.nestable2-card-title > h5 {
+.nestable3-card-title > h5 {
     margin-bottom: 0;
 }

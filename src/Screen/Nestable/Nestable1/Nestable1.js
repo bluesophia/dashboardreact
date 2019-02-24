@@ -8,23 +8,23 @@ import Nestable from 'react-nestable';
 const Nestable1tList = [
     {   
         id: 0,
-        text: 'item 1'
+        text: 'Item 1'
     },
     {
         id:1,
-        text: 'item 2',
+        text: 'Item 2',
         children: [
-            { id:2, text: 'item 3' },
-            { id:3, text: 'item 4' },
-            { id:4, text: 'item 5', 
+            { id:2, text: 'Item 3' },
+            { id:3, text: 'Item 4' },
+            { id:4, text: 'Item 5', 
                 children: [
-                    {id:5, text: 'item 6' }, 
-                    {id:6, text: 'item 7' }, 
-                    {id:7, text: 'item 8' }
+                    {id:5, text: 'Item 6' }, 
+                    {id:6, text: 'Item 7' }, 
+                    {id:7, text: 'Item 8' }
                 ]
             },
-            { id:8, text: 'item 9' },
-            { id:9, text: 'item 10' },
+            { id:8, text: 'Item 9' },
+            { id:9, text: 'Item 10' },
         ]
     }
   ];
