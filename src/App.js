@@ -18,9 +18,9 @@ class App extends Component {
           <TimelineScreen />
           <PricingScreen />
           <AlertScreen />
-          <WidgetAppsScreen /> 
-          <TreeViewScreen /> */}
-          <Nestable />
+          <WidgetAppsScreen />  */}
+          <TreeViewScreen />
+          {/* <Nestable /> */}
         </div>
       </div>
     );

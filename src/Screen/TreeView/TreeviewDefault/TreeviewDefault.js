@@ -54,7 +54,10 @@ class TreeviewDefault extends Component {
     
     // onclick change plus minus icon + folder collapsed
     handleClick(e) {
-        // alert(e.target.id);
+        
+        const target = e.target.id;
+        alert(target);
+        
             this.setState(prevstate => ({
                 classon: !prevstate.classon,
                 childclaasson:!prevstate.childclaasson
@@ -90,13 +93,15 @@ class TreeviewDefault extends Component {
                                 return(
                                     <div>
                                     <li className={ this.state.classon ? "caret active caret-down blue" : "caret blue"} id={index} onClick={this.handleClick}>   
-                                    {item.type}
+                                        <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
+                                        {item.type}
                                     </li>
                                     {
                                         item.children.map((child) => {
                                             return(
                                             <li className={ this.state.classon ? "caret-child-active caret-down" : "caret-child"} onClick={this.handleClick}>  
-                                            {child.name}
+                                                <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
+                                                {child.name}
                                             </li> 
                                             )
                                         })
