@@ -39,10 +39,6 @@ const Nestable1tList = [
           </div>
         );
     };
-    // renderIcon for collapsed
-    // const renderIcon = ({ isCollapsed  }) => {
-    //     <DefaultIcon />
-    // }
 
 class Nestable1 extends Component {
     render(){
@@ -57,8 +53,6 @@ class Nestable1 extends Component {
                             collapsed={false}
                             items={Nestable1tList}
                             renderItem={renderItem}
-                            // collapseIcon={collapseIcon}
-                            // className="nestable"
                         />
                     </div>
                 </div>
