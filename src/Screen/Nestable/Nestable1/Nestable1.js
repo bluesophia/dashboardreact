@@ -3,14 +3,8 @@ import './Nestable1.css';
 import Nestable from 'react-nestable';
 
 // Nestable1tListist => id must be unique    
-const styles = {
-    position: "relative",
-    padding: "10px 15px",
-    fontSize: "20px",
-    border: "1px solid #f9fafa",
-    background: "#f9fafa",
-    cursor: "pointer"
-  };
+
+
 const Nestable1tList = [
     {   
         id: 0,
@@ -38,7 +32,7 @@ const Nestable1tList = [
     // renderItem  
     const renderItem = ({ item, collapseIcon, handler }) => {
         return (
-          <div style={styles}>
+          <div>
             {handler}
             {collapseIcon}
             {item.text}
@@ -63,7 +57,7 @@ class Nestable1 extends Component {
                             collapsed={false}
                             items={Nestable1tList}
                             renderItem={renderItem}
-                            collapseIcon={collapseIcon}
+                            // collapseIcon={collapseIcon}
                             // className="nestable"
                         />
                     </div>
@@ -72,5 +66,4 @@ class Nestable1 extends Component {
         )
     }   
 }
-
 export default Nestable1;

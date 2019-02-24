@@ -5,7 +5,7 @@ import './NestableScreen.css'
 class NestableScreen extends Component {
     render(){
         return(
-            <div className="treeviewScreen-wrapper">
+            <div className="nestablescreen-wrapper">
                 <div><Nestable1 /></div>
             </div>
         )
