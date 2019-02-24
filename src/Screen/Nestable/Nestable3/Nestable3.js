@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import './Nestable2.css';
+import './Nestable3.css';
 import Nestable from 'react-nestable';
 
-// Nestable12Listist => id must be unique    
-const Nestable2tList = [
+// Nestable3Listist => id must be unique    
+const Nestable3tList = [
+    {   
+        id: 0,
+        text: 'Item 13'
+    },
     {   
         id: 0,
         text: 'Item 13'
@@ -12,31 +16,18 @@ const Nestable2tList = [
         id: 1,
         text: 'Item 14'
     },
-    {   
-        id: 3,
-        text: 'Item 16'
-    },
-    {   
-        id: 4,
-        text: 'Item 17'
-    },
-    {   
-        id: 5,
-        text: 'Item 18'
-    },
-    {   
-        id: 6,
-        text: 'Item 19'
-    },
     {
         id:2,
         text: 'Item 15',
         children: [
-            { id:2, text: 'Item 16' },
-            { id:3, text: 'Item 17' },
-            { id:4, text: 'Item 18' }
+            { id:3, text: 'Item 16' },
+            { id:4, text: 'Item 17' },
+            { id:5, text: 'Item 18' },
+            { id:6, text: 'Item 19' },
+            { id:7, text: 'Item 20' },
+            { id:7, text: 'Item 21' },
         ]
-    },
+    }
   ];
       
     // renderItem  
@@ -50,20 +41,20 @@ const Nestable2tList = [
         );
     };
 
-class Nestable2 extends Component {
+class Nestable3 extends Component {
     render(){
         return(
-            <div className="nestable2-row">
-                <div className="nestable2-col-lg-6">
-                    <div className="nestable2-card">
-                        <div className="nestable2-card-body">
-                            <h5 className="nestable2-card-title">Nestable2</h5>
+            <div className="nestable3-row">
+                <div className="nestable3-col-lg-6">
+                    <div className="nestable3-card">
+                        <div className="nestable3-card-body">
+                            <h5 className="nestable3-card-title">Nestable3</h5>
                         </div>
                         <div>
                         <div>
                         <Nestable
                             collapsed={false}
-                            items={Nestable2tList}
+                            items={Nestable3tList}
                             renderItem={renderItem}
                         />
                         </div>   
@@ -74,4 +65,4 @@ class Nestable2 extends Component {
         )
     }   
 }
-export default Nestable2;
+export default Nestable3;
