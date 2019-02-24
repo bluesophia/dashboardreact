@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Nestable1 } from './NestableExports.js';
-import './NestableScreen.css'
+import { Nestable1, Nestable2 } from './NestableExports.js';
 
 class NestableScreen extends Component {
     render(){
         return(
             <div className="nestablescreen-wrapper">
-                <div><Nestable1 /></div>
+                <Nestable1 />
+                <Nestable2 />
             </div>
         )
     }
