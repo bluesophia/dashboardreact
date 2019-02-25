@@ -1,0 +1,6 @@
+@media (min-width: 1000px) {
+    .nestablescreen-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
