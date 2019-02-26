@@ -43,10 +43,6 @@
     margin-bottom: 10px;
     padding: 1.25rem;
 }
-.treeviewdefault-parent {
-    transition: all 0.5s;
-    border-radius: 3px;
-  }
 .tree-view_item  {
     position: relative;
     display: block;
@@ -62,6 +58,18 @@
     margin-bottom: -1px;
     background-color: #fff;
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
+}
+.treeviewdefault-treeview:before {
+    content: '\002B';
+    margin-right: 5px;
+    font-weight: 200;
+    font-size: 17px;
+}
+.parent-minus:before {
+    content: '\2212' !important;
+    margin-right: 5px;
+    font-weight: 200;
+    font-size: 17px;
 }
 .treeviewdefault-treeview-grandchildren {
     position: relative;
@@ -83,10 +91,6 @@
   overflow-y: hidden;
 }
 
-.tree-view_item {
-  /* immediate child of .tree-view, for styling convenience */
-}
-
 /* style for the children nodes container */
 .tree-view_children {
   margin-left: 16px;
@@ -99,7 +103,7 @@
 .tree-view_arrow {
   cursor: pointer;
   margin-right: 6px;
-  display: inline-block;
+  display: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -118,6 +122,10 @@
   transform: rotate(-90deg);
 }
 .treeviewdefault-children-name-indent {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.treeviewdefault-grandchildren-name-indent {
     margin-left: 10px;
     margin-right: 10px;
 }

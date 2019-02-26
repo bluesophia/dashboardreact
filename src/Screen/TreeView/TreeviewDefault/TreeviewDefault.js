@@ -10,7 +10,8 @@ const treeviewDefaultList = [
     {
         id:0,
         type: 'Parent 1',
-        collapsed: false,
+        collapsed: true,
+        classChange: true,
         children: [
             { id:1, name: 'child 1', 
                 grandchildren:[
@@ -29,7 +30,8 @@ const treeviewDefaultList = [
     {
         id:7,
         type: 'Parent 2',
-        collapsed: false,
+        collapsed: true,
+        classChange: true,
         children: [
             { id:8, name: 'child 1', 
                 grandchildren:[
@@ -48,19 +50,22 @@ const treeviewDefaultList = [
     {
         id:14,
         type: 'Parent 3',
-        collapsed: false,
+        collapsed: true,
+        classChange: true,
         children: [],
     },
     {
         id:15,
         type: 'Parent 4',
-        collapsed: false,
+        collapsed: true,
+        classChange: true,
         children: [],
     },
     {
         id:16,
         type: 'Parent 5',
-        collapsed: false,
+        collapsed: true,
+        classChange: true,
         children: [],
     },
   ];
@@ -69,54 +74,63 @@ class TreeviewDefault extends Component {
     constructor(props){
         super(props);
         this.state = {
-            foldercollapsed: treeviewDefaultList.map(() => false),
-            foldercollapsed2: treeviewDefaultList.map(() => false),
-            foldercollapsed3: treeviewDefaultList.map(() => false),
-            togglePlus: false
+            folderParentcollapsed: treeviewDefaultList.map(() => true),
+            folderChildrencollapsed: treeviewDefaultList.map(() => true),
+            folderGrandChildrencollapsed: treeviewDefaultList.map(() => true),
+            classChange :  treeviewDefaultList.map(() => true)
         }
-        this.handleToggle = this.handleToggle.bind(this);
-        this.handleToggle2 = this.handleToggle2.bind(this);
-        this.handleToggle3 = this.handleToggle3.bind(this);
+        this.handleParentToggle = this.handleParentToggle.bind(this);
+        this.handleChildrenToggle = this.handleChildrenToggle.bind(this);
+        this.handleGrandChildrenToggle = this.handleGrandChildrenToggle.bind(this);
 
     }
-    // onclick change plus minus icon + folder collapsed
-    handleToggle(i) {
-        
-        let [...foldercollapsed] = this.state.foldercollapsed;
-        foldercollapsed[i] = !foldercollapsed[i];
+    // Parent Toggle
+    handleParentToggle(i) {
+        let [...folderParentcollapsed] = this.state.folderParentcollapsed;
+        let [...classChange] = this.state.classChange;
+        folderParentcollapsed[i] = !folderParentcollapsed[i];
+        classChange[i] = !classChange[i];
         this.setState({
-            foldercollapsed: foldercollapsed,
+            folderParentcollapsed: folderParentcollapsed,
+            classChange:classChange
+            
+        })
+        console.log(classChange[i])
+    }
+
+    // Children Toggle
+    handleChildrenToggle(i) {
+        
+        let [...folderChildrencollapsed] = this.state.folderChildrencollapsed;
+        folderChildrencollapsed[i] = !folderChildrencollapsed[i];
+        this.setState({
+            folderChildrencollapsed: folderChildrencollapsed,
         })
     }
-    handleToggle2(i) {
+
+    // GrandChild Toggle
+    handleGrandChildrenToggle(i) {
         
-        let [...foldercollapsed2] = this.state.foldercollapsed2;
-        foldercollapsed2[i] = !foldercollapsed2[i];
+        let [...folderGrandChildrencollapsed] = this.state.folderGrandChildrencollapsed;
+        folderGrandChildrencollapsed[i] = !folderGrandChildrencollapsed[i];
         this.setState({
-            foldercollapsed2: foldercollapsed2,
-        })
-    }
-    handleToggle3(i) {
-        
-        let [...foldercollapsed3] = this.state.foldercollapsed3;
-        foldercollapsed3[i] = !foldercollapsed3[i];
-        this.setState({
-            foldercollapsed3: foldercollapsed3,
+            folderGrandChildrencollapsed: folderGrandChildrencollapsed,
         })
     }
 
     render(){
 
-        const foldercollapsed = this.state.foldercollapsed;
-        const foldercollapsed2 = this.state.foldercollapsed2;
-        const foldercollapsed3 = this.state.foldercollapsed3;
+        const folderParentcollapsed = this.state.folderParentcollapsed;
+        const folderChildrencollapsed = this.state.folderChildrencollapsed;
+        const folderGrandChildrencollapsed = this.state.folderGrandChildrencollapsed;
+        const classChange = this.state.classChange;
 
      return(
         <div className="treeviewdefault-row">
         <div className="treeviewdefault-col-lg-6">
             <div className="treeviewdefault-card">
                 <div className="treeviewdefault-card-body">
-                    <h5 className="treeviewdefault-card-title">TO DO LIST</h5>
+                    <h5 className="treeviewdefault-card-title">Default</h5>
                 </div>
                 <div className="treeviewdefault-tree">
                     <div className="treeviewdefault-tree-border">
@@ -125,25 +139,25 @@ class TreeviewDefault extends Component {
 
                         // Parent folder
                         const label = 
-                            <span className="treeviewdefault-parent" onClick={this.handleToggle.bind(null, i)}>
+                            <span onClick={this.handleParentToggle.bind(null, i)} id={item.id}>
                                 <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
                                 Parent {i + 1}
                             </span>;
 
                         return (
                             <TreeView
-                            className="treeviewdefault-treeview"
+                            itemClassName={ classChange[i] === false ? "parent-minus" :"treeviewdefault-treeview" }
                             key={i}
                             nodeLabel={ label ? label : null }
-                            defaultCollapsed={false}
-                            collapsed={foldercollapsed[i]}
-                            onClick={this.handleToggle.bind(null, i)}
+                            collapsed={folderParentcollapsed[i]}
+                            classChange={classChange[i]}
+                            onClick={this.handleParentToggle.bind(null, i)}
                             >
                                 {/* Children folder */}
                                 { item.children.map((item, i) => {
 
                                     const label2 = 
-                                        <span className="treeviewdefault-children-name" onClick={this.handleToggle2.bind(null, i)}>
+                                        <span className="treeviewdefault-children-name" onClick={this.handleChildrenToggle.bind(item, i)}>
                                             <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
                                             {item.name}
                                         </span>;
@@ -151,17 +165,16 @@ class TreeviewDefault extends Component {
                                     return(
                                         // Children folder
                                         <TreeView 
+                                            itemClassName="treeviewdefault-treeview"
                                             key={i}
                                             nodeLabel={ label2 ? label2 : null } 
-                                            defaultCollapsed={false} 
-                                            collapsed={foldercollapsed2[i]} 
-                                            onClick={this.handleToggle2.bind(null, i)}
+                                            collapsed={folderChildrencollapsed[i]} 
+                                            onClick={this.handleChildrenToggle.bind(null, i)}
                                              >
                                                 { item.grandchildren.map((grandchildren, i) => {
 
                                                     const label3 = 
-                                                        <span className="treeviewdefault-children-name" onClick={this.handleToggle3.bind(null, i)}>
-                                                            <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
+                                                        <span className="treeviewdefault-grandchildren-name" onClick={this.handleGrandChildrenToggle.bind(null, i)}>
                                                             {grandchildren.name}
                                                         </span>;
 
@@ -171,10 +184,10 @@ class TreeviewDefault extends Component {
                                                                     key={i}
                                                                     nodeLabel={ label3 ? label3 : null } 
                                                                     defaultCollapsed={false} 
-                                                                    collapsed={foldercollapsed3[i]} 
-                                                                    onClick={this.handleToggle3.bind(null, i)}
+                                                                    collapsed={folderGrandChildrencollapsed[i]} 
+                                                                    onClick={this.handleGrandChildrenToggle.bind(null, i)}
                                                                     >
-                                                                    </TreeView>
+                                                                </TreeView>
                                                             )
                                                     })}
                                         </TreeView>
