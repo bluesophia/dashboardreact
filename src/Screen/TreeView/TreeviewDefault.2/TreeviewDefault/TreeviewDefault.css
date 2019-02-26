@@ -43,6 +43,10 @@
     margin-bottom: 10px;
     padding: 1.25rem;
 }
+.treeviewdefault-parent {
+    transition: all 0.5s;
+    border-radius: 3px;
+  }
 .tree-view_item  {
     position: relative;
     display: block;
@@ -58,18 +62,6 @@
     margin-bottom: -1px;
     background-color: #fff;
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
-}
-.treeviewdefault-treeview:before {
-    content: '\002B';
-    margin-right: 5px;
-    font-weight: 200;
-    font-size: 17px;
-}
-.parent-minus:before {
-    content: '\2212' !important;
-    margin-right: 5px;
-    font-weight: 200;
-    font-size: 17px;
 }
 .treeviewdefault-treeview-grandchildren {
     position: relative;
@@ -91,6 +83,10 @@
   overflow-y: hidden;
 }
 
+.tree-view_item {
+  /* immediate child of .tree-view, for styling convenience */
+}
+
 /* style for the children nodes container */
 .tree-view_children {
   margin-left: 16px;
@@ -103,7 +99,7 @@
 .tree-view_arrow {
   cursor: pointer;
   margin-right: 6px;
-  display: none;
+  display: inline-block;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -125,7 +121,98 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-.treeviewdefault-grandchildren-name-indent {
-    margin-left: 10px;
-    margin-right: 10px;
+
+
+
+.treeviewdefault-tree-ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    border: 1px solid #eee;
 }
+.treeviewdefault-tree-ul > li {
+    padding: 1rem;
+}
+
+.treeviewdefault-tree-parent {
+    /* padding: 1rem; */
+    border-bottom: 1px solid #eee;
+}
+.treeviewdefault-tree-child {
+    border-top: 1px solid #eee;
+}
+.treeviewdefault-tree-grandchild {
+    border-top: 1px solid #eee;
+}
+
+
+
+
+
+/* Remove default bullets */
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+  /* Remove margins and padding from the parent ul */
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the caret/arrow */
+  .caret {
+    cursor: pointer; 
+    user-select: none; /* Prevent text selection */
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {
+    content: "\002B";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-down::before {
+    /* transform: rotate(90deg);  */
+    content: "\2212"
+  }
+  
+  /* Hide the nested list */
+  .nested {
+    display: none;
+  }
+  
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  }
+
+  .blue{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  .caret-child {
+      display: none;
+  }
+  .caret-child-active {
+     cursor: pointer; 
+      user-select: none;
+      position: relative;
+      display: block;
+      padding: 10px 15px 10px 30px;
+      margin-bottom: -1px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      position: relative;
+  }
+  .caret-child-active::before {
+    content: "\002B";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }

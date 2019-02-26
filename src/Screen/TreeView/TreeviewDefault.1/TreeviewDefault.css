@@ -65,6 +65,18 @@
     font-weight: 200;
     font-size: 17px;
 }
+.treeviewdefault-treeview-none {
+    /* content: '\002B'; */
+    margin-right: 5px;
+    font-weight: 200;
+    font-size: 17px;
+}
+.treeviewdefault-treeview-none:before {
+    /* content: '\002B'; */
+    margin-right: 5px;
+    font-weight: 200;
+    font-size: 17px;
+}
 .parent-minus:before {
     content: '\2212' !important;
     margin-right: 5px;
