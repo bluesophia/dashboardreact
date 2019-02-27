@@ -18,6 +18,9 @@ class TreeViewScreen extends Component {
                 <TreeviewCustomIcons />
                 <TreeviewExpanded />
             </div>
+            <div className="treeviewScreen-wrapper">
+                {/* <TreeviewSearchableTree /> */}
+            </div>
             </div>
         )
     }
