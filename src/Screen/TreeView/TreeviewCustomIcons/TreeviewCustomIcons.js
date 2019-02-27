@@ -4,6 +4,7 @@ import TreeView from 'react-treeview';
 import '../../../Assets/Styles/weather-icons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import SimpleLineIcon from 'react-simple-line-icons';
 
 // treevew default list
 const treeviewDefaultList = [
@@ -159,7 +160,7 @@ class TreeviewCustomIcons extends Component {
                         // Parent folder
                         const label = 
                             <span onClick={this.handleParentToggle.bind(null, i)} id={item.id}>
-                                <FontAwesomeIcon icon={classChange[i] === true ? faAngleRight : faAngleDown } style={FontAwesomeIconStyle}/>
+                                <SimpleLineIcon name={classChange[i] === true ? "arrow-right" : "arrow-down"} style={SimpleLineIconStyle}/>
                                 <FontAwesomeIcon icon={faBookmark} style={FontAwesomeIconStyle}/>
                                 Parent {i + 1}
                             </span>;
@@ -180,7 +181,7 @@ class TreeviewCustomIcons extends Component {
                                     // Children folder
                                     const label2 = 
                                         <span onClick={this.handleChildrenToggle.bind(null,children, i)} id={children.id}>
-                                            <FontAwesomeIcon icon={ childclassChange[children.id] === false ? faAngleDown : faAngleRight } style={FontAwesomeIconStyle}/>
+                                            <SimpleLineIcon name={childclassChange[children.id] === false ? "arrow-down" : "arrow-right"} style={SimpleLineIconStyle}/>
                                             <FontAwesomeIcon icon={faBookmark} style={FontAwesomeIconStyle}/>
                                             {children.name}
                                         </span>;
@@ -240,5 +241,10 @@ class TreeviewCustomIcons extends Component {
 
 const FontAwesomeIconStyle = {
     marginRight: '10px'
+}
+const SimpleLineIconStyle = {
+    marginRight: '10px',
+    fontSize: '10px',
+    display: 'inline-block'
 }
 export default TreeviewCustomIcons;
