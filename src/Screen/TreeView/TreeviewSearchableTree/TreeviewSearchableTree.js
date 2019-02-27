@@ -143,13 +143,8 @@ class TreeviewSearchableTree extends Component {
         const childclassChange = this.state.childclassChange;
 
      return(
-        <div className="treeviewdefault-row">
-        <div className="treeviewdefault-col-lg-6">
-            <div className="treeviewdefault-card">
-                <div className="treeviewdefault-card-body">
-                    <h5 className="treeviewdefault-card-title">Searchable Tree</h5>
-                </div>
                 <div className="treeviewdefault-tree">
+                <h2 className="treeviewdefault-card-title-name">Tree</h2>
                     <div className="treeviewdefault-tree-border">
                     <ul className="treeview-ul">
                     <li className="treeview-li-div">
@@ -228,9 +223,6 @@ class TreeviewSearchableTree extends Component {
                     </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>  
     
         )
     }   
