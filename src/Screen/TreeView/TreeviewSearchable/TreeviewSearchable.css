@@ -1,0 +1,62 @@
+@import '../../../Assets/Styles/theme.css';
+
+.treeviewsearchable-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: var(--white);
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.treeviewsearchable-card-body {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    padding-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+.treeviewsearchable-card-body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    padding-top: 1em;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+.treeviewsearchable-card-title {
+    align-self: center;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.treeviewsearchable-card-title > h5 {
+    margin-bottom: 0;
+}
+.treeviewsearchable-card-result {
+    padding: 1.25rem;
+    padding-bottom: 2rem;
+    padding-top: 0;
+}
+.treeviewsearchable-card-result-h2 {
+    font-size: 30px;
+    margin-top: 0;
+    padding: 0;
+}
+.treeviewsearchable-card-result-p {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
