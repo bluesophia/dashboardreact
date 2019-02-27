@@ -10,36 +10,24 @@ class TreeviewSearchableTreeInput extends Component {
         }
 
     }
-   
     render(){
-     return(
-        <div className="treeviewsearchableinput-row">
-            <div className="treeviewsearchableinput-col-lg-6">
-                <div className="treeviewsearchableinput-card">
-                    <div className="treeviewsearchableinput-card-body">
-                        <h5 className="treeviewsearchableinput-card-title">Searchable Tree</h5>
-                    </div>
-                    {/* input */}
-                    <div className="treeviewsearchableinput-card-body-content">
-                        <h2 className="treeviewsearchableinput-card-title-name">Input</h2>
-                        <InputSearch />
-                        <div className="treeviewsearchableinput-card-body-content-input">
-                            <div className="treeviewsearchableinput-card-body-content-input-div"><input type="checkbox" value="Ignore Case"/>Ignore Case</div>
-                            <div className="treeviewsearchableinput-card-body-content-input-div"><input type="checkbox" value="Exact Match"/>Exact Match</div>
-                            <div className="treeviewsearchableinput-card-body-content-input-div"><input type="checkbox" value="Reveal Results"/>Reveal Results</div>
-                        </div>
-                        <div className="treeviewsearchableinput-card-body-content-button">
-                            <RectangleButton value="Search"/>
-                            <RectangleButton value="Clear" 
-                            backgroundColor="var(--white)"
-                            color="var(--black)"
-                            fontWeight="400"/>
-                        </div>
-                    </div>
+        return(
+            <div className="treeviewsearchableinput-card-body-content">
+                <h2 className="treeviewsearchableinput-card-title-name">Input</h2>
+                <InputSearch />
+                <div className="treeviewsearchableinput-card-body-content-input">
+                    <div className="treeviewsearchableinput-card-body-content-input-div"><input type="checkbox" value="Ignore Case"/>Ignore Case</div>
+                    <div className="treeviewsearchableinput-card-body-content-input-div"><input type="checkbox" value="Exact Match"/>Exact Match</div>
+                    <div className="treeviewsearchableinput-card-body-content-input-div"><input type="checkbox" value="Reveal Results"/>Reveal Results</div>
+                </div>
+                <div className="treeviewsearchableinput-card-body-content-button">
+                    <RectangleButton value="Search"/>
+                    <RectangleButton value="Clear" 
+                    backgroundColor="var(--white)"
+                    color="var(--black)"
+                    fontWeight="400"/>
                 </div>
             </div>
-        </div>  
-    
         )
     }   
 }
