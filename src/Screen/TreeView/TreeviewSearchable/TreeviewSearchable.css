@@ -1,5 +1,6 @@
 @import '../../../Assets/Styles/theme.css';
 
+
 .treeviewsearchable-card {
     position: relative;
     display: flex;
@@ -14,6 +15,12 @@
     margin-right: 15px;
     margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+    .treeviewsearchable-card-grid {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+  }
 .treeviewsearchable-card-body {
     display: flex;
     justify-content: space-between;
@@ -27,7 +34,6 @@
 .treeviewsearchable-card-body-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex: 1 1 auto;
     padding: 1.25rem;
     padding-top: 1em;
@@ -46,9 +52,16 @@
     margin-bottom: 0;
 }
 .treeviewsearchable-card-result {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    flex: 1 1 auto;
     padding: 1.25rem;
-    padding-bottom: 2rem;
-    padding-top: 0;
+    padding-top: 1em;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
 }
 .treeviewsearchable-card-result-h2 {
     font-size: 30px;

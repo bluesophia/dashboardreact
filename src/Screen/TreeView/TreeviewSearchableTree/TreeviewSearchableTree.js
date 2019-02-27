@@ -144,6 +144,7 @@ class TreeviewSearchableTree extends Component {
 
      return(
                 <div className="treeviewdefault-tree">
+                <h2 className="treeviewdefault-card-title-name">Tree</h2>
                     <div className="treeviewdefault-tree-border">
                     <ul className="treeview-ul">
                     <li className="treeview-li-div">

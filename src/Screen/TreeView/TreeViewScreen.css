@@ -5,3 +5,10 @@
         grid-template-columns:1fr 1fr 1fr;
     }
   }
+
+@media (min-width: 768px) {
+    .treeviewScreen-wrapper-treeviewsearchable {
+        display:grid;
+        grid-template-columns:1fr;
+    }
+}

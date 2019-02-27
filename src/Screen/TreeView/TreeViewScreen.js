@@ -9,7 +9,7 @@ class TreeViewScreen extends Component {
     render(){
         return(
             <div>
-            {/* <div className="treeviewScreen-wrapper">
+            <div className="treeviewScreen-wrapper">
                 <TreeviewDefault />
                 <TreeviewCollapsed />
                 <TreeviewTagedasBadges />
@@ -18,8 +18,8 @@ class TreeViewScreen extends Component {
                 <TreeviewBlueTheme />
                 <TreeviewCustomIcons />
                 <TreeviewExpanded />
-            </div> */}
-            <div className="treeviewScreen-wrapper">
+            </div>
+            <div className="treeviewScreen-wrapper-treeviewsearchable">
                 <TreeviewSearchable />
             </div>
             </div>

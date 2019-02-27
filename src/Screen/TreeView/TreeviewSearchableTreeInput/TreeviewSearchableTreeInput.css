@@ -27,10 +27,11 @@
 .treeviewsearchableinput-card-body-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex: 1 1 auto;
     padding: 1.25rem;
     padding-top: 1em;
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
