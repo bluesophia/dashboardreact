@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { TreeviewDefault, TreeviewCollapsed, TreeviewTagedasBadges,
-        TreeviewBlueTheme, TreeviewCustomIcons
+        TreeviewBlueTheme, TreeviewCustomIcons, TreeviewExpanded,
+        TreeviewSearchableTree
 } from './TreeViewExports.js';
 import './TreeViewScreen.css'
 
@@ -16,7 +17,10 @@ class TreeViewScreen extends Component {
             <div className="treeviewScreen-wrapper">
                 <TreeviewBlueTheme />
                 <TreeviewCustomIcons />
-                <TreeviewTagedasBadges />
+                <TreeviewExpanded />
+            </div>
+            <div className="treeviewScreen-wrapper">
+                <TreeviewSearchableTree />
             </div>
             </div>
         )

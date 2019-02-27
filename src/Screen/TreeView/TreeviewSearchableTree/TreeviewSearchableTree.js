@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './TreeviewCustomIcons.css';
+import './TreeviewSearchableTree.css';
 import TreeView from 'react-treeview';
 import '../../../Assets/Styles/weather-icons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookmark, faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import SimpleLineIcon from 'react-simple-line-icons';
+import { faFolder } from '@fortawesome/free-solid-svg-icons';
 
 // treevew default list
 const treeviewDefaultList = [
@@ -80,13 +79,13 @@ const treeviewDefaultList = [
     },
   ];
 
-class TreeviewCustomIcons extends Component {
+class TreeviewSearchableTree extends Component {
     constructor(props){
         super(props);
         this.state = {
             treeviewDefaultList,
             
-            folderParentcollapsed: treeviewDefaultList.map((parent) => true),
+            folderParentcollapsed: treeviewDefaultList.map((parent) => false),
             
             folderChildrencollapsed: treeviewDefaultList.map((item,index) => {
         
@@ -148,7 +147,7 @@ class TreeviewCustomIcons extends Component {
         <div className="treeviewdefault-col-lg-6">
             <div className="treeviewdefault-card">
                 <div className="treeviewdefault-card-body">
-                    <h5 className="treeviewdefault-card-title">Custom Icons</h5>
+                    <h5 className="treeviewdefault-card-title">Searchable Tree</h5>
                 </div>
                 <div className="treeviewdefault-tree">
                     <div className="treeviewdefault-tree-border">
@@ -160,15 +159,14 @@ class TreeviewCustomIcons extends Component {
                         // Parent folder
                         const label = 
                             <span onClick={this.handleParentToggle.bind(null, i)} id={item.id}>
-                                <SimpleLineIcon name={classChange[i] === true ? "arrow-right" : "arrow-down"} style={SimpleLineIconStyle}/>
-                                <FontAwesomeIcon icon={faBookmark} style={FontAwesomeIconStyle}/>
+                                <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
                                 Parent {i + 1}
                             </span>;
 
                         return (
                             <li className="treeview-li">
                             <TreeView
-                                // itemClassName={ classChange[i] === false ? "treeviewcustomicon-arrow" : "treeviewdefault-treeview" }
+                                itemClassName={ classChange[i] === false ? "parent-minus" : "treeviewdefault-treeview" }
                                 key={i}
                                 nodeLabel={ label ? label : null }
                                 collapsed={folderParentcollapsed[i]}
@@ -181,8 +179,7 @@ class TreeviewCustomIcons extends Component {
                                     // Children folder
                                     const label2 = 
                                         <span onClick={this.handleChildrenToggle.bind(null,children, i)} id={children.id}>
-                                            <SimpleLineIcon name={childclassChange[children.id] === false ? "arrow-down" : "arrow-right"} style={SimpleLineIconStyle}/>
-                                            <FontAwesomeIcon icon={faBookmark} style={FontAwesomeIconStyle}/>
+                                            <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
                                             {children.name}
                                         </span>;
 
@@ -190,7 +187,7 @@ class TreeviewCustomIcons extends Component {
                                         // Children folder
                                         <li className="treeview-li-1">
                                         <TreeView 
-                                            itemClassName={ childclassChange[children.id] === false ? " tree-view_item1" : "treeviewcustom-treeview tree-view_item1" }
+                                            itemClassName={ childclassChange[children.id] === false ? " tree-view_item1  parent-minus" : "treeviewdefault-treeview tree-view_item1" }
                                             key={children.id}
                                             nodeLabel={ label2 ? label2 : null } 
                                             collapsed={folderChildrencollapsed[children.id]} 
@@ -200,7 +197,7 @@ class TreeviewCustomIcons extends Component {
 
                                                     const label3 = 
                                                         <span className="treeviewdefault-grandchildren-name">
-                                                            <FontAwesomeIcon icon={faBookmark} style={FontAwesomeIconStyle}/>
+                                                            <FontAwesomeIcon icon={faFolder} style={FontAwesomeIconStyle}/>
                                                             {grandchildren.name}
                                                         </span>;
 
@@ -242,9 +239,4 @@ class TreeviewCustomIcons extends Component {
 const FontAwesomeIconStyle = {
     marginRight: '10px'
 }
-const SimpleLineIconStyle = {
-    marginRight: '10px',
-    fontSize: '10px',
-    display: 'inline-block'
-}
-export default TreeviewCustomIcons;
+export default TreeviewSearchableTree;
