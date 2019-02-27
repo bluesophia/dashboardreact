@@ -19,6 +19,7 @@
     justify-content: space-between;
     flex: 1 1 auto;
     padding: 1.25rem;
+    padding-bottom: 0;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
@@ -43,25 +44,44 @@
     margin-bottom: 10px;
     padding: 1.25rem;
 }
-.treeviewdefault-parent {
-    transition: all 0.5s;
-    border-radius: 3px;
-  }
 .tree-view_item  {
     position: relative;
     display: block;
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
     background-color: #fff;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
+}
+.tree-view_item1  {
+    position: relative !important;
+    display: block !important;
+    padding: 0.75rem 2.25rem !important;
+    margin-bottom: -1px !important;
+    background-color: #fff !important;
+}
+.tree-view_item2  {
+    position: relative !important;
+    display: block !important;
+    padding: 0.75rem 4.25rem !important;
+    margin-bottom: -1px !important;
+    background-color: #fff !important;
 }
 .tree-view_children {
     position: relative;
     display: block;
-    /* padding: 0.75rem 1.25rem; */
     margin-bottom: -1px;
     background-color: #fff;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
+}
+.treeviewdefault-treeview:before {
+    content: '\002B';
+    margin-right: 5px;
+    font-weight: 200;
+    font-size: 17px;
+}
+.parent-minus:before {
+    content: '\2212' !important;
+    margin-right: 5px;
+    font-weight: 200;
+    font-size: 17px;
 }
 .treeviewdefault-treeview-grandchildren {
     position: relative;
@@ -69,27 +89,17 @@
     padding: 0.75rem 1.25rem;
     margin-bottom: -1px;
     background-color: #fff;
-    /* border: 1px solid rgba(0, 0, 0, 0.125); */
 }
-/* .treeviewdefault-tree-border {
+.treeviewdefault-tree-border {
     border: 1px solid #eee;
-} */
+    border-bottom: 0;
+}
 /************************************
         treeview style
 ************************************/
 
-/* the tree node's style */
 .tree-view {
   overflow-y: hidden;
-}
-
-.tree-view_item {
-  /* immediate child of .tree-view, for styling convenience */
-}
-
-/* style for the children nodes container */
-.tree-view_children {
-  margin-left: 16px;
 }
 
 .tree-view_children-collapsed {
@@ -99,7 +109,7 @@
 .tree-view_arrow {
   cursor: pointer;
   margin-right: 6px;
-  display: inline-block;
+  display: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -121,98 +131,31 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-
-
-
-.treeviewdefault-tree-ul {
-    padding-left: 0;
-    margin-bottom: 0;
-    border: 1px solid #eee;
+.treeviewdefault-grandchildren-name-indent {
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.treeviewdefault-tree-ul > li {
-    padding: 1rem;
-}
-
-.treeviewdefault-tree-parent {
-    /* padding: 1rem; */
+.treeview-li {
+    list-style: none;
     border-bottom: 1px solid #eee;
 }
-.treeviewdefault-tree-child {
+.treeviewbluetheme-li-div {
+    list-style: none;
+    color: #428bca;
+}
+.treeview-li-1:last-child {
+    list-style: none;
     border-top: 1px solid #eee;
 }
-.treeviewdefault-tree-grandchild {
+.treeview-li-2 {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+}
+.treeview-li-2:first-child {
+    list-style: none;
     border-top: 1px solid #eee;
 }
-
-
-
-
-
-/* Remove default bullets */
-ul, #myUL {
-    list-style-type: none;
-  }
-  
-  /* Remove margins and padding from the parent ul */
-  #myUL {
+.treeviewbluetheme-ul {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Style the caret/arrow */
-  .caret {
-    cursor: pointer; 
-    user-select: none; /* Prevent text selection */
-  }
-  
-  /* Create the caret/arrow with a unicode, and style it */
-  .caret::before {
-    content: "\002B";
-    color: black;
-    display: inline-block;
-    margin-right: 6px;
-  }
-  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
-  .caret-down::before {
-    /* transform: rotate(90deg);  */
-    content: "\2212"
-  }
-  
-  /* Hide the nested list */
-  .nested {
-    display: none;
-  }
-  
-  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
-  .active {
-    display: block;
-  }
-
-  .blue{
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: -1px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-  }
-  .caret-child {
-      display: none;
-  }
-  .caret-child-active {
-     cursor: pointer; 
-      user-select: none;
-      position: relative;
-      display: block;
-      padding: 10px 15px 10px 30px;
-      margin-bottom: -1px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      position: relative;
-  }
-  .caret-child-active::before {
-    content: "\002B";
-    color: black;
-    display: inline-block;
-    margin-right: 6px;
-  }
+}

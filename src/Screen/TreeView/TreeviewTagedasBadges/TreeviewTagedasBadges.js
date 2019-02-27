@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './TreeviewDefault.css';
+import './TreeviewTagedasBadges.css';
 import TreeView from 'react-treeview';
 import '../../../Assets/Styles/weather-icons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -79,13 +79,13 @@ const treeviewDefaultList = [
     },
   ];
 
-class TreeviewDefault extends Component {
+class TreeviewTagedasBadges extends Component {
     constructor(props){
         super(props);
         this.state = {
             treeviewDefaultList,
             
-            folderParentcollapsed: treeviewDefaultList.map((parent) => false),
+            folderParentcollapsed: treeviewDefaultList.map((parent) => true),
             
             folderChildrencollapsed: treeviewDefaultList.map((item,index) => {
         
@@ -147,7 +147,7 @@ class TreeviewDefault extends Component {
         <div className="treeviewdefault-col-lg-6">
             <div className="treeviewdefault-card">
                 <div className="treeviewdefault-card-body">
-                    <h5 className="treeviewdefault-card-title">Default</h5>
+                    <h5 className="treeviewdefault-card-title">Tags as Badges</h5>
                 </div>
                 <div className="treeviewdefault-tree">
                     <div className="treeviewdefault-tree-border">
@@ -239,4 +239,4 @@ class TreeviewDefault extends Component {
 const FontAwesomeIconStyle = {
     marginRight: '10px'
 }
-export default TreeviewDefault;
+export default TreeviewTagedasBadges;

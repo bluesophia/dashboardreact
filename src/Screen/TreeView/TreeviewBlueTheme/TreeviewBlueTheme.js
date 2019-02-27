@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './TreeviewDefault.css';
+import './TreeviewBlueTheme.css';
 import TreeView from 'react-treeview';
 import '../../../Assets/Styles/weather-icons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -79,7 +79,7 @@ const treeviewDefaultList = [
     },
   ];
 
-class TreeviewDefault extends Component {
+class TreeviewBlueTheme extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -143,16 +143,16 @@ class TreeviewDefault extends Component {
         const childclassChange = this.state.childclassChange;
 
      return(
-        <div className="treeviewdefault-row">
+        <div className="treeview-row">
         <div className="treeviewdefault-col-lg-6">
             <div className="treeviewdefault-card">
                 <div className="treeviewdefault-card-body">
-                    <h5 className="treeviewdefault-card-title">Default</h5>
+                    <h5 className="treeviewdefault-card-title">Blue Theme</h5>
                 </div>
                 <div className="treeviewdefault-tree">
                     <div className="treeviewdefault-tree-border">
                     <ul className="treeview-ul">
-                    <li className="treeview-li-div">
+                    <li className="treeviewbluetheme-li-div">
                     {/* data mapping */}
                     { treeviewDefaultList.map((item, i) => {
 
@@ -239,4 +239,4 @@ class TreeviewDefault extends Component {
 const FontAwesomeIconStyle = {
     marginRight: '10px'
 }
-export default TreeviewDefault;
+export default TreeviewBlueTheme;
