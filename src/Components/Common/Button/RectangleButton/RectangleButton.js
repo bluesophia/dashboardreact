@@ -34,7 +34,7 @@ class RectangleButton extends Component {
                     fontSize:fontSize
                 }}>
                     { iconsrc ? <img src={iconsrc} style={{width: "10px", marginRight: "10px"}}/> : null }
-                    <span>{value}</span>
+                    <span style={{fontWeight:fontWeight}}>{value}</span>
                 </a>
             </div>
         )
