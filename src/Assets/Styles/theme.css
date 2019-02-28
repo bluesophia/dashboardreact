@@ -351,10 +351,10 @@ body a:focus, body a:hover {
   text-decoration: none !important;
 }
 
-body a:hover {
+/* body a:hover {
   color: var(--primary) !important;
   text-decoration: underline;
-}
+} */
 
 body svg {
   overflow: hidden;

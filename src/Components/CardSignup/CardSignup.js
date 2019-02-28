@@ -192,6 +192,7 @@ class CardSignup extends Component {
                                         fontSize={"17.5px"}
                                         marginBottom={"20px"}
                                         fontWeight={"500"}
+                                        disabled={isDisabled}
                                     />
                                 </div>
                             </div>
