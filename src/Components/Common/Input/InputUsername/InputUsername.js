@@ -4,23 +4,35 @@ import './InputUsername.css';
 class InputUsername extends Component {
   constructor(props){
     super(props);
-    this.state = {value: ''};
-    this._handleChange = this._handleChange.bind(this);
   }
 
-  _handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-  
   render() {
+
+    const { value, onChange, className, onBlur, borderBottom } = this.props;
+
     return (
         <div className="inputPassword-container">
             <input
-            style={InputStyle}
-            value={this.state.value}
+            className={className}
+            style={{
+              boxSizing: "border-box",
+              width: "100%",
+              height: "30px",
+              background: "none",
+              borderRadius: 0,
+              border: 0,
+              borderBottom: borderBottom,
+              color: "#6c757d",
+              padding: "0.5em",
+              marginTop: "10px",
+              fontWeight: "500"
+            }}
+            value={value}
+            type="text"
             name="username"
             label="username"
-            onChange={this._handleChange}
+            onChange={onChange}
+            onBlur={onBlur}
             placeholder="Username"
             required
             autocomplete="off"
@@ -28,20 +40,6 @@ class InputUsername extends Component {
         </div>
     )
   }
-}
-
-const InputStyle = {
-    boxSizing: "border-box",
-    width: "100%",
-    height: "30px",
-    background: "none",
-    borderRadius: 0,
-    border: 0,
-    borderBottom: "1px solid #e9ecef",
-    color: "#6c757d",
-    padding: "0.5em",
-    marginTop: "10px",
-    fontWeight: "500"
 }
 
 export default InputUsername;

@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './InputEmail.css';
 
 class InputEmail extends Component {
-  constructor(props){
-    super(props);
-    // this.state = {value: ''};
-  }
   render() {
     const { value, onChange, className, onBlur, borderBottom } = this.props;
     return (
@@ -30,7 +26,7 @@ class InputEmail extends Component {
             value={value}
             type="text"
             name="email"
-            label="Email"
+            label="email"
             onChange={onChange}
             onBlur={onBlur}
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"

@@ -3,7 +3,7 @@
 /************************************
                signIn
 ************************************/
-.singin-card {
+.singup-card {
     position: relative;
     display: flex;
     -webkit-box-orient: vertical;
@@ -22,25 +22,25 @@
     margin-right: -10px;
 }
 @media (min-width: 767px){
-    .singin-card {
+    .singup-card {
         margin: 0 auto;
         margin-top: 150px;
         width: 400px;
     }
 }
-.singin-card-body {
+.singup-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
     font-weight: 300;
     width: 100%;
 }
-.singin-card-body-form h3{
+.singup-card-body-form h3{
     font-size: 24px;
     margin-top: 0;
     margin-bottom: 1.7rem;
 }
-.singin-card-body-form {
+.singup-card-body-form {
     background-color: rgba(0, 0, 0, 0);
     background-position: center bottom, center calc(100% - 1px);
     background-repeat: no-repeat;
@@ -49,47 +49,47 @@
     transition: background 0s ease-out 0s;
     text-align: center;
 }
-.singin-form-group {
+.singup-form-group {
     margin-bottom: 25px;
 }
-.singin-form-group-row {
+.singup-form-group-row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -10px;
     margin-left: -10px;
 }
-.singin-form-group-checkbox {
+.singup-form-group-checkbox {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
 }
-.singin-form-control{
+.singup-form-control{
     position: relative;
     display: block;
     min-height: 1.3125rem;
 }
-.signin-form-control-label {
+.singup-form-control-label {
     font-weight: 400;
     width: 100%;
     margin-left: 10px;
 }
-.signin-form-control-label-a {
+.singup-form-control-label-a {
     font-weight: 500;
 }
-.singin-form-group-forgot {
+.singup-form-group-forgot {
     margin-left: auto;
 } 
-.singin-form-group-forgot a {
+.singup-form-group-forgot a {
     color: var(--gray) !important;
 }
-.singin-form-group-social {
+.singup-form-group-social {
     margin-top: 10px;
 }
-.singin-form-group-social-btn-div {
+.singup-form-group-social-btn-div {
     display: block;
     margin-bottom: 30px;
 }
-.singin-form-group-social-btn-facebook {
+.singup-form-group-social-btn-facebook {
     margin-right: 5px;
     display: inline-block;
     font-weight: 400;
@@ -105,7 +105,7 @@
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
 }
-.singin-form-group-social-btn-google {
+.singup-form-group-social-btn-google {
     margin-right: 5px;
     display: inline-block;
     font-weight: 400;
@@ -121,16 +121,16 @@
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
 }
-.singin-form-group-footer {
+.singup-form-group-footer {
     margin-bottom: 0;
 }
-.singin-form-group-footer-signup {
+.singup-form-group-footer-signup {
     text-align: center;
 }
-.singin-form-group-footer-signup-a{
+.singup-form-group-footer-signup-a{
     margin-left: 5px;
     color: var(--blue);
 }
-.singin-form-group-footer-signup-b{
+.singup-form-group-footer-signup-b{
     color: var(--blue);
 }
