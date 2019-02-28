@@ -28,6 +28,7 @@ class CardSignin extends Component {
         }
         this.handleEmailChange = this.handleEmailChange.bind(this);
         this.handlePasswordChange = this.handlePasswordChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
     // email onchange
     handleEmailChange(e) {
@@ -41,6 +42,7 @@ class CardSignin extends Component {
             password: e.target.value
         })
     }
+
     handleBlur = (field) =>(e) => {
         this.setState({
             touched: {
@@ -50,12 +52,14 @@ class CardSignin extends Component {
         })
     }
     handleSubmit(e) {
+        // return된 canBeSubmitted에 에러가 없을 경우 
         if(!this.canBeSubmitted()) {
             e.preventDefault();
             return;
         }
+        // 가져온 값을 보여준다.
         const { email, password } = this.state;
-        alert(`Signed up with email: ${email} pawwsord: ${password}`)
+        alert(`Signed in with email: ${email} pawwsord: ${password}`)
     }
 
     // errors
@@ -64,10 +68,11 @@ class CardSignin extends Component {
             this.state.email,
             this.state.password
         )
-        //return errors.name 
+        //return errors.name 한개라도 조건을 만족하는지(만족하지 않을 경우 !isDisabled)
         const isDisabled = Object.keys(errors).some(x => errors[x])
         return !isDisabled;
     }
+    
  render(){
 
     const errors = validate( this.state.email, this.state.password )
@@ -97,10 +102,10 @@ class CardSignin extends Component {
                                         value={this.state.email}
                                         onChange={this.handleEmailChange}
                                         onBlur={this.handleBlur('email')}
-                                        borderBottom={shouldMarkError('email') ? "1px solid red" : "1px solid #e9ecef"}
+                                        borderBottom={shouldMarkError('email') ? "1px solid #fb9678" : "1px solid #e9ecef"}
                                     />
-                                    <span className={shouldMarkError('email') ? "error" : "error-hidden"}>
-                                        invalid email
+                                    <span className={shouldMarkError('email') ? "error" : "error-hidden"} style={{fontWeight: 400}}>
+                                        Please filled in this field.
                                     </span>
                                 </div>
 
@@ -111,10 +116,10 @@ class CardSignin extends Component {
                                         value={this.state.password}
                                         onChange={this.handlePasswordChange}
                                         onBlur={this.handleBlur('password')}
-                                        borderBottom={shouldMarkError('password') ? "1px solid red" : "1px solid #e9ecef"}
+                                        borderBottom={shouldMarkError('password') ? "1px solid #fb9678" : "1px solid #e9ecef"}
                                     />
-                                    <span className={shouldMarkError('password') ? "error" : "error-hidden"}>
-                                        invalid password
+                                    <span className={shouldMarkError('password') ? "error" : "error-hidden"} style={{fontWeight: 400}}>
+                                        Please filled in this field.
                                     </span>
                                 </div>
                             </div>

@@ -23,6 +23,7 @@ class InputUsername extends Component {
             onChange={this._handleChange}
             placeholder="Username"
             required
+            autocomplete="off"
             />
         </div>
     )

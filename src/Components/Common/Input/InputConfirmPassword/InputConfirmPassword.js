@@ -23,6 +23,7 @@ class InputConfirmPassword extends Component {
             label="password"
             placeholder="Confirm Password"
             onChange={this._handleChange}
+            autocomplete="off"
             />
         </div>
     )
