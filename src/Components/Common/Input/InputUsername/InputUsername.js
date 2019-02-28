@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './InputUsername.css';
+import PropTypes from 'prop-types';
 
 class InputUsername extends Component {
   constructor(props){

@@ -11,11 +11,11 @@ class App extends Component {
         <div className="Wrapper">
           <ToastContainer/> 
           
-          <DashboardScreen />
-          {/* <ProfileScreen />
-          <InvoiceScreen />
+          {/* <DashboardScreen />
+          <ProfileScreen />
+          <InvoiceScreen /> */}
           <LoginScreen />
-          <TimelineScreen />
+          {/* <TimelineScreen />
           <PricingScreen />
           <AlertScreen />
           <WidgetAppsScreen /> 
