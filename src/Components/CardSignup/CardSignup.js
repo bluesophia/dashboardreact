@@ -68,6 +68,7 @@ class CardSignup extends Component {
             }
         })
     }
+    // submit
     handleSubmit(e) {
         // return된 canBeSubmitted에 에러가 없을 경우 
         if(!this.canBeSubmitted()) {
@@ -92,15 +93,15 @@ class CardSignup extends Component {
         return !isDisabled;
     }
     
- render(){
+    render(){
 
-    const errors = validate( this.state.username, this.state.email, this.state.password, this.state.passwordconfirm )
-    const isDisabled = Object.keys(errors).some(x => errors[x])
-    const shouldMarkError = (field) => {
-        const hasError = errors[field];
-        const shouldShow = this.state.touched[field];
+        const errors = validate( this.state.username, this.state.email, this.state.password, this.state.passwordconfirm )
+        const isDisabled = Object.keys(errors).some(x => errors[x])
+        const shouldMarkError = (field) => {
+            const hasError = errors[field];
+            const shouldShow = this.state.touched[field];
 
-        return hasError ? shouldShow : false;
+            return hasError ? shouldShow : false;
     }
 
      return(
@@ -112,9 +113,8 @@ class CardSignup extends Component {
                         {/* form */}
                         <form className="singup-card-body-form" id="loginform" action="#" onSubmit={this.handleSubmit}>
                             <h3>Sign Up</h3>
-
-                            {/* username */}
                             <div className="singup-form-group">
+                                {/* username */}
                                 <div class="col-xs-12">
                                     <InputUsername 
                                         className={shouldMarkError('username') ? "error" : "" }
@@ -127,6 +127,7 @@ class CardSignup extends Component {
                                         Please filled in this field.
                                     </span>
                                 </div>
+                                {/* email */}
                                 <div class="col-xs-12">
                                     <InputEmail 
                                         className={shouldMarkError('email') ? "error" : "" }
@@ -139,6 +140,7 @@ class CardSignup extends Component {
                                         Please filled in this field.
                                     </span>
                                 </div>
+                                {/* password */}
                                 <div class="col-xs-12">
                                     <InputPassword 
                                             className={shouldMarkError('password') ? "error" : "" }
@@ -151,6 +153,7 @@ class CardSignup extends Component {
                                         Please filled in this field.
                                     </span>
                                 </div>
+                                {/* confirm password */}
                                 <div class="col-xs-12">
                                     <InputConfirmPassword 
                                         className={shouldMarkError('passwordconfirm') ? "error" : "" }
@@ -164,6 +167,7 @@ class CardSignup extends Component {
                                     </span>
                                 </div>
                             </div>
+                            {/* terms */}
                             <div className="singup-form-group-row">
                                 <div className="col-md-12">
                                     <div className="singup-form-group-checkbox">
@@ -174,6 +178,7 @@ class CardSignup extends Component {
                                     </div>
                                 </div>
                             </div>
+                            {/* signup button */}
                             <div className="singup-form-group">
                                 <div className="col-xs-12">
                                     <CircleButton 
