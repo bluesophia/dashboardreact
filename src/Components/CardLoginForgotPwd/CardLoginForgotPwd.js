@@ -27,10 +27,10 @@ class CardLoginForgotPwd extends Component {
                                         height={"50px"}
                                         borderRadius={"0.3rem"}
                                         backgroundColor={"var(--primary)"}
+                                        backgroundColorHover={"#fa7953"}
                                         padding={".75rem 1.5rem;"}
                                         fontSize={"17.5px"}
                                         marginBottom={"0"}
-                                        fontWeight={"500"}
                                     />
                                 </div>
                             </div>

@@ -150,6 +150,7 @@ class CardSignin extends Component {
                                         height={"50px"}
                                         borderRadius={"2rem"}
                                         backgroundColor={"var(--blue)"}
+                                        backgroundColorHover={"#038fcd"}
                                         padding={".75rem 1.5rem;"}
                                         fontSize={"17.5px"}
                                         marginBottom={"20px"}

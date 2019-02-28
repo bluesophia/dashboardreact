@@ -65,7 +65,7 @@ class CircleButton extends Component {
     
     render(){
 
-        const { index, width, height,border, borderRadius, fontSize, backgroundColor, 
+        const { index, width, height,border, borderRadius, fontSize, backgroundColor, backgroundColorHover,
             color, value, icon, padding, marginBottom, fontWeight, disabled } = this.props;
         
         return(
@@ -77,7 +77,7 @@ class CircleButton extends Component {
                     fontSize: fontSize,
                     width: width,
                     height: height,
-                    backgroundColor: this.state.hoverDarker ? "#0286c1" : backgroundColor,
+                    backgroundColor: this.state.hoverDarker ? backgroundColorHover : backgroundColor,
                     color: color,
                     padding: padding,
                     marginBottom:marginBottom,
