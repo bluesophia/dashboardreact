@@ -17,7 +17,7 @@ class InputEmail extends Component {
         <div className="inputPassword-container">
             <input
             style={InputStyle}
-            value={this.state.value}
+            value={this.state.email}
             type="email"
             name="email"
             label="Email"

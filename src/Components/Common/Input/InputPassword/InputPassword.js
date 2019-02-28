@@ -5,11 +5,17 @@ class InputPassword extends Component {
   constructor(props){
     super(props);
     this.state = {value: ''};
-    this._handleChange = this._handleChange.bind(this);
+    this.handleUserPasswordInput = this.handleUserPasswordInput.bind(this);
   }
 
-  _handleChange(event) {
-    this.setState({value: event.target.value});
+  handleUserPasswordInput(e) {
+    const password = e.target.password;
+    const value = e.target.value;
+    this.setState(
+      {[password]: value},
+      () => { this.validateField(password, value)}
+      );
+    // this.setState({value: event.target.value});
   }
   
   render() {
@@ -18,11 +24,11 @@ class InputPassword extends Component {
             <input 
             style={InputStyle}
             type="password"
-            value={this.state.value}
+            value={this.state.password}
             name="input-text"
             label="password"
             placeholder="Password"
-            onChange={this._handleChange}
+            onChange={(e) => this.handleUserPasswordInput(e)}
             />
         </div>
     )

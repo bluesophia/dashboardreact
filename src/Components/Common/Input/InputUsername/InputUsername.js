@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './InputUsername.css';
-import PropTypes from 'prop-types';
 
 class InputUsername extends Component {
   constructor(props){
@@ -42,6 +41,6 @@ const InputStyle = {
     padding: "0.5em",
     marginTop: "10px",
     fontWeight: "500"
-  }
+}
 
 export default InputUsername;

@@ -3,10 +3,18 @@ import './CardSignin.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
-import { InputUsername, InputPassword } from '../Common/Input/InputExports';
+import { InputEmail, InputPassword } from '../Common/Input/InputExports';
 import { CircleButton } from '../Common/Button/ButtonExports';
+import { FormErrors } from '../Common/Form/FormExports'
 
 class CardSignin extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            email: '',
+            password: '',
+        }
+    }
  render(){
      return(
         <div className="row col-lg-6">
@@ -14,11 +22,14 @@ class CardSignin extends Component {
                 <div className="singin-card-body">
                     <div className="singin-card-body-form-div">
                         {/* form */}
+                        <div className="panel panel-default">
+                            <FormErrors formErrors={this.state.formErrors} />
+                        </div>
                         <form className="singin-card-body-form" id="loginform" action="#">
                             <h3>Sign In</h3>
                             <div className="singin-form-group">
                                 <div class="col-xs-12">
-                                    <InputUsername />
+                                    <InputEmail />
                                 </div>
                                 <div class="col-xs-12">
                                     <InputPassword />
