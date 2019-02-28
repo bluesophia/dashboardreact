@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import CardTodolist from '../../../Components/CardTodolist/CardTodolist'
 import { CircleButton } from '../../../Components/Common/Button/ButtonExports'
+import { Scrollbars } from 'react-custom-scrollbars';
 import './TodoList.css'
 import '../../../Assets/Styles/theme.css'
-import { Scrollbars } from 'react-custom-scrollbars';
 
 class TodoList extends Component {
     render(){
@@ -69,7 +69,7 @@ class TodoList extends Component {
                                 value="+"
                             />
                         </div>
-                        <div className="comment-widgets" id="comment">
+                        <div className="todolist-comment-widgets" id="comment">
                         <Scrollbars >
                         {
                             todoList.map((item, index) => (

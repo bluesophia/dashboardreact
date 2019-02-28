@@ -65,7 +65,8 @@ class CircleButton extends Component {
     
     render(){
 
-        const { index, width, height,border, borderRadius, fontSize, backgroundColor, color, value, icon, padding, marginBottom, fontWeight } = this.props;
+        const { index, width, height,border, borderRadius, fontSize, backgroundColor, 
+            color, value, icon, padding, marginBottom, fontWeight, disabled } = this.props;
         
         return(
             <div ref={this.setOutsideClick}>
@@ -88,6 +89,7 @@ class CircleButton extends Component {
                     onClick={this.circleEffect}
                     onMouseEnter={this.circleHover}
                     onMouseLeave={this.circleHoverOff}
+                    disabled={disabled}
                     >
                     <FontAwesomeIcon icon={icon}/>
                     <span>{value}</span>

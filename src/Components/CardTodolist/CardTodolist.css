@@ -71,8 +71,73 @@ ul.todo-list {
     vertical-align: top;
 }
 .todo-list-custom-control > label > span:first-child {
-    width: 70%;
     display: inline-block;
     line-height: 25px;
     font-size: 14px;
 }
+
+/************************************
+             checkbox
+************************************/
+.todo-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+.todo-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.todo-checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.todo-checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.todo-checkbox-checkmark-checked {
+    position: absolute;
+    top: 0;
+    left: -27px;
+    height: 17px;
+    width: 17px;
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+.todo-checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: -27px;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border: 1px solid var(--border-bottom-color);
+    border-radius: 5px;
+}
+.todo-checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+.todo-checkbox-input:checked ~ .checkmark:after {
+    display: block;
+  }
+.todo-checkbox .widgettodo-checkbox-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }  

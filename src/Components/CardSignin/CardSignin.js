@@ -3,27 +3,123 @@ import './CardSignin.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
-import { InputUsername, InputPassword } from '../Common/Input/InputExports';
+import { InputEmail, InputPassword } from '../Common/Input/InputExports';
 import { CircleButton } from '../Common/Button/ButtonExports';
 
+function validate(email, password) {
+    return {
+        // true if value is empty
+        email: email.length === 0, 
+        password: password.length === 0
+    }
+}
+
 class CardSignin extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            email: '',
+            password: '',
+
+            touched: {
+                email: false,
+                password: false
+            }
+        }
+        this.handleEmailChange = this.handleEmailChange.bind(this);
+        this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    }
+    // email onchange
+    handleEmailChange(e) {
+        this.setState({
+            email: e.target.value
+        })
+    }
+    // password onchange
+    handlePasswordChange(e) {
+        this.setState({
+            password: e.target.value
+        })
+    }
+    handleBlur = (field) =>(e) => {
+        this.setState({
+            touched: {
+                ...this.state.touched,
+                [field]: true
+            }
+        })
+    }
+    handleSubmit(e) {
+        if(!this.canBeSubmitted()) {
+            e.preventDefault();
+            return;
+        }
+        const { email, password } = this.state;
+        alert(`Signed up with email: ${email} pawwsord: ${password}`)
+    }
+
+    // errors
+    canBeSubmitted() {
+        const errors = validate(
+            this.state.email,
+            this.state.password
+        )
+        //return errors.name 
+        const isDisabled = Object.keys(errors).some(x => errors[x])
+        return !isDisabled;
+    }
  render(){
+
+    const errors = validate( this.state.email, this.state.password )
+    const isDisabled = Object.keys(errors).some(x => errors[x])
+    const shouldMarkError = (field) => {
+        const hasError = errors[field];
+        const shouldShow = this.state.touched[field];
+
+        return hasError ? shouldShow : false;
+    }
+
      return(
         <div className="row col-lg-6">
             <div className="singin-card">
                 <div className="singin-card-body">
                     <div className="singin-card-body-form-div">
+
                         {/* form */}
-                        <form className="singin-card-body-form" id="loginform" action="#">
+                        <form className="singin-card-body-form" id="loginform" action="#" onSubmit={this.handleSubmit}>
                             <h3>Sign In</h3>
                             <div className="singin-form-group">
-                                <div class="col-xs-12">
-                                    <InputUsername />
+
+                                {/* email */}
+                                <div className="col-xs-12">
+                                    <InputEmail 
+                                        className={shouldMarkError('email') ? "error" : "" }
+                                        value={this.state.email}
+                                        onChange={this.handleEmailChange}
+                                        onBlur={this.handleBlur('email')}
+                                        borderBottom={shouldMarkError('email') ? "1px solid red" : "1px solid #e9ecef"}
+                                    />
+                                    <span className={shouldMarkError('email') ? "error" : "error-hidden"}>
+                                        invalid email
+                                    </span>
                                 </div>
-                                <div class="col-xs-12">
-                                    <InputPassword />
+
+                                {/* password */}
+                                <div className="col-xs-12">
+                                    <InputPassword 
+                                        className={shouldMarkError('password') ? "error" : "" }
+                                        value={this.state.password}
+                                        onChange={this.handlePasswordChange}
+                                        onBlur={this.handleBlur('password')}
+                                        borderBottom={shouldMarkError('password') ? "1px solid red" : "1px solid #e9ecef"}
+                                    />
+                                    <span className={shouldMarkError('password') ? "error" : "error-hidden"}>
+                                        invalid password
+                                    </span>
                                 </div>
                             </div>
+
+                            {/* rememeber me & forgot PWD */}    
                             <div className="singin-form-group-row">
                                 <div className="col-md-12">
                                     <div className="singin-form-group-checkbox">
@@ -32,13 +128,15 @@ class CardSignin extends Component {
                                             <label className="signin-form-control-label" for="customCheck1">Remember me</label>
                                         </div> 
                                         <div className="singin-form-group-forgot">
-                                            <a id="to-recover" onclick="showRecover()">
+                                            <a id="to-recover" onClick="showRecover()">
                                             <FontAwesomeIcon icon={faLock} style={FontAwesomeIconStyle}/>
                                             Forgot pwd?</a> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            {/* submit button */}
                             <div className="singin-form-group">
                                 <div className="col-xs-12">
                                     <CircleButton 
@@ -50,9 +148,12 @@ class CardSignin extends Component {
                                         padding={".75rem 1.5rem;"}
                                         fontSize={"17.5px"}
                                         marginBottom={"20px"}
+                                        disabled={isDisabled}
                                     />
                                 </div>
                             </div>
+
+                            {/* social login */}
                             <div className="singin-form-group-row">
                                 <div className="singin-form-group-social col-xs-12 col-sm-12 col-md-12">
                                     <div className="singin-form-group-social-btn-div">
@@ -61,8 +162,10 @@ class CardSignin extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="singin-form-group-footer">
-                                <div class="singin-form-group-footer-signup col-sm-12">
+
+                            {/* Don't have an account? */}
+                            <div className="singin-form-group-footer">
+                                <div className="singin-form-group-footer-signup col-sm-12">
                                     Don't have an account?
                                     <a href="#" className="singin-form-group-footer-signup-a">
                                         <b className="singin-form-group-footer-signup-b">Sign Up</b>

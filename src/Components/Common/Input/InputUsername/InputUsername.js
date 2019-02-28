@@ -41,6 +41,6 @@ const InputStyle = {
     padding: "0.5em",
     marginTop: "10px",
     fontWeight: "500"
-  }
+}
 
 export default InputUsername;

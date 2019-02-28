@@ -13,14 +13,14 @@ class App extends Component {
           
           {/* <DashboardScreen />
           <ProfileScreen />
-          <InvoiceScreen />
+          <InvoiceScreen /> */}
           <LoginScreen />
-          <TimelineScreen />
+          {/* <TimelineScreen />
           <PricingScreen />
           <AlertScreen />
-          <WidgetAppsScreen />  */}
+          <WidgetAppsScreen /> 
           <TreeViewScreen />
-          {/* <Nestable /> */}
+          <Nestable /> */}
         </div>
       </div>
     );
