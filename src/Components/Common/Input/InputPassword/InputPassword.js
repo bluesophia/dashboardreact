@@ -4,12 +4,21 @@ import './InputPassword.css';
 class InputPassword extends Component {
   constructor(props){
     super(props);
+    this.state = {
+      inputOnClick: false
+    }
+    this.inputOnClick=this.inputOnClick.bind(this);
   }
-  
+  inputOnClick(){
+    this.setState({
+      inputOnClick: true
+    })
+  }
   render() {
-      const { value, onChange, onBlur, borderBottom} = this.props;
+      const { value, onChange, onBlur, borderBottom, onClick } = this.props;
+      const inputOnClick = this.state;
     return (
-        <div className="inputPassword-container">
+        <div className={ inputOnClick ? "input-form-control inputPassword-container" : "inputPassword-container"}>
             <input 
             style={
               {
@@ -33,6 +42,8 @@ class InputPassword extends Component {
             placeholder="Password"
             onChange={onChange}
             onBlur={onBlur}
+            onClick={this.inputOnClick}
+            autocomplete="off"
             />
         </div>
     )

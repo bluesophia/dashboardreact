@@ -50,7 +50,7 @@
     text-align: center;
 }
 .singin-card-body-form > span.error {
-    color: red;
+    color: var(--primary);
 }
 .singin-form-group {
     margin-bottom: 25px;
@@ -141,8 +141,10 @@
     display: none;
 }
 .inputpassword .error {
-    border-color: red;
+    border-color: var(--primary);
 }
 .error {
-    color : red;
+    color: var(--primary);
+    display: flex;
+    margin-top: -15px;
 }
