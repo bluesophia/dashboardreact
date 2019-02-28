@@ -49,6 +49,9 @@
     transition: background 0s ease-out 0s;
     text-align: center;
 }
+.singin-card-body-form > span.error {
+    color: red;
+}
 .singin-form-group {
     margin-bottom: 25px;
 }
@@ -133,4 +136,13 @@
 }
 .singin-form-group-footer-signup-b{
     color: var(--blue);
+}
+.error-hidden {
+    display: none;
+}
+.inputpassword .error {
+    border-color: red;
+}
+.error {
+    color : red;
 }
