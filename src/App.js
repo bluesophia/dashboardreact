@@ -12,7 +12,7 @@ class App extends Component {
           <ToastContainer/> 
           
           <DashboardScreen />
-          <ProfileScreen />
+          {/* <ProfileScreen />
           <InvoiceScreen />
           <LoginScreen />
           <TimelineScreen />
@@ -20,7 +20,7 @@ class App extends Component {
           <AlertScreen />
           <WidgetAppsScreen /> 
           <TreeViewScreen />
-          <Nestable />
+          <Nestable /> */}
         </div>
       </div>
     );

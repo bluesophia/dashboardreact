@@ -34,9 +34,28 @@
     margin-bottom: 0;
 }
 
-.comment-widgets {
+.todolist-comment-widgets {
     position: relative;
     margin-bottom: 10px;
     height: 410px;
     position: relative;
+}
+
+/* scrollbar */
+.ps>.ps__scrollbar-x-rail {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    bottom: 0px;
+    height: 6px;
+}
+
+.ps>.ps__scrollbar-x-rail>.ps__scrollbar-x {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    bottom: 2px;
+    height: 6px;
 }

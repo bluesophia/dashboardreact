@@ -14,6 +14,7 @@ class CardWidgetTodolist extends Component {
         }
     }
 
+    // linethrough function
     togglelineThrough() {
         const currentState = this.state.todoDone;
         this.setState({

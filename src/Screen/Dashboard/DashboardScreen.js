@@ -7,7 +7,7 @@ class DashboardScreen extends Component {
     render(){
         return(
             <div>
-                <Infobox />
+                {/* <Infobox />
                 <YearlySales />
                 <Weatherbox />
                 <Commentbox />
@@ -15,10 +15,10 @@ class DashboardScreen extends Component {
                 <SalesOverview />
                 <SalesDifferenceAreachart />
                 <SalesDifferenceBarchart />
-                <VisitStatasticsPiechart />
+                <VisitStatasticsPiechart /> */}
                 <TodoList />
-                <Messages />
-                <DashboardChat />
+                {/* <Messages />
+                <DashboardChat /> */}
             </div>
         )
     }
