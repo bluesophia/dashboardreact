@@ -17,11 +17,15 @@ class ProfileNav extends Component {
     showTimelinePage() {
         this.setState({
             showTimeline: true, 
+            showSettings: false,
+            showProfile: false,
             activeshowTimeline: true
         });
     }
     showProfilePage() {
         this.setState({
+            showTimeline: false,
+            showSettings: false,
             showProfile: true,
             activeshowProfile: true
         });
@@ -29,6 +33,8 @@ class ProfileNav extends Component {
     showSettingsPage() {
         this.setState({
             showSettings: true, 
+            showTimeline: false,
+            showProfile: false,
             activeshowSettings: true
         });
     }
@@ -176,17 +182,20 @@ class ProfileNav extends Component {
 
             </div>
         )
+        
+        const { showTimeline, showProfile, showSettings, activeshowTimeline, activeshowProfile, activeshowSettings } = this.state;
+
         return(
             <div className="profile-nav col-lg-8 col-xlg-9 col-md-6">
                 <div className="profile-nav-card">
                     <ul className="profile-nav-tabs" role="tablist">
-                            <li className="profile-nav-item"> <a className="profile-nav-link" data-toggle="tab" href="#home" role="tab" onClick={this.showTimelinePage}>Timeline</a> </li>
-                            <li className="profile-nav-item"> <a className="profile-nav-link" data-toggle="tab" href="#profile" role="tab" onClick={this.showProfilePage}>Profile</a> </li>
-                            <li className="profile-nav-item"> <a className="profile-nav-link" data-toggle="tab" href="#settings" role="tab" onClick={this.showSettingsPage}>Settings</a> </li>
+                            <li className="profile-nav-item"><a className="profile-nav-link active" data-toggle="tab" href="#home" role="tab" onClick={this.showTimelinePage}>Timeline</a></li>
+                            <li className="profile-nav-item"><a className={ activeshowProfile ? "profile-nav-link active" : "profile-nav-link" } data-toggle="tab" href="#profile" role="tab" onClick={this.showProfilePage}>Profile</a></li>
+                            <li className="profile-nav-item"><a className={ activeshowSettings ? "profile-nav-link active" : "profile-nav-link" } data-toggle="tab" href="#settings" role="tab" onClick={this.showSettingsPage}>Settings</a></li>
                     </ul>
                 </div>
                 {this.state.showTimeline ? timelinePage : null }
-                {this.state.showProfile ? profilePage : profilePage  }
+                {this.state.showProfile ? profilePage : null  }
                 {this.state.showSettings ? settingsPage : null }
             </div>
         )

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ImgCircle from '../Common/ImgCircle/ImgCircle'
 import './CardWidgetProfileDetailHeader.css'
-import SimpleLineIcon from 'react-simple-line-icons';
 import { RectangleButton } from '../Common/Button/ButtonExports';
 
 class CardWidgetProfileDetailHeader extends Component {
@@ -39,11 +38,5 @@ class CardWidgetProfileDetailHeader extends Component {
             </div>
         )
     }
-}
-
-const SimpleLineIconStyle = {
-    fontSize: "14px",
-    marginTop: "4px",
-    marginRight: "5px"
 }
 export default CardWidgetProfileDetailHeader;

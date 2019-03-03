@@ -15,7 +15,7 @@ class InputPassword extends Component {
     })
   }
   render() {
-      const { value, onChange, onBlur, borderBottom, onClick } = this.props;
+      const { value, onChange, onBlur, borderBottom } = this.props;
       const inputOnClick = this.state;
     return (
         <div className={ inputOnClick ? "input-form-control inputPassword-container" : "inputPassword-container"}>

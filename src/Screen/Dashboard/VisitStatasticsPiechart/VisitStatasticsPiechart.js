@@ -45,7 +45,4 @@ class VisitStatasticsPiechart extends Component {
     }
 }
 
-const TooltipStyle = {
-    fontSize: "10px"
-}
 export default VisitStatasticsPiechart;

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import CardMessages from '../../../Components/CardMessages/CardMessages'
 import './WidgetRecentMessages.css'
 import '../../../Assets/Styles/theme.css'
-import { Scrollbars } from 'react-custom-scrollbars';
 
 class WidgetRecentMessages extends Component {
     render(){

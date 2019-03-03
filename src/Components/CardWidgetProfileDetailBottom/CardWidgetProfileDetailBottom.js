@@ -18,14 +18,14 @@ class CardWidgetProfileDetailBottom extends Component {
 
     // hover change color
     handleHover(){
-        this.state={
+        this.setstate({
             mouseOn: true
-        }
+        })
     }
     handleHoverOff(){
-        this.state={
+        this.setstate({
             mouseOn: false
-        }
+        })
     }
 
     render(){

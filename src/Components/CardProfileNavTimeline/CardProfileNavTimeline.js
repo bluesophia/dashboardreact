@@ -68,7 +68,7 @@ class CardProfileNavTimeline extends Component {
                             { like ? 
                                 <a href="#" className="profile-timeline-footer-icon">
                                     <FontAwesomeIcon icon={faHeart} style={FontAwesomeIconStyle}/>
-                                    <p>{like} love</p> 
+                                    <p className="profile-timeline-footer-icon-p">{like} love</p> 
                                 </a> 
                             : null }
                         </span>
