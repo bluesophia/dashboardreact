@@ -4,9 +4,8 @@
             wrap & card
 ************************************/
 
-.card {
+.skillset-card {
     position: relative;
-    border-right: 1px solid #e9ecef;
     flex-direction: column;
     margin-bottom: 10px;
     min-width: 0;
@@ -14,49 +13,45 @@
     flex-basis: auto;
 }
 @media (min-width: 576px){
-    .card {
+    .skillset-card {
         flex: 1 0 0%;
         word-wrap: break-word;
     } 
 }
-.card h3{
+.skillset-card h3{
     margin-top: 0;
     font-size: 24px;
 }
-.card h3 > i {
+.skillset-card h3 > i {
     font-size: 24px;
 }
-.card h2 {
+.skillset-card h2 {
     font-size: 30px;
 }
-.card p {
-    font-size: 14px;
-    font-weight: 300;
-}
-.card .wi {
-    font-size: 36px;
-}
-.card-body {
+.skillset-card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
     font-size: 14px;
     font-weight: 300;
 }
-.card-body h6 {
+.skillset-card-body h6 {
     font-size: 14px;    
 }
-.contentBox {
+.skillset-contentBox {
     display: flex;
     align-items: center;
 }
-.contentBox h3 {
-    text-align: left;
+.skillset-contentBox-title {
+    margin-bottom: 0.4rem;
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 /************************************
               progress
 ************************************/
-.progress {
+.skillset-progress {
     display: flex;
     height: auto;
     overflow: hidden;
@@ -67,16 +62,16 @@
 /************************************
       custom-color-progress-bar
 ************************************/
-.progress-bar-primary {
-    background-color: var(--primary);
+.progress-bar-red {
+    background-color: var(--red);
     height: 6px;
 }
-.progress-bar-cyan {
-    background-color: var(--cyan);
+.progress-bar-blue {
+    background-color: var(--blue);
     height: 6px;
 }
-.progress-bar-purple {
-    background-color: var(--purple);
+.progress-bar-yellow {
+    background-color: var(--yellow);
     height: 6px;
 }
 .progress-bar-green {
@@ -87,31 +82,10 @@
 /************************************
                 items
 ************************************/
-.ptextMuted {
-    color: #6c757d;
-}
 .counterBox {
     margin-left: auto;
 }   
 
-/************************************
-            items-color
-************************************/
-.counter-primary{
-    color: var(--primary);
-    font-weight: 400;
-}
-.counter-cyan{
-    color: var(--cyan);
-    font-weight: 400;
-}
-.counter-purple{
-    color: var(--purple);
-    font-weight: 400;
-}
-.counter-green{
-    color: var(--teal);
-    font-weight: 400;
-}
+
 
 

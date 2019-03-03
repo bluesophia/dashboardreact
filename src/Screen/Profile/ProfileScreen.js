@@ -6,7 +6,7 @@ class ProfileScreen extends Component {
     render(){
         return(
             <div className="profileScreen-wrapper">
-                {/* <div><Profile /></div> */}
+                <div><Profile /></div>
                 <div><ProfileNav /></div>
             </div>
         )

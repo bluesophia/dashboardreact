@@ -2,7 +2,8 @@
 
 .profile-card-body-bottom { 
     padding: 1.25rem;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    background-color: #fff;
 }
 .profile-iframe {
     width: 100%;
@@ -28,4 +29,7 @@
 }
 .profile-card-body-bottom-button > div {
     margin-right: 5px;
+}
+.profile-card-footer {
+    margin-top: 15px;
 }
