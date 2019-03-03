@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../../Assets/Styles/theme.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBomb, faSave, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faBomb } from '@fortawesome/free-solid-svg-icons';
 import './ImgTimelineBadgeColor.css';
 
 class ImgTimelineBadgeColor extends Component {

@@ -11,6 +11,7 @@ class Infobox extends Component {
                 title: 'MYNEW CLIENTS',
                 icon: 'screen-desktop',
                 counter: '23',
+                percent: '85',
                 counterColor:'counter-primary',
                 className: 'progress-bar-primary',
                 ariaValuenow: '25',
@@ -20,6 +21,7 @@ class Infobox extends Component {
                 title: 'NEW PROJECTS',
                 icon: 'note',
                 counter: '169',
+                percent: '85',
                 counterColor:'counter-cyan',
                 className: 'progress-bar-cyan',
                 ariaValuenow: '25',
@@ -29,6 +31,7 @@ class Infobox extends Component {
                 title: 'NEW INVOICES',
                 icon: 'doc',
                 counter: '157',
+                percent: '85',
                 counterColor:'counter-purple',
                 className: 'progress-bar-purple',
                 ariaValuenow: '25',
@@ -38,6 +41,7 @@ class Infobox extends Component {
                 title: 'ALL PROJECTS',
                 icon: 'bag',
                 counter: '431',
+                percent: '85',
                 counterColor:'counter-green',
                 className: 'progress-bar-green',
                 ariaValuenow: '25',
@@ -53,6 +57,7 @@ class Infobox extends Component {
                     title={item.title}
                     icon={item.icon}
                     counter={item.counter}
+                    percent={item.percent}
                     counterColor={item.counterColor}
                     className={item.className}    
                     ariaValuenow={item.areaValuenow}

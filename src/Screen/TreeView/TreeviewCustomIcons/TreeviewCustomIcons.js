@@ -3,7 +3,7 @@ import './TreeviewCustomIcons.css';
 import TreeView from 'react-treeview';
 import '../../../Assets/Styles/weather-icons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookmark, faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import SimpleLineIcon from 'react-simple-line-icons';
 
 // treevew default list

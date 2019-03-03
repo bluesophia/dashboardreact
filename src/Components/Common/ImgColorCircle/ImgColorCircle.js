@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './ImgColorCircle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBomb, faSave, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 class ImgColorCircle extends Component {
         static defaultProps = {

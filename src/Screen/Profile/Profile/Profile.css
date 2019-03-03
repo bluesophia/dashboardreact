@@ -9,10 +9,10 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
     background-clip: border-box;
     border: 0px solid transparent;
     border-radius: 0px;
     margin-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-

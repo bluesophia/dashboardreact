@@ -5,7 +5,7 @@ import ImgCircle from '../Common/ImgCircle/ImgCircle';
 
 class CardWidgetProjectofMonthTable extends Component {
     render(){
-        const { src,assignedName,  name, job, priority, budget, priceColor, backgroundColor, circleName } = this.props;
+        const { src,assignedName,  name, job, priority, budget, backgroundColor, circleName } = this.props;
         return(
                 <tr className="projectofmonth-table-tr">
                     <td>{ src ? <ImgCircle src={src} width={"50px"}/> : <ImgColorCircleStatus backgroundColor={backgroundColor} circleName={circleName}/> }</td>

@@ -3,7 +3,6 @@ import { InputUsername, InputPassword } from '../../../Components/Common/Input/I
 import { RectangleButton } from '../../../Components/Common/Button/ButtonExports';
 import './WidgetSubscribe.css';
 import '../../../Assets/Styles/theme.css';
-import { faFileExcel } from '@fortawesome/free-solid-svg-icons';
 
 class WidgetSubscribe extends Component {
     constructor(props){

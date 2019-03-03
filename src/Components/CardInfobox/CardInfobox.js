@@ -11,7 +11,7 @@ class CardInfobox extends Component {
         }
     }
     render () {
-        const { icon, title, counter, counterColor, className, ariaValuenow } = this.props;
+        const { icon, title, counter, counterColor, className, ariaValuenow, percent } = this.props;
 
         return(
             <div className="card">
@@ -32,7 +32,7 @@ class CardInfobox extends Component {
                         </div>
                         <div className="col-12">
                             <div className="progress">
-                                <div className={className} role="progressbar" aria-valuenow={ariaValuenow} aria-valuemin="0" aria-valuemax="100"></div>
+                                <div className={className} style={{width: percent+'%'}} role="progressbar" aria-valuenow={ariaValuenow} aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>

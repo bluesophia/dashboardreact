@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import './InputUsername.css';
 
 class InputUsername extends Component {
-  constructor(props){
-    super(props);
-  }
-
+  
   render() {
 
     const { value, onChange, className, onBlur, borderBottom } = this.props;
