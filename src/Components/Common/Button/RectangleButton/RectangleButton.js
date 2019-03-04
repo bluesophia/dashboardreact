@@ -11,6 +11,8 @@ class RectangleButton extends Component {
         color: "white",
         value: "Design Weblayout",
         fontWeight: "500",
+        hoverColor: "white",
+        backgroundColorHover: "#009c75",
         marginBottom: "0"
     }
 

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './InputEmail.css';
+import './InputPhone.css';
 
-class InputEmail extends Component {
+class InputPhone extends Component {
   render() {
     const { value, onChange, className, onBlur, borderBottom } = this.props;
     return (
-        <div className="inputemail-container">
+        <div className="inputphone-container">
             <input
             className={className}
             style={
@@ -25,18 +25,16 @@ class InputEmail extends Component {
             }
             value={value}
             type="text"
-            name="email"
-            label="email"
+            name="phone"
+            label="phone"
             onChange={onChange}
             onBlur={onBlur}
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-            placeholder="Email"
+            placeholder="phone"
             autocomplete="off"
-            required
             />
         </div>
     )
   }
 }
 
-export default InputEmail;
+export default InputPhone;

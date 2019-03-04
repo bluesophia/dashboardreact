@@ -21,7 +21,7 @@ class InputConfirmPassword extends Component {
               color: "#6c757d",
               padding: "0.5em",
               marginTop: "10px",
-              fontWeight: "500"
+              fontWeight: "400"
             }}
             type="password"
             value={value}

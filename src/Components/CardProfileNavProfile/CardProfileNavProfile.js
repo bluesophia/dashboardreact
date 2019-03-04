@@ -83,8 +83,5 @@ class CardProfileNavProfile extends Component {
         )
     }
 }
-const CircleButtonStyle = {
-    fontSize: "13px"
-}
 
 export default CardProfileNavProfile;

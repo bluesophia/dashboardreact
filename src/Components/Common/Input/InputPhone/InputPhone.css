@@ -1,9 +1,9 @@
 @import '../../../../Assets/Styles/theme.css';
 
 /************************************
-                email
+            Phone
 ************************************/
-.inputemail-container {
+.inputphone-container {
     padding-left: 0;
     margin-top: 0;
     width: 100%;
@@ -11,15 +11,15 @@
     margin-bottom:25px;
 }
 @media(min-width: 1000px) {
-    .inputemail-container {
+    .inputphone-container {
         margin-bottom:25px;
     }
 }
-.inputemail-container-input:focus {
+.inputphone-container-input:focus {
     outline: none;
 }
 @media(min-width: 1000px) {
-    .inputemail-container-input:focus {
+    .inputphone-container-input:focus {
         width: 70%;
     }
 }

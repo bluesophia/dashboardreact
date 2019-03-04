@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './ProfileNav.css';
 import CardProfileNavTimeline from '../../../Components/CardProfileNavTimeline/CardProfileNavTimeline'
 import CardProfileNavProfile from '../../../Components/CardProfileNavProfile/CardProfileNavProfile'
+import CardProfileNavSettings from '../../../Components/CardProfileNavSettings/CardProfileNavSettings'
 
 const timelineDataList = [
     {
@@ -79,6 +80,15 @@ const profileDataList ={
        `
 }
 
+const SettingsDataList ={
+    id: 0,
+    name: 'Johnathan Deo',
+    email: 'johnathan@admin.com',
+    password: '11111111',
+    phone: '(123) 456 7890',
+    Message: ''
+}
+
 
 class ProfileNav extends Component {
     constructor(props){
@@ -127,8 +137,7 @@ class ProfileNav extends Component {
     }
     render(){
          
-        const timelinePage =(
-            
+        const timelinePage = (
             <div className="profile-nav-timeline-card">
                 {
                     timelineDataList.map((item, index) => (
@@ -151,7 +160,6 @@ class ProfileNav extends Component {
                     />
                     ))
                 }
-
             </div>
          )
          const profilePage = (
@@ -163,33 +171,18 @@ class ProfileNav extends Component {
                     location={profileDataList.location}
                     detail={profileDataList.detail}
                 />
-
             </div>
          )
          const settingsPage = (
             <div className="profile-nav-timeline-card">
-                {
-                    timelineDataList.map((item, index) => (
-                        <CardProfileNavTimeline 
-                        key={item.id}
-                        name={item.name}
-                        update={item.update}
-                        updateWhere={item.updateWhere}
-                        image1={item.image1}
-                        image2={item.image2}
-                        image3={item.image3}
-                        image4={item.image4}
-                        imgUrl={item.imgUrl}
-                        comment={item.comment}
-                        Blockquote={item.Blockquote}
-                        commentNumber={item.commentNumber}
-                        like={item.like}
-                        time={item.time}
-                        button={item.button}
-                    />
-                    ))
-                }
-
+                <CardProfileNavSettings
+                    name={SettingsDataList.name}
+                    phone={SettingsDataList.phone}
+                    password={SettingsDataList.password}
+                    email={SettingsDataList.email}
+                    Message={SettingsDataList.Message}
+                    detail={SettingsDataList.detail}
+                />
             </div>
         )
         
