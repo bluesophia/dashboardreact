@@ -42,8 +42,7 @@ class CardProfileNavSettings extends Component {
             <div className="profilenavsettings-card-body">
                     <div className="profilenavsettings-card">
                         <div className="profilenavsettings-card-footer-address">
-                            
-                            {/* profile detail */}
+                            {/* profile settings */}
                             <div>
                             <h5 className="profilenavsettings-card-h3">Full Name</h5>
                             <InputUsername 
@@ -78,21 +77,22 @@ class CardProfileNavSettings extends Component {
                             <textarea className="profilenavsettings-form-control" value={Message}></textarea>
                             </div>
                             <div>
+                            {/* options */}
                             <h5 className="profilenavsettings-card-h3">Select Country</h5>
                             <div className="profilenavsettings-card-option">
                                 <select className="profilenavsettings-option-control">
-                                    <option>January</option>
-                                    <option value="1">February</option>
-                                    <option value="2">March</option>
-                                    <option value="3">April</option>
+                                    <option>London</option>
+                                    <option value="1">India</option>
+                                    <option value="2">Usa</option>
+                                    <option value="3">Thailand</option>
                                 </select>
                             </div>
+                            {/* button */}
                             <div className="profilenavsettings-card-button">
                                 <RectangleButton 
                                     value="Update Profile"
                                 />
                             </div>
-                            {/* <p className="profilenavsettings-card-p">{location}</p> */}
                             </div>
                         </div>
                     <div>
