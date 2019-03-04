@@ -43,7 +43,7 @@ class InputPassword extends Component {
             onChange={onChange}
             onBlur={onBlur}
             onClick={this.inputOnClick}
-            autocomplete="off"
+            autoComplete="off"
             />
         </div>
     )

@@ -31,7 +31,7 @@ class InputEmail extends Component {
             onBlur={onBlur}
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
             placeholder="Email"
-            autocomplete="off"
+            autoComplete="off"
             required
             />
         </div>

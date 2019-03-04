@@ -5,25 +5,48 @@ class InputSearch extends Component {
   constructor(props){
     super(props);
     this.state = {value: ''};
-    this._handleChange = this._handleChange.bind(this);
+    this.filterList = this.filterList.bind(this);
   }
 
-  _handleChange(event) {
-    this.setState({value: event.target.value});
+  filterList(e) {
+    let updateList = this.state.initialItems;
+    // updateList = updateList.filter(function(item){
+    //   return item.toLowerCase().search(
+    //     e.target.value.toLowerCase()) ! == -1;
+    // });
+    this.setState({value: e.target.value});
+  }
+  getInitialState() {
+    return{
+      initialItems: [],
+      items: []
+    }
+  }
+  componentWillMount(){
+    this.setState({items: this.state.initialItems})
   }
   
   render() {
+
+    const { value } = this.state;
+
     return (
         <div className="inputsearch-container">
+          <form>
+            <fieldset className="inputsearch-form-group">
             <input
             style={InputStyle}
-            value={this.state.value}
+            value={value}
+            type="text"
             name="search"
             label="search"
-            onChange={this._handleChange}
+            onChange={this.filterList}
             placeholder="Type to search..."
+            autoComplete="off"
             required
             />
+            </fieldset>
+          </form>
         </div>
     )
   }

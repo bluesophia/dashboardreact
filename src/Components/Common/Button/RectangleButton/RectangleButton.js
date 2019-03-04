@@ -68,11 +68,11 @@ class RectangleButton extends Component {
     render(){
 
         const { index, color, hoverColor, borderColor,border, backgroundColor, value, fontWeight, 
-            marginBottom, marginTop, fontSize, borderRadius, padding, iconsrc, backgroundColorHover } = this.props;
+            marginBottom, marginTop, fontSize, borderRadius, padding, iconsrc, backgroundColorHover, url } = this.props;
         
         return(
             <div ref={this.setOutsideClick}>
-                <a key={index} className="rectanglebutton" 
+                <a key={index} className="rectanglebutton" href={url}
                 style={{
                     color: this.state.hoverDarker ? hoverColor : color,
                     borderColor: borderColor,

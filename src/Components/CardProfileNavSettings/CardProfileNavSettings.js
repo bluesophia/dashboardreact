@@ -48,7 +48,6 @@ class CardProfileNavSettings extends Component {
                             <InputUsername 
                                 value={name}
                                 borderBottom="1px solid var(--border-bottom-color)"
-                                style={InputFontStyle}
                             />
                             </div>
                             <div>
@@ -91,6 +90,7 @@ class CardProfileNavSettings extends Component {
                             <div className="profilenavsettings-card-button">
                                 <RectangleButton 
                                     value="Update Profile"
+                                    url="#"
                                 />
                             </div>
                             </div>
@@ -103,7 +103,4 @@ class CardProfileNavSettings extends Component {
     }
 }
 
-const InputFontStyle = {
-    fontWeight: 100
-}
 export default CardProfileNavSettings;

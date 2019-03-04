@@ -30,7 +30,7 @@ class InputConfirmPassword extends Component {
             placeholder="Confirm Password"
             onChange={onChange}
             onBlur={onBlur}
-            autocomplete="off"
+            autoComplete="off"
             />
         </div>
     )

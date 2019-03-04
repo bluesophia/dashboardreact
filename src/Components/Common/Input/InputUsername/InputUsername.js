@@ -32,7 +32,7 @@ class InputUsername extends Component {
             onBlur={onBlur}
             placeholder="Username"
             required
-            autocomplete="off"
+            autoComplete="off"
             />
         </div>
     )

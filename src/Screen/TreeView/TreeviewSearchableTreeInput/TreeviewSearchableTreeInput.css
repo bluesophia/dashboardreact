@@ -64,3 +64,32 @@
 .treeviewsearchableinput-card-body-content-input-div > input {
     margin-right: 5px;
 }
+
+/************************************
+            Input search
+************************************/
+.inputsearch-container {
+    padding-left: 0;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom:10px;
+}
+@media(min-width: 1000px) {
+    .inputsearch-container {
+        margin-bottom:10px;
+    }
+}
+.inputsearch-container-input:focus {
+    outline: none;
+}
+@media(min-width: 1000px) {
+    .inputsearch-container-input:focus {
+        width: 70%;
+    }
+}
+/************************************
+            fieldset
+************************************/
+fieldset.inputsearch-form-group {
+    border: none;
+}

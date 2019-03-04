@@ -30,7 +30,7 @@ class InputPhone extends Component {
             onChange={onChange}
             onBlur={onBlur}
             placeholder="phone"
-            autocomplete="off"
+            autoComplete="off"
             />
         </div>
     )
