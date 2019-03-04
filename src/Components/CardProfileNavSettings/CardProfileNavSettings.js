@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './CardProfileNavSettings.css'
 import CardProfileNavProfileSkillset from '../CardProfileNavProfileSkillset/CardProfileNavProfileSkillset'
 import { InputUsername, InputEmail, InputPassword, InputPhone } from '../Common/Input/InputExports';
+import { RectangleButton } from '../Common/Button/ButtonExports';
 const skillsetList = [
     {
         id: 0,
@@ -78,13 +79,18 @@ class CardProfileNavSettings extends Component {
                             </div>
                             <div>
                             <h5 className="profilenavsettings-card-h3">Select Country</h5>
-                            <div className="salestable-card-option">
-                                <select className="salestable-form-control">
+                            <div className="profilenavsettings-card-option">
+                                <select className="profilenavsettings-option-control">
                                     <option>January</option>
                                     <option value="1">February</option>
                                     <option value="2">March</option>
                                     <option value="3">April</option>
                                 </select>
+                            </div>
+                            <div className="profilenavsettings-card-button">
+                                <RectangleButton 
+                                    value="Update Profile"
+                                />
                             </div>
                             {/* <p className="profilenavsettings-card-p">{location}</p> */}
                             </div>

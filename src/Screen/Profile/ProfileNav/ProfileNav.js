@@ -137,8 +137,7 @@ class ProfileNav extends Component {
     }
     render(){
          
-        const timelinePage =(
-            
+        const timelinePage = (
             <div className="profile-nav-timeline-card">
                 {
                     timelineDataList.map((item, index) => (
