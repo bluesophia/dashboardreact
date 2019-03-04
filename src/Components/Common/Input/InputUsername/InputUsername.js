@@ -5,7 +5,7 @@ class InputUsername extends Component {
   
   render() {
 
-    const { value, onChange, className, onBlur, borderBottom } = this.props;
+    const { value, onChange, className, onBlur, borderBottom  } = this.props;
 
     return (
         <div className="inputPassword-container">
@@ -22,7 +22,7 @@ class InputUsername extends Component {
               color: "#6c757d",
               padding: "0.5em",
               marginTop: "10px",
-              fontWeight: "500"
+              fontWeight: "400"
             }}
             value={value}
             type="text"

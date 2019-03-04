@@ -13,9 +13,9 @@ class App extends Component {
           
           {/* <DashboardScreen /> */}
           <ProfileScreen />
-          {/* <InvoiceScreen />
-          <LoginScreen />
-          <TimelineScreen />
+          {/* <InvoiceScreen /> */}
+          {/* <LoginScreen /> */}
+          {/* <TimelineScreen />
           <PricingScreen />
           <AlertScreen />
           <WidgetAppsScreen /> 

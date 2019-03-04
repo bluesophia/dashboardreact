@@ -3,3 +3,5 @@ export { default as InputPassword } from './InputPassword/InputPassword';
 export { default as InputEmail } from './InputEmail/InputEmail';
 export { default as InputConfirmPassword } from './InputConfirmPassword/InputConfirmPassword';
 export { default as InputSearch } from './InputSearch/InputSearch';
+export { default as InputPhone } from './InputPhone/InputPhone';
+

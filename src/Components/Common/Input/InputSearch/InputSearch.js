@@ -39,7 +39,7 @@ const InputStyle = {
     color: "#6c757d",
     padding: "1.25em 1em",
     marginTop: "10px",
-    fontWeight: "500"
+    fontWeight: "400"
   }
 
 export default InputSearch;
