@@ -6,18 +6,24 @@ class TreeviewSearchable extends Component {
         super(props);
         this.state = {
             // listDatafromTreeviewData: '111',
-            listDataFromChild:''
+            listDataFromChild:null
         }
-        // this.handleResultChange = this.handleResultChange.bind(this);
-
+            // this.handleResultChange = this.handleResultChange.bind(this);
+            this.handleDataCallback=this.handleDataCallback.bind(this);
     }
+    
 
-    myCallback = (message) => {
-        this.setState({
-            listDataFromChild: message
-        }, () => console.log(this.state.listDataFromChild));
+    handleDataCallback(txtMsg){
+        // alert(txtMsg);
+        alert("fffff")
+        console.log(this);
+    }
+    // myCallback = (listInfo) => {
+    //     this.setState({
+    //         listDataFromChild: listInfo
+    //     });
         
-    }
+    // }
     
     // handleResultChange(data){
     //     this.setState({
@@ -26,7 +32,7 @@ class TreeviewSearchable extends Component {
     // }
 
     render(){
-        const { listDataFromChild } = this.state;
+
      return(
         <div className="treeviewsearchable-row">
             <div className="treeviewsearchable-col-lg-6">
@@ -37,16 +43,19 @@ class TreeviewSearchable extends Component {
                     </div>
                     <div className="treeviewsearchable-card-grid">
                         <TreeviewSearchableTreeInput style={{marginBottom: '10px'}}/>
-                        <TreeviewSearchableTree callbackFromParent={this.myCallback}/>
-                        <dataListtoParent message={listDataFromChild}/>
+                        <TreeviewSearchableTree 
+                            // callbackFromParent={this.myCallback}
+                            dataCallback={this.handleDataCallback}
+                        />
                         <div className="treeviewsearchable-card-result">
                             <h2 className="treeviewsearchable-card-result-h2">Results</h2>
                             <p className="treeviewsearchable-card-result-p">0 matches found</p>
+                            <p>{this.state.listDataFromChild}</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>   
     
         )
     }   

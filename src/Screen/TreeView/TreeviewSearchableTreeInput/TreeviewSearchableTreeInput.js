@@ -26,9 +26,18 @@ class TreeviewSearchableTreeInput extends Component {
     }
     // get input value
     inputValue(e) {
-        this.setState({
-            value: e.target.value
-        })
+        // this.setState({
+        //     value: e.target.value
+        // })
+        alert("hiiii")
+        e.preventDefault()
+        const { dataCallback } = this.props;
+        // dataCallback("hi")
+        alert(dataCallback);
+        // console.log(dataCallback);
+        // if(dataCallback !== undefined){
+        //     dataCallback("hi")
+        // }
     }
 
     // exact match handle onclick
@@ -39,6 +48,7 @@ class TreeviewSearchableTreeInput extends Component {
     // }
 
     render(){
+        const { post } = this.props;
         return(
             <div className="treeviewsearchableinput-card-body-content">
                 <h2 className="treeviewsearchableinput-card-title-name">Input</h2>
@@ -48,7 +58,7 @@ class TreeviewSearchableTreeInput extends Component {
                         <fieldset className="inputsearch-form-group">
                         <input
                         style={InputStyle}
-                        value={this.state.value}
+                        value={this.state.value} 
                         type="text"
                         name="search"
                         label="search"
@@ -56,11 +66,13 @@ class TreeviewSearchableTreeInput extends Component {
                         placeholder="Type to search..."
                         autoComplete="off"
                         required
+                        onClick={this.inputValue}
                         />
                         </fieldset>
                     </form>
                 </div>
                 {/* search options */}
+                <h1>{post}</h1>
                 <div className="treeviewsearchableinput-card-body-content-input">
                     <div className="treeviewsearchableinput-card-body-content-input-div">
                         <input type="checkbox" 

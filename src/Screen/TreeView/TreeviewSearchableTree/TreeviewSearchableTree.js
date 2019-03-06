@@ -4,10 +4,9 @@ import TreeView from 'react-treeview';
 import '../../../Assets/Styles/weather-icons.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolder } from '@fortawesome/free-solid-svg-icons';
-// dataList to parent
-const dataListtoParent = (props) => {
+
     // treevew default list
-    let message = [
+    const treeviewDefaultList = [
         {
             id:0,
             type: 'Parent 1',
@@ -79,87 +78,11 @@ const dataListtoParent = (props) => {
             children: [],
         },
       ];
-    this.props.callbackFromParent(message);
-    return <h3>hoo{this.props.message}</h3>
-}
-
-// // treevew default list
-const treeviewDefaultList = [
-    {
-        id:0,
-        type: 'Parent 1',
-        collapsed: true,
-        classChange: true,
-        children: [
-            { id:1, 
-                name: 'child 1', 
-                collapsed: false,
-                childclassChange: false,
-                grandchildren:[
-                    {id:2, name: 'Grandchild 1'},
-                    {id:3, name: 'Grandchild 2'},
-                ]
-            },
-            { id:4, name: 'child 2',
-                collapsed: false,
-                childclassChange: false,
-                grandchildren:[
-                    {id:5, name: 'Grandchild 1'},
-                    {id:6, name: 'Grandchild 2'},
-                ]
-            }
-        ]
-    },
-    {
-        id:7,
-        type: 'Parent 2',
-        collapsed: true,
-        classChange: true,
-        children: [
-            { id:8, name: 'child 1', 
-                collapsed: false,
-                childclassChange: false,
-                grandchildren:[
-                    {id:9, name: 'Grandchild 1'},
-                    {id:10, name: 'Grandchild 2'},
-                ]
-            },
-            { id:11, name: 'child 2', 
-                collapsed: false,
-                childclassChange: false,
-                grandchildren:[
-                    {id:12, name: 'Grandchild 1'},
-                    {id:13, name: 'Grandchild 2'},
-                ]
-            }
-        ]
-    },
-    {
-        id:14,
-        type: 'Parent 3',
-        collapsed: true,
-        classChange: true,
-        children: [],
-    },
-    {
-        id:15,
-        type: 'Parent 4',
-        collapsed: true,
-        classChange: true,
-        children: [],
-    },
-    {
-        id:16,
-        type: 'Parent 5',
-        collapsed: true,
-        classChange: true,
-        children: [],
-    },
-  ];
 
 class TreeviewSearchableTree extends Component {
     constructor(props){
         super(props);
+        
         this.state = {
             treeviewDefaultList,
             
@@ -178,7 +101,7 @@ class TreeviewSearchableTree extends Component {
             }),
             
             classChange :  treeviewDefaultList.map(() => true),
-            
+            selected: []            
             
         }
 
@@ -186,8 +109,8 @@ class TreeviewSearchableTree extends Component {
         this.handleChildrenToggle = this.handleChildrenToggle.bind(this);
 
     }
-    
-    // Parent Toggle
+
+     // Parent Toggle
     handleParentToggle(i) {
         let [...folderParentcollapsed] = this.state.folderParentcollapsed;
         let [...classChange] = this.state.classChange;

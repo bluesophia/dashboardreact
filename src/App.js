@@ -6,21 +6,21 @@ import 'react-toastify/dist/ReactToastify.min.css';
 
 class App extends Component {
   render() {
-    return (
+       return (
       <div className="App">
         <div className="Wrapper">
           <ToastContainer/> 
           
-          {/* <DashboardScreen />
+          <DashboardScreen />
           <ProfileScreen />
           <InvoiceScreen />
           <LoginScreen />
           <TimelineScreen />
           <PricingScreen />
           <AlertScreen />
-          <WidgetAppsScreen />  */}
+          <WidgetAppsScreen /> 
           <TreeViewScreen />
-          {/* <Nestable /> */}
+          <Nestable />
         </div>
       </div>
     );
