@@ -220,9 +220,9 @@ class TreeviewSearchableTree extends Component {
                         );
                     })}
                     </li>
-                    </ul>
-                    </div>
-                </div>
+                </ul>
+            </div>
+        </div>
     
         )
     }   
