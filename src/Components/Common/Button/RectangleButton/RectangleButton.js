@@ -39,6 +39,8 @@ class RectangleButton extends Component {
         this.setState (prevState => ({
             effectOn: !prevState.effectOn
         }))
+
+        this.props.onClick();
     }
     // outline none when outslide click
     // set ref

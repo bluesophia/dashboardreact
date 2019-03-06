@@ -9,11 +9,6 @@ class InputSearch extends Component {
   }
 
   filterList(e) {
-    let updateList = this.state.initialItems;
-    // updateList = updateList.filter(function(item){
-    //   return item.toLowerCase().search(
-    //     e.target.value.toLowerCase()) ! == -1;
-    // });
     this.setState({value: e.target.value});
   }
   getInitialState() {
@@ -21,9 +16,6 @@ class InputSearch extends Component {
       initialItems: [],
       items: []
     }
-  }
-  componentWillMount(){
-    this.setState({items: this.state.initialItems})
   }
   
   render() {

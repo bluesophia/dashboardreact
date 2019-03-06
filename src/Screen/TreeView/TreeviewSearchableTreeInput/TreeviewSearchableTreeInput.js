@@ -8,47 +8,13 @@ class TreeviewSearchableTreeInput extends Component {
         this.state = {
             value: '',
             results: '',
-            exactMatch : false,
-            initialItems: [
-                "Apples",
-                "Broccoli",
-                "Chicken",
-                "Duck",
-                "Eggs",
-                "Fish",
-                "Granola",
-                "Hash Browns"
-              ]
+            exactMatch : false
         }
-        this.inputValue = this.inputValue.bind(this)
-        // this.exactMatchHandleClick = this.exactMatchHandleClick.bind(this)
 
     }
-    // get input value
-    inputValue(e) {
-        // this.setState({
-        //     value: e.target.value
-        // })
-        alert("hiiii")
-        e.preventDefault()
-        const { dataCallback } = this.props;
-        // dataCallback("hi")
-        alert(dataCallback);
-        // console.log(dataCallback);
-        // if(dataCallback !== undefined){
-        //     dataCallback("hi")
-        // }
-    }
-
-    // exact match handle onclick
-    // exactMatchHandleClick() {
-    //     if( this.state.value === datalist.value) {
-            
-    //     }
-    // }
 
     render(){
-        const { post } = this.props;
+        const { onClick, value, onChange } = this.props;
         return(
             <div className="treeviewsearchableinput-card-body-content">
                 <h2 className="treeviewsearchableinput-card-title-name">Input</h2>
@@ -58,21 +24,19 @@ class TreeviewSearchableTreeInput extends Component {
                         <fieldset className="inputsearch-form-group">
                         <input
                         style={InputStyle}
-                        value={this.state.value} 
+                        value={value} 
                         type="text"
                         name="search"
                         label="search"
-                        onChange={this.inputValue}
+                        onChange={onChange}
                         placeholder="Type to search..."
                         autoComplete="off"
                         required
-                        onClick={this.inputValue}
                         />
                         </fieldset>
                     </form>
                 </div>
                 {/* search options */}
-                <h1>{post}</h1>
                 <div className="treeviewsearchableinput-card-body-content-input">
                     <div className="treeviewsearchableinput-card-body-content-input-div">
                         <input type="checkbox" 
@@ -99,7 +63,7 @@ class TreeviewSearchableTreeInput extends Component {
                 </div>
                 {/* search & clear button */}
                 <div className="treeviewsearchableinput-card-body-content-button">
-                    <RectangleButton value="Search"/>
+                    <RectangleButton value="Search" onClick={onClick.bind(this)}/>
                     <RectangleButton value="Clear" 
                     backgroundColor="var(--white)"
                     color="var(--black)"

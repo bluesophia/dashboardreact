@@ -78,17 +78,29 @@ class TreeviewSearchable extends Component {
     constructor(props){
         super(props);
         this.state = {
-            // value=''
+            value: ''
         }
         // this.handleChange = this.handleChange.bind(this);
+        this.searchOnClick = this.searchOnClick.bind(this);
+        this.inputValue = this.inputValue.bind(this);
     }
     
     // handleChange(e){
-    //     changeValue
+    //     alert(e.target.value);
     // }
+    inputValue(e) {
+        e.preventDefault()
+        this.setState({
+            value: e.target.value
+        })
+    }
+
+    searchOnClick(){
+        alert(this.state.value)
+    }
 
     render(){
-        const { treeviewDefaultList  } = this.state;
+        const { value } = this.state;
      return(
         <div className="treeviewsearchable-row">
             <div className="treeviewsearchable-col-lg-6">
@@ -97,10 +109,17 @@ class TreeviewSearchable extends Component {
                         <h5 className="treeviewsearchable-card-title">Searchable Tree</h5>
                     </div>
                     <div className="treeviewsearchable-card-grid">
-                        <TreeviewSearchableTreeInput style={{marginBottom: '10px'}} onChange={this.handleChange}/>
+                        <TreeviewSearchableTreeInput 
+                            style={{marginBottom: '10px'}} 
+                            // onchange={this.handleChange}
+                            onClick={this.searchOnClick}
+                            value={value}
+                            onChange={this.inputValue}
+                            />
                         <TreeviewSearchableTree 
                             // callbackFromParent={this.myCallback}
                             data={treeviewDefaultList}
+                            value={value}
                         />
                         <div className="treeviewsearchable-card-result">
                             <h2 className="treeviewsearchable-card-result-h2">Results</h2>
